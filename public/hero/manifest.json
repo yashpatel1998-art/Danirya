@@ -1,0 +1,10 @@
+{
+  "version": "master_hero_production",
+  "frameCount": 280,
+  "fps": 24,
+  "aspectRatio": "16:9",
+  "resolution": "3840x2160",
+  "naming": "frame_XXXX.png",
+  "range": { "start": 1, "end": 280 },
+  "path": "/hero/frames/"
+}
