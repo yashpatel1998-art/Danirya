@@ -1,0 +1,49 @@
+.root {
+  position: relative;
+  background: var(--doc-bg, #e6dcc8);
+  color: var(--doc-ink, #1c1610);
+  /* WaveEdge owns the temple → document handoff */
+}
+
+.watermarkZone {
+  position: relative;
+}
+
+.watermarkRail {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* Never paint into the Application block below */
+  overflow: hidden;
+}
+
+.watermarkSticky {
+  position: sticky;
+  top: 16vh;
+  display: grid;
+  place-items: center;
+  height: 68vh;
+  /*
+   * Low opacity for hierarchy — lighting/exposure lives in Logo3D,
+   * not here. Washed-out grey was from crushing exposure + CSS desaturate.
+   */
+  opacity: 0.26;
+}
+
+.watermarkLogo {
+  width: min(56vw, 20rem) !important;
+  height: min(56vw, 20rem) !important;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.after {
+  position: relative;
+  z-index: 1;
+  /* Explicit clean field for the form — no watermark inheritance */
+  background: var(--doc-bg, #e6dcc8);
+}

@@ -1,0 +1,353 @@
+{
+  "maxY": 9872,
+  "decisions": {
+    "sequence": "case-study-then-studio",
+    "inset": "4.5vh / 3.5vw",
+    "iris": "Jesko fly-through — logo leaves viewport; no clip circle",
+    "stack": "hidden until iris ends; gated holds between panels",
+    "mobile": "plain-vertical ≤720px"
+  },
+  "samples": [
+    {
+      "label": "start",
+      "scrollY": 0,
+      "stackOpacity": 0,
+      "irisZoom": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "opacity": 1
+      },
+      "irisLogo": {
+        "transform": "matrix(1, 0, 0, 1, -144, -144)",
+        "opacity": 1
+      },
+      "studio": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 1499.93, 0)",
+        "top": 4152,
+        "left": 1550,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 941.85)",
+        "top": 5094,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "fly-early",
+      "scrollY": 790,
+      "stackOpacity": 0,
+      "irisZoom": {
+        "transform": "matrix(1.9771, 0, 0, 1.9771, 0, 0)",
+        "opacity": 1
+      },
+      "irisLogo": {
+        "transform": "matrix(3.5405, 0, 0, 3.5405, -144, -144)",
+        "opacity": 1
+      },
+      "studio": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 1499.93, 0)",
+        "top": 3362,
+        "left": 1550,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 941.85)",
+        "top": 4304,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "fly-mid",
+      "scrollY": 1580,
+      "stackOpacity": 0,
+      "irisZoom": {
+        "transform": "matrix(1.9771, 0, 0, 1.9771, 0, 0)",
+        "opacity": 1
+      },
+      "irisLogo": {
+        "transform": "matrix(3.5405, 0, 0, 3.5405, -144, -144)",
+        "opacity": 1
+      },
+      "studio": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 1499.93, 0)",
+        "top": 2572,
+        "left": 1550,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 941.85)",
+        "top": 3514,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "fly-late",
+      "scrollY": 2369,
+      "stackOpacity": 0,
+      "irisZoom": {
+        "transform": "matrix(1.9771, 0, 0, 1.9771, 0, 0)",
+        "opacity": 1
+      },
+      "irisLogo": {
+        "transform": "matrix(3.5405, 0, 0, 3.5405, -144, -144)",
+        "opacity": 1
+      },
+      "studio": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 1499.93, 0)",
+        "top": 1783,
+        "left": 1550,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 941.85)",
+        "top": 2725,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "case-breathe",
+      "scrollY": 3159,
+      "stackOpacity": 0,
+      "irisZoom": {
+        "transform": "matrix(1.9771, 0, 0, 1.9771, 0, 0)",
+        "opacity": 1
+      },
+      "irisLogo": {
+        "transform": "matrix(3.5405, 0, 0, 3.5405, -144, -144)",
+        "opacity": 1
+      },
+      "studio": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 1499.93, 0)",
+        "top": 993,
+        "left": 1550,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 941.85)",
+        "top": 1935,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "case-hold",
+      "scrollY": 4146,
+      "stackOpacity": 1,
+      "irisZoom": {
+        "transform": "matrix(6, 0, 0, 6, 0, 0)",
+        "opacity": 0
+      },
+      "irisLogo": {
+        "transform": "matrix(14, 0, 0, 14, -144, -144)",
+        "opacity": 0
+      },
+      "studio": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 1499.93, 0)",
+        "top": 40,
+        "left": 1550,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 941.85)",
+        "top": 982,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "studio-enter",
+      "scrollY": 5133,
+      "stackOpacity": 1,
+      "irisZoom": {
+        "transform": "matrix(6, 0, 0, 6, 0, 0)",
+        "opacity": 0
+      },
+      "irisLogo": {
+        "transform": "matrix(14, 0, 0, 14, -144, -144)",
+        "opacity": 0
+      },
+      "studio": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 1499.93, 0)",
+        "top": 40,
+        "left": 1550,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 941.85)",
+        "top": 982,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "studio-hold",
+      "scrollY": 6121,
+      "stackOpacity": 1,
+      "irisZoom": {
+        "transform": "matrix(6, 0, 0, 6, 0, 0)",
+        "opacity": 0
+      },
+      "irisLogo": {
+        "transform": "matrix(14, 0, 0, 14, -144, -144)",
+        "opacity": 0
+      },
+      "studio": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 1499.93, 0)",
+        "top": 40,
+        "left": 1550,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 941.85)",
+        "top": 982,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "app-enter",
+      "scrollY": 7305,
+      "stackOpacity": 1,
+      "irisZoom": {
+        "transform": "matrix(6, 0, 0, 6, 0, 0)",
+        "opacity": 0
+      },
+      "irisLogo": {
+        "transform": "matrix(14, 0, 0, 14, -144, -144)",
+        "opacity": 0
+      },
+      "studio": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 1499.93, 0)",
+        "top": 40,
+        "left": 1550,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 941.85)",
+        "top": 982,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "app-hold",
+      "scrollY": 8687,
+      "stackOpacity": 1,
+      "irisZoom": {
+        "transform": "matrix(6, 0, 0, 6, 0, 0)",
+        "opacity": 0
+      },
+      "irisLogo": {
+        "transform": "matrix(14, 0, 0, 14, -144, -144)",
+        "opacity": 0
+      },
+      "studio": {
+        "opacity": 1,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "top": 40,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 1,
+        "transform": "matrix(1, 0, 0, 1, 0, 504.649)",
+        "top": 545,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    },
+    {
+      "label": "app-rest",
+      "scrollY": 9872,
+      "stackOpacity": 1,
+      "irisZoom": {
+        "transform": "matrix(6, 0, 0, 6, 0, 0)",
+        "opacity": 0
+      },
+      "irisLogo": {
+        "transform": "matrix(14, 0, 0, 14, -144, -144)",
+        "opacity": 0
+      },
+      "studio": {
+        "opacity": 1,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "top": 40,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "application": {
+        "opacity": 1,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "top": 40,
+        "left": 50,
+        "width": 1339,
+        "height": 819
+      },
+      "vw": 1440,
+      "vh": 900
+    }
+  ]
+}

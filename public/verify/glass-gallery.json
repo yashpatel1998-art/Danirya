@@ -1,0 +1,19 @@
+{
+  "spec": "large glass panels + scoped teal/purple bokeh",
+  "replaced": "orbital ring / helix gallery",
+  "markers": {
+    "gallery": "[data-glass-gallery]",
+    "panel": "[data-glass-panel]",
+    "bokeh": "[data-work-bokeh]"
+  },
+  "checks": {
+    "panelSizeApprox": "935x695",
+    "glassBlur": "blur(22px) saturate(1.25)",
+    "orbitalSelectorsAbsent": true,
+    "bokehOnlyInsideWorkField": true,
+    "categoryNav": "skipped — single flagship",
+    "logoShowcaseInStudio": true,
+    "studioUnaffectedByCoolPalette": true
+  },
+  "screenshot": "/verify/glass-gallery.png"
+}

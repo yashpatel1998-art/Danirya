@@ -1,0 +1,12002 @@
+[
+  {
+    "frame": 0,
+    "position": [
+      0.0,
+      -8.0,
+      7.4
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.0
+  },
+  {
+    "frame": 1,
+    "position": [
+      0.0,
+      -7.940718,
+      7.372172
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 2,
+    "position": [
+      0.0,
+      -7.881461,
+      7.34429
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 3,
+    "position": [
+      0.0,
+      -7.822233,
+      7.316346
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 4,
+    "position": [
+      0.0,
+      -7.763031,
+      7.288348
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065488
+  },
+  {
+    "frame": 5,
+    "position": [
+      0.0,
+      -7.703855,
+      7.260294
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 6,
+    "position": [
+      0.0,
+      -7.644707,
+      7.232183
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 7,
+    "position": [
+      0.0,
+      -7.585583,
+      7.204021
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 8,
+    "position": [
+      0.0,
+      -7.526484,
+      7.175806
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 9,
+    "position": [
+      0.0,
+      -7.467408,
+      7.147541
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 10,
+    "position": [
+      0.0,
+      -7.408354,
+      7.119231
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 11,
+    "position": [
+      0.0,
+      -7.349322,
+      7.090877
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 12,
+    "position": [
+      0.0,
+      -7.290309,
+      7.06248
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 13,
+    "position": [
+      0.0,
+      -7.231316,
+      7.034047
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065488
+  },
+  {
+    "frame": 14,
+    "position": [
+      0.0,
+      -7.172337,
+      7.00558
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065489
+  },
+  {
+    "frame": 15,
+    "position": [
+      0.0,
+      -7.113373,
+      6.977085
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065488
+  },
+  {
+    "frame": 16,
+    "position": [
+      0.0,
+      -7.05442,
+      6.948564
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.06549
+  },
+  {
+    "frame": 17,
+    "position": [
+      0.0,
+      -6.995479,
+      6.920022
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.065488
+  },
+  {
+    "frame": 18,
+    "position": [
+      0.0,
+      -6.843497,
+      6.846359
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 19,
+    "position": [
+      0.0,
+      -6.691515,
+      6.772698
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 20,
+    "position": [
+      0.0,
+      -6.53948,
+      6.699145
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168893
+  },
+  {
+    "frame": 21,
+    "position": [
+      0.0,
+      -6.387338,
+      6.625814
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 22,
+    "position": [
+      0.0,
+      -6.235035,
+      6.552818
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168893
+  },
+  {
+    "frame": 23,
+    "position": [
+      0.0,
+      -6.082523,
+      6.48026
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 24,
+    "position": [
+      0.0,
+      -5.929761,
+      6.40823
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 25,
+    "position": [
+      0.0,
+      -5.776718,
+      6.3368
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 26,
+    "position": [
+      0.0,
+      -5.623374,
+      6.266018
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 27,
+    "position": [
+      0.0,
+      -5.469714,
+      6.195925
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 28,
+    "position": [
+      0.0,
+      -5.31574,
+      6.126524
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 29,
+    "position": [
+      0.0,
+      -5.161452,
+      6.057823
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 30,
+    "position": [
+      0.0,
+      -5.006862,
+      5.989803
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 31,
+    "position": [
+      0.0,
+      -4.851984,
+      5.922444
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 32,
+    "position": [
+      0.0,
+      -4.696866,
+      5.855639
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 33,
+    "position": [
+      0.0,
+      -4.541612,
+      5.789148
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168893
+  },
+  {
+    "frame": 34,
+    "position": [
+      0.0,
+      -4.386218,
+      5.722988
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.168892
+  },
+  {
+    "frame": 35,
+    "position": [
+      0.0,
+      -4.165215,
+      5.629675
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239895
+  },
+  {
+    "frame": 36,
+    "position": [
+      0.0,
+      -3.943833,
+      5.537261
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239897
+  },
+  {
+    "frame": 37,
+    "position": [
+      0.0,
+      -3.722023,
+      5.44588
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239895
+  },
+  {
+    "frame": 38,
+    "position": [
+      0.0,
+      -3.499742,
+      5.355652
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239896
+  },
+  {
+    "frame": 39,
+    "position": [
+      0.0,
+      -3.276963,
+      5.26666
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239896
+  },
+  {
+    "frame": 40,
+    "position": [
+      0.0,
+      -3.053683,
+      5.178936
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239895
+  },
+  {
+    "frame": 41,
+    "position": [
+      0.0,
+      -2.829918,
+      5.092451
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239896
+  },
+  {
+    "frame": 42,
+    "position": [
+      0.0,
+      -2.605711,
+      5.00712
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239896
+  },
+  {
+    "frame": 43,
+    "position": [
+      0.0,
+      -2.381118,
+      4.922813
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239895
+  },
+  {
+    "frame": 44,
+    "position": [
+      0.0,
+      -2.156198,
+      4.839381
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239895
+  },
+  {
+    "frame": 45,
+    "position": [
+      0.0,
+      -1.931015,
+      4.756662
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239896
+  },
+  {
+    "frame": 46,
+    "position": [
+      0.0,
+      -1.705623,
+      4.674512
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239896
+  },
+  {
+    "frame": 47,
+    "position": [
+      0.0,
+      -1.480086,
+      4.592762
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239896
+  },
+  {
+    "frame": 48,
+    "position": [
+      0.0,
+      -1.25511,
+      4.509484
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239894
+  },
+  {
+    "frame": 49,
+    "position": [
+      0.0,
+      -1.031143,
+      4.423529
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239894
+  },
+  {
+    "frame": 50,
+    "position": [
+      0.0,
+      -0.808077,
+      4.335261
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239895
+  },
+  {
+    "frame": 51,
+    "position": [
+      0.0,
+      -0.585779,
+      4.245078
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239895
+  },
+  {
+    "frame": 52,
+    "position": [
+      0.0,
+      -0.32803,
+      4.13837
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278964
+  },
+  {
+    "frame": 53,
+    "position": [
+      0.0,
+      -0.070804,
+      4.030408
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278964
+  },
+  {
+    "frame": 54,
+    "position": [
+      0.0,
+      0.186245,
+      3.922023
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278965
+  },
+  {
+    "frame": 55,
+    "position": [
+      0.0,
+      0.443504,
+      3.81414
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278964
+  },
+  {
+    "frame": 56,
+    "position": [
+      0.0,
+      0.701403,
+      3.707798
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278963
+  },
+  {
+    "frame": 57,
+    "position": [
+      0.0,
+      0.960388,
+      3.604128
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278963
+  },
+  {
+    "frame": 58,
+    "position": [
+      0.0,
+      1.220928,
+      3.504442
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278959
+  },
+  {
+    "frame": 59,
+    "position": [
+      0.0,
+      1.483461,
+      3.410129
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.27896
+  },
+  {
+    "frame": 60,
+    "position": [
+      0.0,
+      1.748408,
+      3.322844
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278955
+  },
+  {
+    "frame": 61,
+    "position": [
+      0.0,
+      2.016059,
+      3.24426
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278949
+  },
+  {
+    "frame": 62,
+    "position": [
+      0.0,
+      2.286581,
+      3.176236
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278943
+  },
+  {
+    "frame": 63,
+    "position": [
+      0.0,
+      2.559929,
+      3.120687
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278936
+  },
+  {
+    "frame": 64,
+    "position": [
+      0.0,
+      2.835798,
+      3.079489
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278927
+  },
+  {
+    "frame": 65,
+    "position": [
+      0.0,
+      3.113582,
+      3.054343
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278921
+  },
+  {
+    "frame": 66,
+    "position": [
+      0.0,
+      3.392322,
+      3.04337
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278956
+  },
+  {
+    "frame": 67,
+    "position": [
+      0.0,
+      3.671213,
+      3.037074
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278962
+  },
+  {
+    "frame": 68,
+    "position": [
+      0.0,
+      3.950159,
+      3.034001
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278963
+  },
+  {
+    "frame": 69,
+    "position": [
+      0.0,
+      4.229122,
+      3.033442
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.278964
+  },
+  {
+    "frame": 70,
+    "position": [
+      0.0,
+      4.468836,
+      3.034491
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239716
+  },
+  {
+    "frame": 71,
+    "position": [
+      0.0,
+      4.708543,
+      3.036568
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239716
+  },
+  {
+    "frame": 72,
+    "position": [
+      0.0,
+      4.948241,
+      3.039328
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239714
+  },
+  {
+    "frame": 73,
+    "position": [
+      0.0,
+      5.187937,
+      3.04243
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239716
+  },
+  {
+    "frame": 74,
+    "position": [
+      0.0,
+      5.427633,
+      3.045539
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239717
+  },
+  {
+    "frame": 75,
+    "position": [
+      0.0,
+      5.667334,
+      3.048313
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239716
+  },
+  {
+    "frame": 76,
+    "position": [
+      0.0,
+      5.907042,
+      3.050392
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239717
+  },
+  {
+    "frame": 77,
+    "position": [
+      0.0,
+      6.146755,
+      3.051392
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239715
+  },
+  {
+    "frame": 78,
+    "position": [
+      0.0,
+      6.386468,
+      3.050891
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239714
+  },
+  {
+    "frame": 79,
+    "position": [
+      0.0,
+      6.626174,
+      3.048802
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239715
+  },
+  {
+    "frame": 80,
+    "position": [
+      0.0,
+      6.865883,
+      3.046848
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239716
+  },
+  {
+    "frame": 81,
+    "position": [
+      0.0,
+      7.105594,
+      3.045285
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239716
+  },
+  {
+    "frame": 82,
+    "position": [
+      0.0,
+      7.345309,
+      3.044083
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239718
+  },
+  {
+    "frame": 83,
+    "position": [
+      0.0,
+      7.585021,
+      3.043203
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239713
+  },
+  {
+    "frame": 84,
+    "position": [
+      0.0,
+      7.824737,
+      3.042613
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239716
+  },
+  {
+    "frame": 85,
+    "position": [
+      0.0,
+      8.06445,
+      3.042281
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239714
+  },
+  {
+    "frame": 86,
+    "position": [
+      0.0,
+      8.304167,
+      3.042178
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.239717
+  },
+  {
+    "frame": 87,
+    "position": [
+      0.0,
+      8.45837,
+      3.042221
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.154203
+  },
+  {
+    "frame": 88,
+    "position": [
+      0.0,
+      8.612576,
+      3.042339
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "forecourt",
+    "velocity": 0.154206
+  },
+  {
+    "frame": 89,
+    "position": [
+      0.0,
+      8.766781,
+      3.042524
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154204
+  },
+  {
+    "frame": 90,
+    "position": [
+      0.0,
+      8.920987,
+      3.04277
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154206
+  },
+  {
+    "frame": 91,
+    "position": [
+      0.0,
+      9.07519,
+      3.043071
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154203
+  },
+  {
+    "frame": 92,
+    "position": [
+      0.0,
+      9.229393,
+      3.043417
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154204
+  },
+  {
+    "frame": 93,
+    "position": [
+      0.0,
+      9.3836,
+      3.043804
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154208
+  },
+  {
+    "frame": 94,
+    "position": [
+      0.0,
+      9.537805,
+      3.044225
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154205
+  },
+  {
+    "frame": 95,
+    "position": [
+      0.0,
+      9.69201,
+      3.044671
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154206
+  },
+  {
+    "frame": 96,
+    "position": [
+      0.0,
+      9.846212,
+      3.045137
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154203
+  },
+  {
+    "frame": 97,
+    "position": [
+      0.0,
+      10.000418,
+      3.045617
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154206
+  },
+  {
+    "frame": 98,
+    "position": [
+      0.0,
+      10.154621,
+      3.046103
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154204
+  },
+  {
+    "frame": 99,
+    "position": [
+      0.0,
+      10.308828,
+      3.046588
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154208
+  },
+  {
+    "frame": 100,
+    "position": [
+      0.0,
+      10.463032,
+      3.047068
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154204
+  },
+  {
+    "frame": 101,
+    "position": [
+      0.0,
+      10.617234,
+      3.047533
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154203
+  },
+  {
+    "frame": 102,
+    "position": [
+      0.0,
+      10.771441,
+      3.047978
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154208
+  },
+  {
+    "frame": 103,
+    "position": [
+      0.0,
+      10.925646,
+      3.048397
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.154205
+  },
+  {
+    "frame": 104,
+    "position": [
+      0.0,
+      10.985441,
+      3.048551
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059796
+  },
+  {
+    "frame": 105,
+    "position": [
+      0.0,
+      11.045235,
+      3.048699
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059794
+  },
+  {
+    "frame": 106,
+    "position": [
+      0.0,
+      11.105028,
+      3.048841
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059794
+  },
+  {
+    "frame": 107,
+    "position": [
+      0.0,
+      11.164822,
+      3.048977
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059794
+  },
+  {
+    "frame": 108,
+    "position": [
+      0.0,
+      11.224617,
+      3.049106
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059796
+  },
+  {
+    "frame": 109,
+    "position": [
+      0.0,
+      11.284407,
+      3.049229
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.05979
+  },
+  {
+    "frame": 110,
+    "position": [
+      0.0,
+      11.344202,
+      3.049344
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059795
+  },
+  {
+    "frame": 111,
+    "position": [
+      0.0,
+      11.403994,
+      3.049451
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059792
+  },
+  {
+    "frame": 112,
+    "position": [
+      0.0,
+      11.463787,
+      3.04955
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059794
+  },
+  {
+    "frame": 113,
+    "position": [
+      0.0,
+      11.523582,
+      3.04964
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059795
+  },
+  {
+    "frame": 114,
+    "position": [
+      0.0,
+      11.583376,
+      3.049721
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059794
+  },
+  {
+    "frame": 115,
+    "position": [
+      0.0,
+      11.643168,
+      3.049793
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059793
+  },
+  {
+    "frame": 116,
+    "position": [
+      0.0,
+      11.702963,
+      3.049855
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059794
+  },
+  {
+    "frame": 117,
+    "position": [
+      0.0,
+      11.762756,
+      3.049906
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059793
+  },
+  {
+    "frame": 118,
+    "position": [
+      0.0,
+      11.822552,
+      3.049947
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059795
+  },
+  {
+    "frame": 119,
+    "position": [
+      0.0,
+      11.882345,
+      3.049977
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059793
+  },
+  {
+    "frame": 120,
+    "position": [
+      0.0,
+      11.942138,
+      3.049995
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.059793
+  },
+  {
+    "frame": 121,
+    "position": [
+      0.0,
+      12.011086,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 122,
+    "position": [
+      0.0,
+      12.080031,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068946
+  },
+  {
+    "frame": 123,
+    "position": [
+      0.0,
+      12.148978,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068947
+  },
+  {
+    "frame": 124,
+    "position": [
+      0.0,
+      12.217923,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068945
+  },
+  {
+    "frame": 125,
+    "position": [
+      0.0,
+      12.286871,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 126,
+    "position": [
+      0.0,
+      12.355816,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068945
+  },
+  {
+    "frame": 127,
+    "position": [
+      0.0,
+      12.424764,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 128,
+    "position": [
+      0.0,
+      12.493708,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068944
+  },
+  {
+    "frame": 129,
+    "position": [
+      0.0,
+      12.562653,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068945
+  },
+  {
+    "frame": 130,
+    "position": [
+      0.0,
+      12.6316,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 131,
+    "position": [
+      0.0,
+      12.700544,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068944
+  },
+  {
+    "frame": 132,
+    "position": [
+      0.0,
+      12.769492,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 133,
+    "position": [
+      0.0,
+      12.838436,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068944
+  },
+  {
+    "frame": 134,
+    "position": [
+      0.0,
+      12.907383,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068947
+  },
+  {
+    "frame": 135,
+    "position": [
+      0.0,
+      12.976331,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 136,
+    "position": [
+      0.0,
+      13.045275,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068944
+  },
+  {
+    "frame": 137,
+    "position": [
+      0.0,
+      13.114223,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 138,
+    "position": [
+      0.0,
+      13.183167,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068944
+  },
+  {
+    "frame": 139,
+    "position": [
+      0.0,
+      13.252112,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068946
+  },
+  {
+    "frame": 140,
+    "position": [
+      0.0,
+      13.321059,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068947
+  },
+  {
+    "frame": 141,
+    "position": [
+      0.0,
+      13.390004,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068945
+  },
+  {
+    "frame": 142,
+    "position": [
+      0.0,
+      13.45895,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068946
+  },
+  {
+    "frame": 143,
+    "position": [
+      0.0,
+      13.527895,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068945
+  },
+  {
+    "frame": 144,
+    "position": [
+      0.0,
+      13.596842,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068947
+  },
+  {
+    "frame": 145,
+    "position": [
+      0.0,
+      13.665786,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068944
+  },
+  {
+    "frame": 146,
+    "position": [
+      0.0,
+      13.734734,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 147,
+    "position": [
+      0.0,
+      13.803681,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 148,
+    "position": [
+      0.0,
+      13.872627,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068946
+  },
+  {
+    "frame": 149,
+    "position": [
+      0.0,
+      13.941572,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068945
+  },
+  {
+    "frame": 150,
+    "position": [
+      0.0,
+      14.010515,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068943
+  },
+  {
+    "frame": 151,
+    "position": [
+      0.0,
+      14.079462,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068947
+  },
+  {
+    "frame": 152,
+    "position": [
+      0.0,
+      14.148408,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068946
+  },
+  {
+    "frame": 153,
+    "position": [
+      0.0,
+      14.217356,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 154,
+    "position": [
+      0.0,
+      14.286304,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 155,
+    "position": [
+      0.0,
+      14.355249,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068946
+  },
+  {
+    "frame": 156,
+    "position": [
+      0.0,
+      14.424197,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 157,
+    "position": [
+      0.0,
+      14.493142,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068945
+  },
+  {
+    "frame": 158,
+    "position": [
+      0.0,
+      14.56209,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 159,
+    "position": [
+      0.0,
+      14.631036,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068946
+  },
+  {
+    "frame": 160,
+    "position": [
+      0.0,
+      14.699984,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068948
+  },
+  {
+    "frame": 161,
+    "position": [
+      0.0,
+      14.76893,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068947
+  },
+  {
+    "frame": 162,
+    "position": [
+      0.0,
+      14.837873,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068943
+  },
+  {
+    "frame": 163,
+    "position": [
+      0.0,
+      14.906819,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068946
+  },
+  {
+    "frame": 164,
+    "position": [
+      0.0,
+      14.975763,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068944
+  },
+  {
+    "frame": 165,
+    "position": [
+      0.0,
+      15.044712,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068949
+  },
+  {
+    "frame": 166,
+    "position": [
+      0.0,
+      15.113657,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068945
+  },
+  {
+    "frame": 167,
+    "position": [
+      0.0,
+      15.182604,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.068947
+  },
+  {
+    "frame": 168,
+    "position": [
+      0.0,
+      15.289763,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.10716
+  },
+  {
+    "frame": 169,
+    "position": [
+      0.0,
+      15.396921,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107158
+  },
+  {
+    "frame": 170,
+    "position": [
+      0.0,
+      15.50408,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 171,
+    "position": [
+      0.0,
+      15.611236,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107156
+  },
+  {
+    "frame": 172,
+    "position": [
+      0.0,
+      15.718393,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107158
+  },
+  {
+    "frame": 173,
+    "position": [
+      0.0,
+      15.82555,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 174,
+    "position": [
+      0.0,
+      15.932711,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107161
+  },
+  {
+    "frame": 175,
+    "position": [
+      0.0,
+      16.039867,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 176,
+    "position": [
+      0.0,
+      16.147026,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 177,
+    "position": [
+      0.0,
+      16.254183,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 178,
+    "position": [
+      0.0,
+      16.361341,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 179,
+    "position": [
+      0.0,
+      16.468498,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 180,
+    "position": [
+      0.0,
+      16.575655,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 181,
+    "position": [
+      0.0,
+      16.682816,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107161
+  },
+  {
+    "frame": 182,
+    "position": [
+      0.0,
+      16.789972,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 183,
+    "position": [
+      0.0,
+      16.897131,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 184,
+    "position": [
+      0.0,
+      17.004288,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 185,
+    "position": [
+      0.0,
+      17.111446,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 186,
+    "position": [
+      0.0,
+      17.218603,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 187,
+    "position": [
+      0.0,
+      17.325764,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107161
+  },
+  {
+    "frame": 188,
+    "position": [
+      0.0,
+      17.43292,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 189,
+    "position": [
+      0.0,
+      17.540079,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 190,
+    "position": [
+      0.0,
+      17.647236,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 191,
+    "position": [
+      0.0,
+      17.754395,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 192,
+    "position": [
+      0.0,
+      17.861551,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 193,
+    "position": [
+      0.0,
+      17.96871,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 194,
+    "position": [
+      0.0,
+      18.075871,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107161
+  },
+  {
+    "frame": 195,
+    "position": [
+      0.0,
+      18.183025,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107155
+  },
+  {
+    "frame": 196,
+    "position": [
+      0.0,
+      18.290184,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 197,
+    "position": [
+      0.0,
+      18.397341,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 198,
+    "position": [
+      0.0,
+      18.504499,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 199,
+    "position": [
+      0.0,
+      18.611658,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 200,
+    "position": [
+      0.0,
+      18.718817,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 201,
+    "position": [
+      0.0,
+      18.825974,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 202,
+    "position": [
+      0.0,
+      18.933132,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 203,
+    "position": [
+      0.0,
+      19.040291,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 204,
+    "position": [
+      0.0,
+      19.147448,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 205,
+    "position": [
+      0.0,
+      19.254606,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 206,
+    "position": [
+      0.0,
+      19.361763,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "threshold",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 207,
+    "position": [
+      0.0,
+      19.46892,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 208,
+    "position": [
+      0.0,
+      19.576078,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 209,
+    "position": [
+      0.0,
+      19.683237,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 210,
+    "position": [
+      0.0,
+      19.790394,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 211,
+    "position": [
+      0.0,
+      19.897554,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107161
+  },
+  {
+    "frame": 212,
+    "position": [
+      0.0,
+      20.004711,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 213,
+    "position": [
+      0.0,
+      20.11187,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107159
+  },
+  {
+    "frame": 214,
+    "position": [
+      0.0,
+      20.219027,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107157
+  },
+  {
+    "frame": 215,
+    "position": [
+      0.009777,
+      20.325232,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.106654
+  },
+  {
+    "frame": 216,
+    "position": [
+      0.056977,
+      20.420942,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.106716
+  },
+  {
+    "frame": 217,
+    "position": [
+      0.125633,
+      20.503029,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107013
+  },
+  {
+    "frame": 218,
+    "position": [
+      0.205183,
+      20.574739,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107101
+  },
+  {
+    "frame": 219,
+    "position": [
+      0.290996,
+      20.638878,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107133
+  },
+  {
+    "frame": 220,
+    "position": [
+      0.38075,
+      20.697392,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107143
+  },
+  {
+    "frame": 221,
+    "position": [
+      0.473235,
+      20.751499,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.10715
+  },
+  {
+    "frame": 222,
+    "position": [
+      0.997873,
+      20.994659,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.578249
+  },
+  {
+    "frame": 223,
+    "position": [
+      1.543347,
+      21.187435,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.578536
+  },
+  {
+    "frame": 224,
+    "position": [
+      1.779845,
+      21.259497,
+      3.05
+    ],
+    "forward": [
+      0.122249,
+      0.9925,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.247233
+  },
+  {
+    "frame": 225,
+    "position": [
+      2.017965,
+      21.326004,
+      3.05
+    ],
+    "forward": [
+      0.248021,
+      0.968755,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.247233
+  },
+  {
+    "frame": 226,
+    "position": [
+      2.25952,
+      21.378479,
+      3.05
+    ],
+    "forward": [
+      0.374178,
+      0.927357,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.247189
+  },
+  {
+    "frame": 227,
+    "position": [
+      2.503932,
+      21.41555,
+      3.05
+    ],
+    "forward": [
+      0.497072,
+      0.867709,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.247208
+  },
+  {
+    "frame": 228,
+    "position": [
+      2.749974,
+      21.439589,
+      3.05
+    ],
+    "forward": [
+      0.612812,
+      0.790229,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.247213
+  },
+  {
+    "frame": 229,
+    "position": [
+      2.996852,
+      21.452631,
+      3.05
+    ],
+    "forward": [
+      0.717627,
+      0.696428,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.247222
+  },
+  {
+    "frame": 230,
+    "position": [
+      3.244052,
+      21.456453,
+      3.05
+    ],
+    "forward": [
+      0.808243,
+      0.588848,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.24723
+  },
+  {
+    "frame": 231,
+    "position": [
+      3.491259,
+      21.452789,
+      3.05
+    ],
+    "forward": [
+      0.88222,
+      0.470838,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.247234
+  },
+  {
+    "frame": 232,
+    "position": [
+      3.738326,
+      21.443523,
+      3.05
+    ],
+    "forward": [
+      0.938156,
+      0.346211,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.24724
+  },
+  {
+    "frame": 233,
+    "position": [
+      3.985282,
+      21.431585,
+      3.05
+    ],
+    "forward": [
+      0.975754,
+      0.218869,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.247245
+  },
+  {
+    "frame": 234,
+    "position": [
+      4.232392,
+      21.425739,
+      3.05
+    ],
+    "forward": [
+      0.995718,
+      0.092442,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.247179
+  },
+  {
+    "frame": 235,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.08086
+  },
+  {
+    "frame": 236,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 237,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 238,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 239,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 240,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 241,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 242,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 243,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 244,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 245,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 246,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 247,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 248,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 249,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 250,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 251,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 252,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 253,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 254,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 255,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 256,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 257,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 258,
+    "position": [
+      4.248208,
+      21.505037,
+      3.05
+    ],
+    "forward": [
+      0.999551,
+      -0.029976,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.0
+  },
+  {
+    "frame": 259,
+    "position": [
+      4.239141,
+      21.506395,
+      3.05
+    ],
+    "forward": [
+      0.999998,
+      0.001826,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.009168
+  },
+  {
+    "frame": 260,
+    "position": [
+      4.210289,
+      21.510233,
+      3.05
+    ],
+    "forward": [
+      0.994303,
+      0.106594,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.029107
+  },
+  {
+    "frame": 261,
+    "position": [
+      4.158988,
+      21.51561,
+      3.05
+    ],
+    "forward": [
+      0.954826,
+      0.297166,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.051582
+  },
+  {
+    "frame": 262,
+    "position": [
+      4.082613,
+      21.521683,
+      3.05
+    ],
+    "forward": [
+      0.828289,
+      0.560301,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.076615
+  },
+  {
+    "frame": 263,
+    "position": [
+      3.978868,
+      21.528095,
+      3.05
+    ],
+    "forward": [
+      0.579104,
+      0.815253,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.103943
+  },
+  {
+    "frame": 264,
+    "position": [
+      3.846339,
+      21.535103,
+      3.05
+    ],
+    "forward": [
+      0.28154,
+      0.95955,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.132715
+  },
+  {
+    "frame": 265,
+    "position": [
+      3.685167,
+      21.543526,
+      3.05
+    ],
+    "forward": [
+      0.069981,
+      0.997548,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.161392
+  },
+  {
+    "frame": 266,
+    "position": [
+      3.497883,
+      21.554634,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.187613
+  },
+  {
+    "frame": 267,
+    "position": [
+      3.289833,
+      21.569901,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.208609
+  },
+  {
+    "frame": 268,
+    "position": [
+      3.068812,
+      21.590672,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.221996
+  },
+  {
+    "frame": 269,
+    "position": [
+      2.843733,
+      21.617779,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.226705
+  },
+  {
+    "frame": 270,
+    "position": [
+      2.622988,
+      21.651367,
+      3.05
+    ],
+    "forward": [
+      0.004833,
+      0.999988,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.223285
+  },
+  {
+    "frame": 271,
+    "position": [
+      2.413171,
+      21.690966,
+      3.05
+    ],
+    "forward": [
+      0.017297,
+      0.99985,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.213522
+  },
+  {
+    "frame": 272,
+    "position": [
+      2.213505,
+      21.736893,
+      3.05
+    ],
+    "forward": [
+      0.034339,
+      0.99941,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.20488
+  },
+  {
+    "frame": 273,
+    "position": [
+      2.020164,
+      21.790443,
+      3.05
+    ],
+    "forward": [
+      0.052896,
+      0.9986,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.200619
+  },
+  {
+    "frame": 274,
+    "position": [
+      1.832924,
+      21.850418,
+      3.05
+    ],
+    "forward": [
+      0.069911,
+      0.997553,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.196611
+  },
+  {
+    "frame": 275,
+    "position": [
+      1.649979,
+      21.911106,
+      3.05
+    ],
+    "forward": [
+      0.08234,
+      0.996604,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.192749
+  },
+  {
+    "frame": 276,
+    "position": [
+      1.471097,
+      21.972332,
+      3.05
+    ],
+    "forward": [
+      0.087156,
+      0.996195,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.189069
+  },
+  {
+    "frame": 277,
+    "position": [
+      1.296254,
+      22.034458,
+      3.05
+    ],
+    "forward": [
+      0.084722,
+      0.996405,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.185552
+  },
+  {
+    "frame": 278,
+    "position": [
+      1.125467,
+      22.097887,
+      3.05
+    ],
+    "forward": [
+      0.078113,
+      0.996944,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.182186
+  },
+  {
+    "frame": 279,
+    "position": [
+      0.958826,
+      22.163147,
+      3.05
+    ],
+    "forward": [
+      0.068366,
+      0.99766,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.178964
+  },
+  {
+    "frame": 280,
+    "position": [
+      0.796547,
+      22.230902,
+      3.05
+    ],
+    "forward": [
+      0.05652,
+      0.998402,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.175856
+  },
+  {
+    "frame": 281,
+    "position": [
+      0.638991,
+      22.302053,
+      3.05
+    ],
+    "forward": [
+      0.043619,
+      0.999048,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.172877
+  },
+  {
+    "frame": 282,
+    "position": [
+      0.486876,
+      22.377966,
+      3.05
+    ],
+    "forward": [
+      0.030711,
+      0.999528,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.170005
+  },
+  {
+    "frame": 283,
+    "position": [
+      0.341544,
+      22.460701,
+      3.05
+    ],
+    "forward": [
+      0.018846,
+      0.999822,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.167232
+  },
+  {
+    "frame": 284,
+    "position": [
+      0.20583,
+      22.553707,
+      3.05
+    ],
+    "forward": [
+      0.009074,
+      0.999959,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.164525
+  },
+  {
+    "frame": 285,
+    "position": [
+      0.087051,
+      22.663546,
+      3.05
+    ],
+    "forward": [
+      0.002443,
+      0.999997,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.16178
+  },
+  {
+    "frame": 286,
+    "position": [
+      0.008235,
+      22.80077,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.158248
+  },
+  {
+    "frame": 287,
+    "position": [
+      -4.4e-05,
+      22.957191,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.156641
+  },
+  {
+    "frame": 288,
+    "position": [
+      -0.000252,
+      23.11203,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.154839
+  },
+  {
+    "frame": 289,
+    "position": [
+      -0.000572,
+      23.264633,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.152603
+  },
+  {
+    "frame": 290,
+    "position": [
+      -0.000963,
+      23.41506,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.150427
+  },
+  {
+    "frame": 291,
+    "position": [
+      -0.001398,
+      23.563387,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.148328
+  },
+  {
+    "frame": 292,
+    "position": [
+      -0.001858,
+      23.709663,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.146277
+  },
+  {
+    "frame": 293,
+    "position": [
+      -0.002331,
+      23.853956,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.144294
+  },
+  {
+    "frame": 294,
+    "position": [
+      -0.002806,
+      23.996323,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.142367
+  },
+  {
+    "frame": 295,
+    "position": [
+      -0.003275,
+      24.136814,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.140492
+  },
+  {
+    "frame": 296,
+    "position": [
+      -0.003731,
+      24.275478,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.138665
+  },
+  {
+    "frame": 297,
+    "position": [
+      -0.004167,
+      24.412373,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.136895
+  },
+  {
+    "frame": 298,
+    "position": [
+      -0.004578,
+      24.547539,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.135167
+  },
+  {
+    "frame": 299,
+    "position": [
+      -0.004956,
+      24.681011,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.133473
+  },
+  {
+    "frame": 300,
+    "position": [
+      -0.005296,
+      24.812843,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.131833
+  },
+  {
+    "frame": 301,
+    "position": [
+      -0.005591,
+      24.943083,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.13024
+  },
+  {
+    "frame": 302,
+    "position": [
+      -0.005833,
+      25.071754,
+      3.05
+    ],
+    "forward": [
+      -0.002443,
+      0.999997,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.128672
+  },
+  {
+    "frame": 303,
+    "position": [
+      -0.006012,
+      25.198895,
+      3.05
+    ],
+    "forward": [
+      -0.009074,
+      0.999959,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.12714
+  },
+  {
+    "frame": 304,
+    "position": [
+      -0.006119,
+      25.324549,
+      3.05
+    ],
+    "forward": [
+      -0.018846,
+      0.999822,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.125654
+  },
+  {
+    "frame": 305,
+    "position": [
+      -0.006138,
+      25.448751,
+      3.05
+    ],
+    "forward": [
+      -0.030711,
+      0.999528,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.124203
+  },
+  {
+    "frame": 306,
+    "position": [
+      -0.006049,
+      25.57152,
+      3.05
+    ],
+    "forward": [
+      -0.043619,
+      0.999048,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.122768
+  },
+  {
+    "frame": 307,
+    "position": [
+      -0.005828,
+      25.692898,
+      3.05
+    ],
+    "forward": [
+      -0.05652,
+      0.998402,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.121378
+  },
+  {
+    "frame": 308,
+    "position": [
+      -0.005431,
+      25.81291,
+      3.05
+    ],
+    "forward": [
+      -0.068366,
+      0.99766,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.120013
+  },
+  {
+    "frame": 309,
+    "position": [
+      -0.004795,
+      25.931595,
+      3.05
+    ],
+    "forward": [
+      -0.078113,
+      0.996944,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.118686
+  },
+  {
+    "frame": 310,
+    "position": [
+      -0.003793,
+      26.048965,
+      3.05
+    ],
+    "forward": [
+      -0.084722,
+      0.996405,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.117375
+  },
+  {
+    "frame": 311,
+    "position": [
+      -0.002139,
+      26.165054,
+      3.05
+    ],
+    "forward": [
+      -0.087156,
+      0.996195,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.116101
+  },
+  {
+    "frame": 312,
+    "position": [
+      0.00082,
+      26.279856,
+      3.05
+    ],
+    "forward": [
+      -0.084722,
+      0.996405,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.11484
+  },
+  {
+    "frame": 313,
+    "position": [
+      -0.011804,
+      26.391464,
+      3.05
+    ],
+    "forward": [
+      -0.078113,
+      0.996944,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.11232
+  },
+  {
+    "frame": 314,
+    "position": [
+      -0.001978,
+      26.299835,
+      3.05
+    ],
+    "forward": [
+      -0.068366,
+      0.99766,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.092154
+  },
+  {
+    "frame": 315,
+    "position": [
+      0.093825,
+      26.349529,
+      3.05
+    ],
+    "forward": [
+      -0.05652,
+      0.998402,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.107924
+  },
+  {
+    "frame": 316,
+    "position": [
+      0.170871,
+      26.428099,
+      3.05
+    ],
+    "forward": [
+      -0.043619,
+      0.999048,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.110042
+  },
+  {
+    "frame": 317,
+    "position": [
+      0.217735,
+      26.477354,
+      3.05
+    ],
+    "forward": [
+      -0.030711,
+      0.999528,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.067988
+  },
+  {
+    "frame": 318,
+    "position": [
+      0.253462,
+      26.514368,
+      3.05
+    ],
+    "forward": [
+      -0.018846,
+      0.999822,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.051443
+  },
+  {
+    "frame": 319,
+    "position": [
+      0.327196,
+      26.591507,
+      3.05
+    ],
+    "forward": [
+      -0.009074,
+      0.999959,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.10671
+  },
+  {
+    "frame": 320,
+    "position": [
+      0.400023,
+      26.668003,
+      3.05
+    ],
+    "forward": [
+      -0.002443,
+      0.999997,
+      -0.0
+    ],
+    "room": "hall",
+    "velocity": 0.105619
+  },
+  {
+    "frame": 321,
+    "position": [
+      0.404848,
+      26.673471,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.007293
+  },
+  {
+    "frame": 322,
+    "position": [
+      0.47673,
+      26.747961,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.103517
+  },
+  {
+    "frame": 323,
+    "position": [
+      0.547887,
+      26.821728,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.102493
+  },
+  {
+    "frame": 324,
+    "position": [
+      0.616643,
+      26.892359,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.098571
+  },
+  {
+    "frame": 325,
+    "position": [
+      0.686743,
+      26.964348,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.100481
+  },
+  {
+    "frame": 326,
+    "position": [
+      0.756058,
+      27.035748,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.099511
+  },
+  {
+    "frame": 327,
+    "position": [
+      0.82459,
+      27.106556,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.098542
+  },
+  {
+    "frame": 328,
+    "position": [
+      0.890057,
+      27.174932,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.094664
+  },
+  {
+    "frame": 329,
+    "position": [
+      0.957769,
+      27.243914,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.096661
+  },
+  {
+    "frame": 330,
+    "position": [
+      1.024845,
+      27.312237,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.095746
+  },
+  {
+    "frame": 331,
+    "position": [
+      1.091297,
+      27.379883,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.094825
+  },
+  {
+    "frame": 332,
+    "position": [
+      1.157565,
+      27.446445,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.093926
+  },
+  {
+    "frame": 333,
+    "position": [
+      1.223318,
+      27.51228,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "hall",
+    "velocity": 0.093046
+  },
+  {
+    "frame": 334,
+    "position": [
+      1.288254,
+      27.577705,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.09218
+  },
+  {
+    "frame": 335,
+    "position": [
+      1.351588,
+      27.643482,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.091312
+  },
+  {
+    "frame": 336,
+    "position": [
+      1.40913,
+      27.713228,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.090419
+  },
+  {
+    "frame": 337,
+    "position": [
+      1.447209,
+      27.79311,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.088494
+  },
+  {
+    "frame": 338,
+    "position": [
+      1.518864,
+      27.845348,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.088676
+  },
+  {
+    "frame": 339,
+    "position": [
+      1.593103,
+      27.892595,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.087998
+  },
+  {
+    "frame": 340,
+    "position": [
+      1.667056,
+      27.938761,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.087179
+  },
+  {
+    "frame": 341,
+    "position": [
+      1.740823,
+      27.983692,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.086374
+  },
+  {
+    "frame": 342,
+    "position": [
+      1.815895,
+      27.980501,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.07514
+  },
+  {
+    "frame": 343,
+    "position": [
+      1.899559,
+      27.993307,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.084639
+  },
+  {
+    "frame": 344,
+    "position": [
+      1.980623,
+      28.015417,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.084025
+  },
+  {
+    "frame": 345,
+    "position": [
+      2.060372,
+      28.039413,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.083281
+  },
+  {
+    "frame": 346,
+    "position": [
+      2.139386,
+      28.063198,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.082517
+  },
+  {
+    "frame": 347,
+    "position": [
+      2.217702,
+      28.086771,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.081787
+  },
+  {
+    "frame": 348,
+    "position": [
+      2.29529,
+      28.110125,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.081026
+  },
+  {
+    "frame": 349,
+    "position": [
+      2.372178,
+      28.133251,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.08029
+  },
+  {
+    "frame": 350,
+    "position": [
+      2.448373,
+      28.156185,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.079572
+  },
+  {
+    "frame": 351,
+    "position": [
+      2.523883,
+      28.178913,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.078857
+  },
+  {
+    "frame": 352,
+    "position": [
+      2.598701,
+      28.201435,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.078134
+  },
+  {
+    "frame": 353,
+    "position": [
+      2.672846,
+      28.223751,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.077431
+  },
+  {
+    "frame": 354,
+    "position": [
+      2.74631,
+      28.245853,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.076717
+  },
+  {
+    "frame": 355,
+    "position": [
+      2.819116,
+      28.267765,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.076031
+  },
+  {
+    "frame": 356,
+    "position": [
+      2.891258,
+      28.289478,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.075339
+  },
+  {
+    "frame": 357,
+    "position": [
+      2.962734,
+      28.310993,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.074643
+  },
+  {
+    "frame": 358,
+    "position": [
+      3.033564,
+      28.332314,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.07397
+  },
+  {
+    "frame": 359,
+    "position": [
+      3.103746,
+      28.353424,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.073288
+  },
+  {
+    "frame": 360,
+    "position": [
+      3.173277,
+      28.374353,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.072613
+  },
+  {
+    "frame": 361,
+    "position": [
+      3.242164,
+      28.395088,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.07194
+  },
+  {
+    "frame": 362,
+    "position": [
+      3.310424,
+      28.415632,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.071284
+  },
+  {
+    "frame": 363,
+    "position": [
+      3.378039,
+      28.435986,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.070612
+  },
+  {
+    "frame": 364,
+    "position": [
+      3.445024,
+      28.456146,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.069953
+  },
+  {
+    "frame": 365,
+    "position": [
+      3.511807,
+      28.474609,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.069288
+  },
+  {
+    "frame": 366,
+    "position": [
+      3.579461,
+      28.485924,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.068593
+  },
+  {
+    "frame": 367,
+    "position": [
+      3.646852,
+      28.480955,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.067573
+  },
+  {
+    "frame": 368,
+    "position": [
+      3.698098,
+      28.439392,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.065983
+  },
+  {
+    "frame": 369,
+    "position": [
+      3.748991,
+      28.477732,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.063718
+  },
+  {
+    "frame": 370,
+    "position": [
+      3.792292,
+      28.527599,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.066043
+  },
+  {
+    "frame": 371,
+    "position": [
+      3.834626,
+      28.57745,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.065401
+  },
+  {
+    "frame": 372,
+    "position": [
+      3.876817,
+      28.626566,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.06475
+  },
+  {
+    "frame": 373,
+    "position": [
+      3.91912,
+      28.67474,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.064111
+  },
+  {
+    "frame": 374,
+    "position": [
+      3.909584,
+      28.700731,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.027686
+  },
+  {
+    "frame": 375,
+    "position": [
+      3.859491,
+      28.734303,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.060302
+  },
+  {
+    "frame": 376,
+    "position": [
+      3.838663,
+      28.792568,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.061876
+  },
+  {
+    "frame": 377,
+    "position": [
+      3.831211,
+      28.85359,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.061475
+  },
+  {
+    "frame": 378,
+    "position": [
+      3.83,
+      28.914433,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.060855
+  },
+  {
+    "frame": 379,
+    "position": [
+      3.83,
+      28.974653,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.060221
+  },
+  {
+    "frame": 380,
+    "position": [
+      3.83,
+      29.03422,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.059566
+  },
+  {
+    "frame": 381,
+    "position": [
+      3.83,
+      29.064709,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.030489
+  },
+  {
+    "frame": 382,
+    "position": [
+      3.83,
+      29.12294,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.058231
+  },
+  {
+    "frame": 383,
+    "position": [
+      3.83,
+      29.180504,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.057564
+  },
+  {
+    "frame": 384,
+    "position": [
+      3.83,
+      29.237385,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.056881
+  },
+  {
+    "frame": 385,
+    "position": [
+      3.83,
+      29.293577,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.056192
+  },
+  {
+    "frame": 386,
+    "position": [
+      3.83,
+      29.349077,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0555
+  },
+  {
+    "frame": 387,
+    "position": [
+      3.83,
+      29.360645,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.011568
+  },
+  {
+    "frame": 388,
+    "position": [
+      3.83,
+      29.400606,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.039961
+  },
+  {
+    "frame": 389,
+    "position": [
+      3.83,
+      29.453945,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.053339
+  },
+  {
+    "frame": 390,
+    "position": [
+      3.83,
+      29.506542,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.052597
+  },
+  {
+    "frame": 391,
+    "position": [
+      3.829479,
+      29.558365,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.051825
+  },
+  {
+    "frame": 392,
+    "position": [
+      3.827013,
+      29.609333,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.051028
+  },
+  {
+    "frame": 393,
+    "position": [
+      3.819625,
+      29.65892,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.050135
+  },
+  {
+    "frame": 394,
+    "position": [
+      3.790473,
+      29.656818,
+      3.05
+    ],
+    "forward": [
+      0.030489,
+      0.999535,
+      -0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.029228
+  },
+  {
+    "frame": 395,
+    "position": [
+      3.799029,
+      29.689871,
+      3.05
+    ],
+    "forward": [
+      0.116728,
+      0.993164,
+      -0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.034142
+  },
+  {
+    "frame": 396,
+    "position": [
+      3.811703,
+      29.735733,
+      3.05
+    ],
+    "forward": [
+      0.25077,
+      0.968047,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.047581
+  },
+  {
+    "frame": 397,
+    "position": [
+      3.823711,
+      29.780745,
+      3.05
+    ],
+    "forward": [
+      0.41987,
+      0.907584,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.046586
+  },
+  {
+    "frame": 398,
+    "position": [
+      3.835195,
+      29.824833,
+      3.05
+    ],
+    "forward": [
+      0.602338,
+      0.798241,
+      -0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.04556
+  },
+  {
+    "frame": 399,
+    "position": [
+      3.846082,
+      29.867905,
+      3.05
+    ],
+    "forward": [
+      0.769456,
+      0.6387,
+      -0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.044426
+  },
+  {
+    "frame": 400,
+    "position": [
+      3.856197,
+      29.909904,
+      3.05
+    ],
+    "forward": [
+      0.895499,
+      0.445064,
+      -0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.043201
+  },
+  {
+    "frame": 401,
+    "position": [
+      3.864901,
+      29.950796,
+      3.05
+    ],
+    "forward": [
+      0.969375,
+      0.245584,
+      -0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.041808
+  },
+  {
+    "frame": 402,
+    "position": [
+      3.863276,
+      29.921583,
+      3.05
+    ],
+    "forward": [
+      0.997669,
+      0.068242,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.029258
+  },
+  {
+    "frame": 403,
+    "position": [
+      3.891932,
+      29.927877,
+      3.05
+    ],
+    "forward": [
+      0.997676,
+      -0.068133,
+      -0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.029339
+  },
+  {
+    "frame": 404,
+    "position": [
+      3.914349,
+      29.9561,
+      3.05
+    ],
+    "forward": [
+      0.98806,
+      -0.15407,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.036043
+  },
+  {
+    "frame": 405,
+    "position": [
+      3.932783,
+      29.983376,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.03292
+  },
+  {
+    "frame": 406,
+    "position": [
+      3.947661,
+      30.00705,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.027961
+  },
+  {
+    "frame": 407,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.015911
+  },
+  {
+    "frame": 408,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 409,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 410,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 411,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 412,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 413,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 414,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 415,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 416,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 417,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 418,
+    "position": [
+      3.95591,
+      30.020655,
+      3.05
+    ],
+    "forward": [
+      0.982903,
+      -0.184124,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0
+  },
+  {
+    "frame": 419,
+    "position": [
+      3.964446,
+      30.035061,
+      3.05
+    ],
+    "forward": [
+      0.988463,
+      -0.151463,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.016745
+  },
+  {
+    "frame": 420,
+    "position": [
+      3.990559,
+      30.080441,
+      3.05
+    ],
+    "forward": [
+      0.998889,
+      -0.04712,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.052357
+  },
+  {
+    "frame": 421,
+    "position": [
+      4.032065,
+      30.161346,
+      3.05
+    ],
+    "forward": [
+      0.990419,
+      0.138098,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.090932
+  },
+  {
+    "frame": 422,
+    "position": [
+      4.051964,
+      30.209042,
+      3.05
+    ],
+    "forward": [
+      0.918389,
+      0.395679,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.05168
+  },
+  {
+    "frame": 423,
+    "position": [
+      4.160193,
+      30.345604,
+      3.05
+    ],
+    "forward": [
+      0.741435,
+      0.671024,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.174249
+  },
+  {
+    "frame": 424,
+    "position": [
+      4.239895,
+      30.396416,
+      3.05
+    ],
+    "forward": [
+      0.480529,
+      0.876979,
+      -0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.094521
+  },
+  {
+    "frame": 425,
+    "position": [
+      4.345721,
+      30.49128,
+      3.05
+    ],
+    "forward": [
+      0.226159,
+      0.97409,
+      -0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.14212
+  },
+  {
+    "frame": 426,
+    "position": [
+      4.546813,
+      30.671059,
+      3.05
+    ],
+    "forward": [
+      0.057098,
+      0.998369,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.269738
+  },
+  {
+    "frame": 427,
+    "position": [
+      4.619807,
+      30.735317,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.097249
+  },
+  {
+    "frame": 428,
+    "position": [
+      4.75419,
+      30.850565,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.177033
+  },
+  {
+    "frame": 429,
+    "position": [
+      4.552851,
+      30.676701,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.266019
+  },
+  {
+    "frame": 430,
+    "position": [
+      4.530011,
+      30.650057,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.035094
+  },
+  {
+    "frame": 431,
+    "position": [
+      4.379562,
+      30.534113,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.189942
+  },
+  {
+    "frame": 432,
+    "position": [
+      4.251691,
+      30.429176,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.165417
+  },
+  {
+    "frame": 433,
+    "position": [
+      4.115038,
+      30.340839,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.162719
+  },
+  {
+    "frame": 434,
+    "position": [
+      3.981271,
+      30.253357,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.159833
+  },
+  {
+    "frame": 435,
+    "position": [
+      3.889484,
+      30.220472,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.0975
+  },
+  {
+    "frame": 436,
+    "position": [
+      3.753743,
+      30.146976,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.154361
+  },
+  {
+    "frame": 437,
+    "position": [
+      3.679405,
+      30.096222,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.090012
+  },
+  {
+    "frame": 438,
+    "position": [
+      3.539491,
+      30.044224,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.149264
+  },
+  {
+    "frame": 439,
+    "position": [
+      3.431536,
+      30.018044,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.111084
+  },
+  {
+    "frame": 440,
+    "position": [
+      3.290135,
+      29.988989,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.144355
+  },
+  {
+    "frame": 441,
+    "position": [
+      3.153312,
+      29.950634,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.142097
+  },
+  {
+    "frame": 442,
+    "position": [
+      3.057339,
+      29.916286,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.101933
+  },
+  {
+    "frame": 443,
+    "position": [
+      2.920041,
+      29.905327,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.137735
+  },
+  {
+    "frame": 444,
+    "position": [
+      2.80119,
+      29.901777,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.118904
+  },
+  {
+    "frame": 445,
+    "position": [
+      2.677763,
+      29.929714,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.126549
+  },
+  {
+    "frame": 446,
+    "position": [
+      2.546495,
+      29.938251,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.131545
+  },
+  {
+    "frame": 447,
+    "position": [
+      2.44059,
+      29.92197,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.10715
+  },
+  {
+    "frame": 448,
+    "position": [
+      2.316375,
+      29.951702,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.127724
+  },
+  {
+    "frame": 449,
+    "position": [
+      2.193936,
+      29.980907,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.125874
+  },
+  {
+    "frame": 450,
+    "position": [
+      2.093525,
+      30.030413,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.111951
+  },
+  {
+    "frame": 451,
+    "position": [
+      1.982812,
+      30.082193,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.122224
+  },
+  {
+    "frame": 452,
+    "position": [
+      1.870731,
+      30.126602,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.120558
+  },
+  {
+    "frame": 453,
+    "position": [
+      1.762523,
+      30.149414,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.110586
+  },
+  {
+    "frame": 454,
+    "position": [
+      1.659782,
+      30.205887,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.117239
+  },
+  {
+    "frame": 455,
+    "position": [
+      1.558808,
+      30.262249,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.11564
+  },
+  {
+    "frame": 456,
+    "position": [
+      1.459737,
+      30.318773,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.114061
+  },
+  {
+    "frame": 457,
+    "position": [
+      1.383159,
+      30.396437,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.109068
+  },
+  {
+    "frame": 458,
+    "position": [
+      1.294157,
+      30.462812,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.111027
+  },
+  {
+    "frame": 459,
+    "position": [
+      1.204601,
+      30.525915,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.109555
+  },
+  {
+    "frame": 460,
+    "position": [
+      1.112875,
+      30.579124,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.106043
+  },
+  {
+    "frame": 461,
+    "position": [
+      1.03131,
+      30.647936,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.106714
+  },
+  {
+    "frame": 462,
+    "position": [
+      0.951063,
+      30.71616,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.105328
+  },
+  {
+    "frame": 463,
+    "position": [
+      0.871967,
+      30.783634,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.103966
+  },
+  {
+    "frame": 464,
+    "position": [
+      0.813114,
+      30.85833,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.095095
+  },
+  {
+    "frame": 465,
+    "position": [
+      0.742618,
+      30.931133,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.101341
+  },
+  {
+    "frame": 466,
+    "position": [
+      0.671737,
+      31.00177,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.100068
+  },
+  {
+    "frame": 467,
+    "position": [
+      0.600327,
+      31.065733,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.095868
+  },
+  {
+    "frame": 468,
+    "position": [
+      0.535086,
+      31.134348,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.09468
+  },
+  {
+    "frame": 469,
+    "position": [
+      0.46991,
+      31.205324,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.096362
+  },
+  {
+    "frame": 470,
+    "position": [
+      0.405371,
+      31.275299,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.095193
+  },
+  {
+    "frame": 471,
+    "position": [
+      0.395543,
+      31.291803,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.019209
+  },
+  {
+    "frame": 472,
+    "position": [
+      0.338703,
+      31.365225,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.092852
+  },
+  {
+    "frame": 473,
+    "position": [
+      0.280519,
+      31.436176,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.091758
+  },
+  {
+    "frame": 474,
+    "position": [
+      0.222539,
+      31.505854,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.090646
+  },
+  {
+    "frame": 475,
+    "position": [
+      0.211172,
+      31.516113,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.015313
+  },
+  {
+    "frame": 476,
+    "position": [
+      0.156381,
+      31.585609,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.088497
+  },
+  {
+    "frame": 477,
+    "position": [
+      0.102136,
+      31.654182,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.087434
+  },
+  {
+    "frame": 478,
+    "position": [
+      0.048298,
+      31.721766,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.086406
+  },
+  {
+    "frame": 479,
+    "position": [
+      0.083481,
+      31.678463,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.055794
+  },
+  {
+    "frame": 480,
+    "position": [
+      0.033884,
+      31.746723,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.084376
+  },
+  {
+    "frame": 481,
+    "position": [
+      -0.016488,
+      31.81321,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.083413
+  },
+  {
+    "frame": 482,
+    "position": [
+      -0.075741,
+      31.869724,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.081883
+  },
+  {
+    "frame": 483,
+    "position": [
+      -0.097713,
+      31.80921,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.06438
+  },
+  {
+    "frame": 484,
+    "position": [
+      -0.073751,
+      31.73247,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.080394
+  },
+  {
+    "frame": 485,
+    "position": [
+      -0.025443,
+      31.673918,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.075907
+  },
+  {
+    "frame": 486,
+    "position": [
+      -0.001457,
+      31.745352,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.075354
+  },
+  {
+    "frame": 487,
+    "position": [
+      0.0,
+      31.82313,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.077792
+  },
+  {
+    "frame": 488,
+    "position": [
+      0.0,
+      31.900055,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.076925
+  },
+  {
+    "frame": 489,
+    "position": [
+      0.0,
+      31.976101,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.076046
+  },
+  {
+    "frame": 490,
+    "position": [
+      0.0,
+      32.051292,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.075191
+  },
+  {
+    "frame": 491,
+    "position": [
+      0.0,
+      32.125633,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.074341
+  },
+  {
+    "frame": 492,
+    "position": [
+      0.0,
+      32.199139,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.073505
+  },
+  {
+    "frame": 493,
+    "position": [
+      0.0,
+      32.271812,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.072674
+  },
+  {
+    "frame": 494,
+    "position": [
+      0.0,
+      32.343674,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.071861
+  },
+  {
+    "frame": 495,
+    "position": [
+      0.0,
+      32.414734,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.07106
+  },
+  {
+    "frame": 496,
+    "position": [
+      0.0,
+      32.484993,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.070259
+  },
+  {
+    "frame": 497,
+    "position": [
+      0.0,
+      32.554482,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.069489
+  },
+  {
+    "frame": 498,
+    "position": [
+      0.0,
+      32.623188,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.068707
+  },
+  {
+    "frame": 499,
+    "position": [
+      0.0,
+      32.691135,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.067947
+  },
+  {
+    "frame": 500,
+    "position": [
+      0.0,
+      32.758327,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.067192
+  },
+  {
+    "frame": 501,
+    "position": [
+      0.0,
+      32.824772,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.066444
+  },
+  {
+    "frame": 502,
+    "position": [
+      0.0,
+      32.890488,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.065716
+  },
+  {
+    "frame": 503,
+    "position": [
+      0.0,
+      32.955471,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.064983
+  },
+  {
+    "frame": 504,
+    "position": [
+      0.0,
+      33.019745,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.064274
+  },
+  {
+    "frame": 505,
+    "position": [
+      0.0,
+      33.083309,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.063564
+  },
+  {
+    "frame": 506,
+    "position": [
+      0.0,
+      33.146172,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.062862
+  },
+  {
+    "frame": 507,
+    "position": [
+      0.0,
+      33.208344,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.062172
+  },
+  {
+    "frame": 508,
+    "position": [
+      0.0,
+      33.269829,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.061485
+  },
+  {
+    "frame": 509,
+    "position": [
+      0.0,
+      33.330635,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.060806
+  },
+  {
+    "frame": 510,
+    "position": [
+      0.0,
+      33.390781,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.060146
+  },
+  {
+    "frame": 511,
+    "position": [
+      0.0,
+      33.45026,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.059479
+  },
+  {
+    "frame": 512,
+    "position": [
+      0.0,
+      33.509087,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.058826
+  },
+  {
+    "frame": 513,
+    "position": [
+      0.0,
+      33.567268,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.058182
+  },
+  {
+    "frame": 514,
+    "position": [
+      0.0,
+      33.624809,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.057541
+  },
+  {
+    "frame": 515,
+    "position": [
+      0.0,
+      33.681713,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.056904
+  },
+  {
+    "frame": 516,
+    "position": [
+      0.0,
+      33.738003,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.05629
+  },
+  {
+    "frame": 517,
+    "position": [
+      0.0,
+      33.793659,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.055656
+  },
+  {
+    "frame": 518,
+    "position": [
+      0.0,
+      33.848717,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.055058
+  },
+  {
+    "frame": 519,
+    "position": [
+      0.0,
+      33.903156,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.05444
+  },
+  {
+    "frame": 520,
+    "position": [
+      0.0,
+      33.956997,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.053841
+  },
+  {
+    "frame": 521,
+    "position": [
+      0.0,
+      34.010246,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.053249
+  },
+  {
+    "frame": 522,
+    "position": [
+      0.0,
+      34.062908,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.052662
+  },
+  {
+    "frame": 523,
+    "position": [
+      0.0,
+      34.114986,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.052078
+  },
+  {
+    "frame": 524,
+    "position": [
+      0.0,
+      34.166489,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.051502
+  },
+  {
+    "frame": 525,
+    "position": [
+      0.0,
+      34.217415,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.050926
+  },
+  {
+    "frame": 526,
+    "position": [
+      0.0,
+      34.26778,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.050365
+  },
+  {
+    "frame": 527,
+    "position": [
+      0.0,
+      34.317585,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.049805
+  },
+  {
+    "frame": 528,
+    "position": [
+      0.0,
+      34.366829,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.049244
+  },
+  {
+    "frame": 529,
+    "position": [
+      0.0,
+      34.415531,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.048702
+  },
+  {
+    "frame": 530,
+    "position": [
+      0.0,
+      34.46368,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.048149
+  },
+  {
+    "frame": 531,
+    "position": [
+      0.0,
+      34.511288,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "chapel",
+    "velocity": 0.047607
+  },
+  {
+    "frame": 532,
+    "position": [
+      0.0,
+      34.558372,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.047085
+  },
+  {
+    "frame": 533,
+    "position": [
+      0.0,
+      34.604912,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.046539
+  },
+  {
+    "frame": 534,
+    "position": [
+      0.0,
+      34.650936,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.046024
+  },
+  {
+    "frame": 535,
+    "position": [
+      0.0,
+      34.696438,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.045502
+  },
+  {
+    "frame": 536,
+    "position": [
+      0.0,
+      34.741417,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.044979
+  },
+  {
+    "frame": 537,
+    "position": [
+      0.0,
+      34.785885,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.044468
+  },
+  {
+    "frame": 538,
+    "position": [
+      0.0,
+      34.829849,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.043964
+  },
+  {
+    "frame": 539,
+    "position": [
+      0.0,
+      34.873306,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.043457
+  },
+  {
+    "frame": 540,
+    "position": [
+      0.0,
+      34.916256,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.04295
+  },
+  {
+    "frame": 541,
+    "position": [
+      0.0,
+      34.958717,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.042461
+  },
+  {
+    "frame": 542,
+    "position": [
+      0.0,
+      35.000687,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.041969
+  },
+  {
+    "frame": 543,
+    "position": [
+      0.0,
+      35.042168,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.041481
+  },
+  {
+    "frame": 544,
+    "position": [
+      0.0,
+      35.083168,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.041
+  },
+  {
+    "frame": 545,
+    "position": [
+      0.0,
+      35.12368,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.040512
+  },
+  {
+    "frame": 546,
+    "position": [
+      0.0,
+      35.163715,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.040035
+  },
+  {
+    "frame": 547,
+    "position": [
+      0.0,
+      35.203278,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.039562
+  },
+  {
+    "frame": 548,
+    "position": [
+      0.0,
+      35.242378,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.039101
+  },
+  {
+    "frame": 549,
+    "position": [
+      0.0,
+      35.281006,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.038628
+  },
+  {
+    "frame": 550,
+    "position": [
+      0.0,
+      35.319168,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.038162
+  },
+  {
+    "frame": 551,
+    "position": [
+      0.0,
+      35.356876,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.037708
+  },
+  {
+    "frame": 552,
+    "position": [
+      0.0,
+      35.394119,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.037243
+  },
+  {
+    "frame": 553,
+    "position": [
+      0.0,
+      35.43092,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.0368
+  },
+  {
+    "frame": 554,
+    "position": [
+      0.0,
+      35.467262,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.036343
+  },
+  {
+    "frame": 555,
+    "position": [
+      0.0,
+      35.503162,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.0359
+  },
+  {
+    "frame": 556,
+    "position": [
+      0.0,
+      35.538616,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.035454
+  },
+  {
+    "frame": 557,
+    "position": [
+      0.0,
+      35.57362,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.035004
+  },
+  {
+    "frame": 558,
+    "position": [
+      0.0,
+      35.6082,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.03458
+  },
+  {
+    "frame": 559,
+    "position": [
+      0.0,
+      35.642338,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.034138
+  },
+  {
+    "frame": 560,
+    "position": [
+      0.0,
+      35.676044,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033707
+  },
+  {
+    "frame": 561,
+    "position": [
+      0.0,
+      35.709312,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033268
+  },
+  {
+    "frame": 562,
+    "position": [
+      0.0,
+      35.742168,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.032856
+  },
+  {
+    "frame": 563,
+    "position": [
+      0.0,
+      35.774593,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.032425
+  },
+  {
+    "frame": 564,
+    "position": [
+      0.0,
+      35.806583,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.03199
+  },
+  {
+    "frame": 565,
+    "position": [
+      0.0,
+      35.838165,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.031582
+  },
+  {
+    "frame": 566,
+    "position": [
+      0.0,
+      35.869324,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.031158
+  },
+  {
+    "frame": 567,
+    "position": [
+      0.0,
+      35.900078,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.030754
+  },
+  {
+    "frame": 568,
+    "position": [
+      0.0,
+      35.930401,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.030323
+  },
+  {
+    "frame": 569,
+    "position": [
+      0.0,
+      35.96032,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.029919
+  },
+  {
+    "frame": 570,
+    "position": [
+      0.0,
+      35.989834,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.029514
+  },
+  {
+    "frame": 571,
+    "position": [
+      0.0,
+      36.018936,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.029102
+  },
+  {
+    "frame": 572,
+    "position": [
+      0.0,
+      36.04763,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.028694
+  },
+  {
+    "frame": 573,
+    "position": [
+      0.0,
+      36.075943,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.028313
+  },
+  {
+    "frame": 574,
+    "position": [
+      0.0,
+      36.103836,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.027893
+  },
+  {
+    "frame": 575,
+    "position": [
+      0.0,
+      36.131325,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.027489
+  },
+  {
+    "frame": 576,
+    "position": [
+      0.0,
+      36.158428,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.027103
+  },
+  {
+    "frame": 577,
+    "position": [
+      0.0,
+      36.185131,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.026703
+  },
+  {
+    "frame": 578,
+    "position": [
+      0.0,
+      36.211441,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.02631
+  },
+  {
+    "frame": 579,
+    "position": [
+      0.0,
+      36.237354,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.025913
+  },
+  {
+    "frame": 580,
+    "position": [
+      0.0,
+      36.262886,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.025532
+  },
+  {
+    "frame": 581,
+    "position": [
+      0.0,
+      36.288017,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.025131
+  },
+  {
+    "frame": 582,
+    "position": [
+      0.0,
+      36.312775,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.024757
+  },
+  {
+    "frame": 583,
+    "position": [
+      0.0,
+      36.337139,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.024364
+  },
+  {
+    "frame": 584,
+    "position": [
+      0.0,
+      36.361115,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.023975
+  },
+  {
+    "frame": 585,
+    "position": [
+      0.0,
+      36.384708,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.023594
+  },
+  {
+    "frame": 586,
+    "position": [
+      0.0,
+      36.407917,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.023209
+  },
+  {
+    "frame": 587,
+    "position": [
+      0.0,
+      36.430756,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.022839
+  },
+  {
+    "frame": 588,
+    "position": [
+      0.0,
+      36.453201,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.022446
+  },
+  {
+    "frame": 589,
+    "position": [
+      0.0,
+      36.475273,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.022072
+  },
+  {
+    "frame": 590,
+    "position": [
+      0.0,
+      36.496975,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.021702
+  },
+  {
+    "frame": 591,
+    "position": [
+      0.0,
+      36.518284,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.021309
+  },
+  {
+    "frame": 592,
+    "position": [
+      0.0,
+      36.53923,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.020947
+  },
+  {
+    "frame": 593,
+    "position": [
+      0.0,
+      36.559792,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.020561
+  },
+  {
+    "frame": 594,
+    "position": [
+      0.0,
+      36.579979,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.020187
+  },
+  {
+    "frame": 595,
+    "position": [
+      0.0,
+      36.599796,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.019817
+  },
+  {
+    "frame": 596,
+    "position": [
+      0.0,
+      36.619244,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.019447
+  },
+  {
+    "frame": 597,
+    "position": [
+      0.0,
+      36.638306,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.019062
+  },
+  {
+    "frame": 598,
+    "position": [
+      0.0,
+      36.657005,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.0187
+  },
+  {
+    "frame": 599,
+    "position": [
+      0.0,
+      36.675327,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.018322
+  },
+  {
+    "frame": 600,
+    "position": [
+      0.0,
+      36.693275,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.017948
+  },
+  {
+    "frame": 601,
+    "position": [
+      0.0,
+      36.710854,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.017578
+  },
+  {
+    "frame": 602,
+    "position": [
+      0.0,
+      36.728058,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.017204
+  },
+  {
+    "frame": 603,
+    "position": [
+      0.0,
+      36.744892,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.016834
+  },
+  {
+    "frame": 604,
+    "position": [
+      0.0,
+      36.761349,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.016457
+  },
+  {
+    "frame": 605,
+    "position": [
+      0.0,
+      36.777435,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.016087
+  },
+  {
+    "frame": 606,
+    "position": [
+      0.0,
+      36.793152,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.015717
+  },
+  {
+    "frame": 607,
+    "position": [
+      0.0,
+      36.808491,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.015339
+  },
+  {
+    "frame": 608,
+    "position": [
+      0.0,
+      36.823467,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.014977
+  },
+  {
+    "frame": 609,
+    "position": [
+      0.0,
+      36.838047,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.01458
+  },
+  {
+    "frame": 610,
+    "position": [
+      0.0,
+      36.852268,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.014221
+  },
+  {
+    "frame": 611,
+    "position": [
+      0.0,
+      36.866093,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.013824
+  },
+  {
+    "frame": 612,
+    "position": [
+      0.0,
+      36.879555,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.013462
+  },
+  {
+    "frame": 613,
+    "position": [
+      0.0,
+      36.892632,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.013077
+  },
+  {
+    "frame": 614,
+    "position": [
+      0.0,
+      36.905323,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.012691
+  },
+  {
+    "frame": 615,
+    "position": [
+      0.0,
+      36.917637,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.012314
+  },
+  {
+    "frame": 616,
+    "position": [
+      0.0,
+      36.929558,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.011921
+  },
+  {
+    "frame": 617,
+    "position": [
+      0.0,
+      36.941093,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.011536
+  },
+  {
+    "frame": 618,
+    "position": [
+      0.0,
+      36.952232,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.011139
+  },
+  {
+    "frame": 619,
+    "position": [
+      0.0,
+      36.962982,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.01075
+  },
+  {
+    "frame": 620,
+    "position": [
+      0.0,
+      36.973328,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.010345
+  },
+  {
+    "frame": 621,
+    "position": [
+      0.0,
+      36.98328,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.009953
+  },
+  {
+    "frame": 622,
+    "position": [
+      0.0,
+      36.992817,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.009537
+  },
+  {
+    "frame": 623,
+    "position": [
+      0.0,
+      37.001953,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.009136
+  },
+  {
+    "frame": 624,
+    "position": [
+      0.0,
+      37.010654,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.008701
+  },
+  {
+    "frame": 625,
+    "position": [
+      0.0,
+      37.018951,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.008297
+  },
+  {
+    "frame": 626,
+    "position": [
+      0.0,
+      37.026802,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.007851
+  },
+  {
+    "frame": 627,
+    "position": [
+      0.0,
+      37.034222,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.00742
+  },
+  {
+    "frame": 628,
+    "position": [
+      0.0,
+      37.041199,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.006977
+  },
+  {
+    "frame": 629,
+    "position": [
+      0.0,
+      37.047714,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.006516
+  },
+  {
+    "frame": 630,
+    "position": [
+      0.0,
+      37.053761,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.006046
+  },
+  {
+    "frame": 631,
+    "position": [
+      0.0,
+      37.059319,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.005558
+  },
+  {
+    "frame": 632,
+    "position": [
+      0.0,
+      37.064384,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.005066
+  },
+  {
+    "frame": 633,
+    "position": [
+      0.0,
+      37.068913,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.004528
+  },
+  {
+    "frame": 634,
+    "position": [
+      0.0,
+      37.072906,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.003994
+  },
+  {
+    "frame": 635,
+    "position": [
+      0.0,
+      37.076317,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.00341
+  },
+  {
+    "frame": 636,
+    "position": [
+      0.0,
+      37.079098,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.002781
+  },
+  {
+    "frame": 637,
+    "position": [
+      0.0,
+      37.081192,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.002094
+  },
+  {
+    "frame": 638,
+    "position": [
+      0.0,
+      37.082512,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.00132
+  },
+  {
+    "frame": 639,
+    "position": [
+      0.0,
+      37.08292,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.000408
+  },
+  {
+    "frame": 640,
+    "position": [
+      0.0,
+      37.085644,
+      3.05
+    ],
+    "forward": [
+      0.005694,
+      0.999984,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.002724
+  },
+  {
+    "frame": 641,
+    "position": [
+      0.0,
+      37.091053,
+      3.05
+    ],
+    "forward": [
+      0.011388,
+      0.999935,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.005409
+  },
+  {
+    "frame": 642,
+    "position": [
+      0.0,
+      37.097786,
+      3.05
+    ],
+    "forward": [
+      0.017082,
+      0.999854,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.006733
+  },
+  {
+    "frame": 643,
+    "position": [
+      0.0,
+      37.105385,
+      3.05
+    ],
+    "forward": [
+      0.022775,
+      0.999741,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.007599
+  },
+  {
+    "frame": 644,
+    "position": [
+      0.0,
+      37.113628,
+      3.05
+    ],
+    "forward": [
+      0.039063,
+      0.999237,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.008244
+  },
+  {
+    "frame": 645,
+    "position": [
+      0.0,
+      37.122406,
+      3.05
+    ],
+    "forward": [
+      0.055342,
+      0.998467,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.008778
+  },
+  {
+    "frame": 646,
+    "position": [
+      0.0,
+      37.13163,
+      3.05
+    ],
+    "forward": [
+      0.071607,
+      0.997433,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.009224
+  },
+  {
+    "frame": 647,
+    "position": [
+      0.0,
+      37.141243,
+      3.05
+    ],
+    "forward": [
+      0.087851,
+      0.996134,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.009613
+  },
+  {
+    "frame": 648,
+    "position": [
+      0.0,
+      37.151207,
+      3.05
+    ],
+    "forward": [
+      0.113437,
+      0.993545,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.009964
+  },
+  {
+    "frame": 649,
+    "position": [
+      0.0,
+      37.161503,
+      3.05
+    ],
+    "forward": [
+      0.138957,
+      0.990298,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.010296
+  },
+  {
+    "frame": 650,
+    "position": [
+      0.0,
+      37.172092,
+      3.05
+    ],
+    "forward": [
+      0.164385,
+      0.986396,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.01059
+  },
+  {
+    "frame": 651,
+    "position": [
+      0.0,
+      37.182976,
+      3.05
+    ],
+    "forward": [
+      0.189695,
+      0.981843,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.010883
+  },
+  {
+    "frame": 652,
+    "position": [
+      0.0,
+      37.194118,
+      3.05
+    ],
+    "forward": [
+      0.222922,
+      0.974836,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.011143
+  },
+  {
+    "frame": 653,
+    "position": [
+      0.0,
+      37.205524,
+      3.05
+    ],
+    "forward": [
+      0.25591,
+      0.966701,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.011406
+  },
+  {
+    "frame": 654,
+    "position": [
+      0.0,
+      37.217178,
+      3.05
+    ],
+    "forward": [
+      0.288603,
+      0.957449,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.011654
+  },
+  {
+    "frame": 655,
+    "position": [
+      0.0,
+      37.229073,
+      3.05
+    ],
+    "forward": [
+      0.320944,
+      0.947098,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.011894
+  },
+  {
+    "frame": 656,
+    "position": [
+      0.0,
+      37.241203,
+      3.05
+    ],
+    "forward": [
+      0.359513,
+      0.93314,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.012131
+  },
+  {
+    "frame": 657,
+    "position": [
+      0.0,
+      37.253571,
+      3.05
+    ],
+    "forward": [
+      0.397508,
+      0.917599,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.012367
+  },
+  {
+    "frame": 658,
+    "position": [
+      0.0,
+      37.266159,
+      3.05
+    ],
+    "forward": [
+      0.434834,
+      0.900511,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.012589
+  },
+  {
+    "frame": 659,
+    "position": [
+      0.0,
+      37.278973,
+      3.05
+    ],
+    "forward": [
+      0.471397,
+      0.881921,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.012814
+  },
+  {
+    "frame": 660,
+    "position": [
+      0.0,
+      37.292004,
+      3.05
+    ],
+    "forward": [
+      0.512227,
+      0.85885,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.013031
+  },
+  {
+    "frame": 661,
+    "position": [
+      0.0,
+      37.305256,
+      3.05
+    ],
+    "forward": [
+      0.551973,
+      0.833862,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.013252
+  },
+  {
+    "frame": 662,
+    "position": [
+      0.0,
+      37.318733,
+      3.05
+    ],
+    "forward": [
+      0.590503,
+      0.807035,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.013477
+  },
+  {
+    "frame": 663,
+    "position": [
+      0.0,
+      37.33242,
+      3.05
+    ],
+    "forward": [
+      0.627691,
+      0.778462,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.013687
+  },
+  {
+    "frame": 664,
+    "position": [
+      0.0,
+      37.346333,
+      3.05
+    ],
+    "forward": [
+      0.667011,
+      0.745048,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.013912
+  },
+  {
+    "frame": 665,
+    "position": [
+      0.0,
+      37.360455,
+      3.05
+    ],
+    "forward": [
+      0.704603,
+      0.709601,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.014122
+  },
+  {
+    "frame": 666,
+    "position": [
+      0.0,
+      37.374794,
+      3.05
+    ],
+    "forward": [
+      0.740315,
+      0.672261,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.014339
+  },
+  {
+    "frame": 667,
+    "position": [
+      0.0,
+      37.389351,
+      3.05
+    ],
+    "forward": [
+      0.774006,
+      0.633178,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.014557
+  },
+  {
+    "frame": 668,
+    "position": [
+      0.0,
+      37.404133,
+      3.05
+    ],
+    "forward": [
+      0.807721,
+      0.589565,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.014782
+  },
+  {
+    "frame": 669,
+    "position": [
+      0.0,
+      37.419128,
+      3.05
+    ],
+    "forward": [
+      0.839027,
+      0.54409,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.014996
+  },
+  {
+    "frame": 670,
+    "position": [
+      0.0,
+      37.434345,
+      3.05
+    ],
+    "forward": [
+      0.867775,
+      0.496956,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.015217
+  },
+  {
+    "frame": 671,
+    "position": [
+      0.0,
+      37.449791,
+      3.05
+    ],
+    "forward": [
+      0.893841,
+      0.448383,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.015446
+  },
+  {
+    "frame": 672,
+    "position": [
+      0.0,
+      37.465458,
+      3.05
+    ],
+    "forward": [
+      0.918125,
+      0.396291,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.015667
+  },
+  {
+    "frame": 673,
+    "position": [
+      0.0,
+      37.48135,
+      3.05
+    ],
+    "forward": [
+      0.939409,
+      0.342799,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.015892
+  },
+  {
+    "frame": 674,
+    "position": [
+      0.0,
+      37.497475,
+      3.05
+    ],
+    "forward": [
+      0.957579,
+      0.288172,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.016125
+  },
+  {
+    "frame": 675,
+    "position": [
+      0.0,
+      37.513836,
+      3.05
+    ],
+    "forward": [
+      0.972553,
+      0.232682,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.016361
+  },
+  {
+    "frame": 676,
+    "position": [
+      0.0,
+      37.53043,
+      3.05
+    ],
+    "forward": [
+      0.984521,
+      0.175266,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.016594
+  },
+  {
+    "frame": 677,
+    "position": [
+      0.0,
+      37.547264,
+      3.05
+    ],
+    "forward": [
+      0.993115,
+      0.117147,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.016834
+  },
+  {
+    "frame": 678,
+    "position": [
+      0.0,
+      37.564342,
+      3.05
+    ],
+    "forward": [
+      0.99828,
+      0.058624,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.017078
+  },
+  {
+    "frame": 679,
+    "position": [
+      0.0,
+      37.581669,
+      3.05
+    ],
+    "forward": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.017326
+  },
+  {
+    "frame": 680,
+    "position": [
+      0.0,
+      37.599247,
+      3.05
+    ],
+    "forward": [
+      0.99828,
+      -0.058624,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.017578
+  },
+  {
+    "frame": 681,
+    "position": [
+      0.0,
+      37.617081,
+      3.05
+    ],
+    "forward": [
+      0.993115,
+      -0.117147,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.017834
+  },
+  {
+    "frame": 682,
+    "position": [
+      0.0,
+      37.635178,
+      3.05
+    ],
+    "forward": [
+      0.984521,
+      -0.175266,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.018097
+  },
+  {
+    "frame": 683,
+    "position": [
+      0.0,
+      37.653534,
+      3.05
+    ],
+    "forward": [
+      0.972553,
+      -0.232682,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.018356
+  },
+  {
+    "frame": 684,
+    "position": [
+      0.0,
+      37.672161,
+      3.05
+    ],
+    "forward": [
+      0.957579,
+      -0.288172,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.018627
+  },
+  {
+    "frame": 685,
+    "position": [
+      0.0,
+      37.691071,
+      3.05
+    ],
+    "forward": [
+      0.939409,
+      -0.342799,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.018909
+  },
+  {
+    "frame": 686,
+    "position": [
+      0.0,
+      37.710266,
+      3.05
+    ],
+    "forward": [
+      0.918125,
+      -0.39629,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.019196
+  },
+  {
+    "frame": 687,
+    "position": [
+      0.0,
+      37.72974,
+      3.05
+    ],
+    "forward": [
+      0.893841,
+      -0.448383,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.019474
+  },
+  {
+    "frame": 688,
+    "position": [
+      0.0,
+      37.749516,
+      3.05
+    ],
+    "forward": [
+      0.867775,
+      -0.496956,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.019775
+  },
+  {
+    "frame": 689,
+    "position": [
+      0.0,
+      37.769596,
+      3.05
+    ],
+    "forward": [
+      0.839027,
+      -0.54409,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.020081
+  },
+  {
+    "frame": 690,
+    "position": [
+      0.0,
+      37.789993,
+      3.05
+    ],
+    "forward": [
+      0.807721,
+      -0.589565,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.020397
+  },
+  {
+    "frame": 691,
+    "position": [
+      0.0,
+      37.810699,
+      3.05
+    ],
+    "forward": [
+      0.774006,
+      -0.633178,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.020706
+  },
+  {
+    "frame": 692,
+    "position": [
+      0.0,
+      37.831745,
+      3.05
+    ],
+    "forward": [
+      0.740315,
+      -0.672261,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.021046
+  },
+  {
+    "frame": 693,
+    "position": [
+      0.0,
+      37.853123,
+      3.05
+    ],
+    "forward": [
+      0.704603,
+      -0.709602,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.021378
+  },
+  {
+    "frame": 694,
+    "position": [
+      0.0,
+      37.874851,
+      3.05
+    ],
+    "forward": [
+      0.667011,
+      -0.745048,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.021729
+  },
+  {
+    "frame": 695,
+    "position": [
+      0.0,
+      37.896938,
+      3.05
+    ],
+    "forward": [
+      0.627691,
+      -0.778462,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.022087
+  },
+  {
+    "frame": 696,
+    "position": [
+      0.0,
+      37.919395,
+      3.05
+    ],
+    "forward": [
+      0.590503,
+      -0.807035,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.022457
+  },
+  {
+    "frame": 697,
+    "position": [
+      0.0,
+      37.94223,
+      3.05
+    ],
+    "forward": [
+      0.551973,
+      -0.833862,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.022835
+  },
+  {
+    "frame": 698,
+    "position": [
+      0.0,
+      37.965458,
+      3.05
+    ],
+    "forward": [
+      0.512227,
+      -0.85885,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.023228
+  },
+  {
+    "frame": 699,
+    "position": [
+      0.0,
+      37.989098,
+      3.05
+    ],
+    "forward": [
+      0.471397,
+      -0.881921,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.02364
+  },
+  {
+    "frame": 700,
+    "position": [
+      0.0,
+      38.013157,
+      3.05
+    ],
+    "forward": [
+      0.434834,
+      -0.900511,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.024059
+  },
+  {
+    "frame": 701,
+    "position": [
+      0.0,
+      38.037655,
+      3.05
+    ],
+    "forward": [
+      0.397508,
+      -0.917599,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.024498
+  },
+  {
+    "frame": 702,
+    "position": [
+      0.0,
+      38.062611,
+      3.05
+    ],
+    "forward": [
+      0.359513,
+      -0.93314,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.024956
+  },
+  {
+    "frame": 703,
+    "position": [
+      0.0,
+      38.088036,
+      3.05
+    ],
+    "forward": [
+      0.320944,
+      -0.947098,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.025425
+  },
+  {
+    "frame": 704,
+    "position": [
+      0.0,
+      38.113953,
+      3.05
+    ],
+    "forward": [
+      0.288603,
+      -0.957449,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.025917
+  },
+  {
+    "frame": 705,
+    "position": [
+      0.0,
+      38.140385,
+      3.05
+    ],
+    "forward": [
+      0.25591,
+      -0.966701,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.026432
+  },
+  {
+    "frame": 706,
+    "position": [
+      0.0,
+      38.167347,
+      3.05
+    ],
+    "forward": [
+      0.222922,
+      -0.974836,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.026962
+  },
+  {
+    "frame": 707,
+    "position": [
+      0.0,
+      38.19487,
+      3.05
+    ],
+    "forward": [
+      0.189695,
+      -0.981843,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.027523
+  },
+  {
+    "frame": 708,
+    "position": [
+      0.0,
+      38.222984,
+      3.05
+    ],
+    "forward": [
+      0.164385,
+      -0.986396,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.028114
+  },
+  {
+    "frame": 709,
+    "position": [
+      0.0,
+      38.251709,
+      3.05
+    ],
+    "forward": [
+      0.138957,
+      -0.990298,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.028725
+  },
+  {
+    "frame": 710,
+    "position": [
+      0.0,
+      38.281075,
+      3.05
+    ],
+    "forward": [
+      0.113438,
+      -0.993545,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.029366
+  },
+  {
+    "frame": 711,
+    "position": [
+      0.0,
+      38.311134,
+      3.05
+    ],
+    "forward": [
+      0.087851,
+      -0.996134,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.03006
+  },
+  {
+    "frame": 712,
+    "position": [
+      0.0,
+      38.341904,
+      3.05
+    ],
+    "forward": [
+      0.071607,
+      -0.997433,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.030769
+  },
+  {
+    "frame": 713,
+    "position": [
+      0.0,
+      38.373432,
+      3.05
+    ],
+    "forward": [
+      0.055342,
+      -0.998467,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.031528
+  },
+  {
+    "frame": 714,
+    "position": [
+      0.0,
+      38.405758,
+      3.05
+    ],
+    "forward": [
+      0.039063,
+      -0.999237,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.032326
+  },
+  {
+    "frame": 715,
+    "position": [
+      0.0,
+      38.438957,
+      3.05
+    ],
+    "forward": [
+      0.022775,
+      -0.999741,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033199
+  },
+  {
+    "frame": 716,
+    "position": [
+      0.0,
+      38.473068,
+      3.05
+    ],
+    "forward": [
+      0.017082,
+      -0.999854,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.034111
+  },
+  {
+    "frame": 717,
+    "position": [
+      0.0,
+      38.508148,
+      3.05
+    ],
+    "forward": [
+      0.011388,
+      -0.999935,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.03508
+  },
+  {
+    "frame": 718,
+    "position": [
+      0.0,
+      38.544277,
+      3.05
+    ],
+    "forward": [
+      0.005694,
+      -0.999984,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.036129
+  },
+  {
+    "frame": 719,
+    "position": [
+      0.0,
+      38.581543,
+      3.05
+    ],
+    "forward": [
+      -0.0,
+      -1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.037266
+  },
+  {
+    "frame": 720,
+    "position": [
+      0.0,
+      38.61549,
+      3.05
+    ],
+    "forward": [
+      -0.005694,
+      -0.999984,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 721,
+    "position": [
+      0.0,
+      38.649441,
+      3.05
+    ],
+    "forward": [
+      -0.011388,
+      -0.999935,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 722,
+    "position": [
+      0.0,
+      38.683392,
+      3.05
+    ],
+    "forward": [
+      -0.017082,
+      -0.999854,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 723,
+    "position": [
+      0.0,
+      38.717335,
+      3.05
+    ],
+    "forward": [
+      -0.022775,
+      -0.999741,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 724,
+    "position": [
+      0.0,
+      38.751282,
+      3.05
+    ],
+    "forward": [
+      -0.039062,
+      -0.999237,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 725,
+    "position": [
+      0.0,
+      38.785225,
+      3.05
+    ],
+    "forward": [
+      -0.055342,
+      -0.998467,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 726,
+    "position": [
+      0.0,
+      38.819176,
+      3.05
+    ],
+    "forward": [
+      -0.071607,
+      -0.997433,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 727,
+    "position": [
+      0.0,
+      38.85313,
+      3.05
+    ],
+    "forward": [
+      -0.087851,
+      -0.996134,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 728,
+    "position": [
+      0.0,
+      38.887081,
+      3.05
+    ],
+    "forward": [
+      -0.113437,
+      -0.993545,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 729,
+    "position": [
+      0.0,
+      38.921024,
+      3.05
+    ],
+    "forward": [
+      -0.138957,
+      -0.990299,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 730,
+    "position": [
+      0.0,
+      38.954975,
+      3.05
+    ],
+    "forward": [
+      -0.164385,
+      -0.986396,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 731,
+    "position": [
+      0.0,
+      38.988922,
+      3.05
+    ],
+    "forward": [
+      -0.189695,
+      -0.981843,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 732,
+    "position": [
+      0.0,
+      39.022869,
+      3.05
+    ],
+    "forward": [
+      -0.222921,
+      -0.974836,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 733,
+    "position": [
+      0.0,
+      39.05682,
+      3.05
+    ],
+    "forward": [
+      -0.25591,
+      -0.966701,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 734,
+    "position": [
+      0.0,
+      39.090775,
+      3.05
+    ],
+    "forward": [
+      -0.288602,
+      -0.957449,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 735,
+    "position": [
+      0.0,
+      39.124718,
+      3.05
+    ],
+    "forward": [
+      -0.320943,
+      -0.947098,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 736,
+    "position": [
+      0.0,
+      39.158669,
+      3.05
+    ],
+    "forward": [
+      -0.359512,
+      -0.93314,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 737,
+    "position": [
+      0.0,
+      39.192619,
+      3.05
+    ],
+    "forward": [
+      -0.397508,
+      -0.917599,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 738,
+    "position": [
+      0.0,
+      39.22657,
+      3.05
+    ],
+    "forward": [
+      -0.434834,
+      -0.900511,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 739,
+    "position": [
+      0.0,
+      39.260513,
+      3.05
+    ],
+    "forward": [
+      -0.471397,
+      -0.881921,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 740,
+    "position": [
+      0.0,
+      39.294464,
+      3.05
+    ],
+    "forward": [
+      -0.512227,
+      -0.85885,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 741,
+    "position": [
+      0.0,
+      39.328407,
+      3.05
+    ],
+    "forward": [
+      -0.551973,
+      -0.833862,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 742,
+    "position": [
+      0.0,
+      39.362362,
+      3.05
+    ],
+    "forward": [
+      -0.590503,
+      -0.807035,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 743,
+    "position": [
+      0.0,
+      39.396313,
+      3.05
+    ],
+    "forward": [
+      -0.627691,
+      -0.778462,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 744,
+    "position": [
+      0.0,
+      39.430264,
+      3.05
+    ],
+    "forward": [
+      -0.667011,
+      -0.745048,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 745,
+    "position": [
+      0.0,
+      39.464214,
+      3.05
+    ],
+    "forward": [
+      -0.704603,
+      -0.709602,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 746,
+    "position": [
+      0.0,
+      39.498161,
+      3.05
+    ],
+    "forward": [
+      -0.740315,
+      -0.672261,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 747,
+    "position": [
+      0.0,
+      39.532108,
+      3.05
+    ],
+    "forward": [
+      -0.774006,
+      -0.633178,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 748,
+    "position": [
+      0.0,
+      39.566051,
+      3.05
+    ],
+    "forward": [
+      -0.807721,
+      -0.589565,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 749,
+    "position": [
+      0.0,
+      39.600002,
+      3.05
+    ],
+    "forward": [
+      -0.839027,
+      -0.54409,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 750,
+    "position": [
+      0.0,
+      39.633957,
+      3.05
+    ],
+    "forward": [
+      -0.867775,
+      -0.496956,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 751,
+    "position": [
+      0.0,
+      39.667908,
+      3.05
+    ],
+    "forward": [
+      -0.893841,
+      -0.448383,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 752,
+    "position": [
+      0.0,
+      39.701851,
+      3.05
+    ],
+    "forward": [
+      -0.918125,
+      -0.39629,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 753,
+    "position": [
+      0.0,
+      39.735802,
+      3.05
+    ],
+    "forward": [
+      -0.939409,
+      -0.342799,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 754,
+    "position": [
+      0.0,
+      39.769753,
+      3.05
+    ],
+    "forward": [
+      -0.957579,
+      -0.288172,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 755,
+    "position": [
+      0.0,
+      39.803696,
+      3.05
+    ],
+    "forward": [
+      -0.972553,
+      -0.232682,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 756,
+    "position": [
+      0.0,
+      39.837646,
+      3.05
+    ],
+    "forward": [
+      -0.984521,
+      -0.175266,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 757,
+    "position": [
+      0.0,
+      39.871605,
+      3.05
+    ],
+    "forward": [
+      -0.993115,
+      -0.117147,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033958
+  },
+  {
+    "frame": 758,
+    "position": [
+      0.0,
+      39.90554,
+      3.05
+    ],
+    "forward": [
+      -0.99828,
+      -0.058624,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033936
+  },
+  {
+    "frame": 759,
+    "position": [
+      0.0,
+      39.939491,
+      3.05
+    ],
+    "forward": [
+      -1.0,
+      0.0,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 760,
+    "position": [
+      0.0,
+      39.973442,
+      3.05
+    ],
+    "forward": [
+      -0.99828,
+      0.058624,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 761,
+    "position": [
+      0.0,
+      40.007385,
+      3.05
+    ],
+    "forward": [
+      -0.993115,
+      0.117147,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 762,
+    "position": [
+      0.0,
+      40.041328,
+      3.05
+    ],
+    "forward": [
+      -0.984521,
+      0.175266,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 763,
+    "position": [
+      0.0,
+      40.075279,
+      3.05
+    ],
+    "forward": [
+      -0.972553,
+      0.232681,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 764,
+    "position": [
+      0.0,
+      40.109226,
+      3.05
+    ],
+    "forward": [
+      -0.957579,
+      0.288171,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 765,
+    "position": [
+      0.0,
+      40.143173,
+      3.05
+    ],
+    "forward": [
+      -0.939409,
+      0.342799,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 766,
+    "position": [
+      0.0,
+      40.177124,
+      3.05
+    ],
+    "forward": [
+      -0.918125,
+      0.39629,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 767,
+    "position": [
+      0.0,
+      40.211075,
+      3.05
+    ],
+    "forward": [
+      -0.893841,
+      0.448383,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 768,
+    "position": [
+      0.0,
+      40.245018,
+      3.05
+    ],
+    "forward": [
+      -0.867775,
+      0.496957,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 769,
+    "position": [
+      0.0,
+      40.278969,
+      3.05
+    ],
+    "forward": [
+      -0.839027,
+      0.54409,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 770,
+    "position": [
+      0.0,
+      40.31292,
+      3.05
+    ],
+    "forward": [
+      -0.807721,
+      0.589565,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 771,
+    "position": [
+      0.0,
+      40.346867,
+      3.05
+    ],
+    "forward": [
+      -0.774006,
+      0.633178,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 772,
+    "position": [
+      0.0,
+      40.380817,
+      3.05
+    ],
+    "forward": [
+      -0.740314,
+      0.672261,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 773,
+    "position": [
+      0.0,
+      40.414772,
+      3.05
+    ],
+    "forward": [
+      -0.704603,
+      0.709602,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 774,
+    "position": [
+      0.0,
+      40.448715,
+      3.05
+    ],
+    "forward": [
+      -0.667011,
+      0.745048,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 775,
+    "position": [
+      0.0,
+      40.482666,
+      3.05
+    ],
+    "forward": [
+      -0.627691,
+      0.778462,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 776,
+    "position": [
+      0.0,
+      40.516621,
+      3.05
+    ],
+    "forward": [
+      -0.590503,
+      0.807035,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 777,
+    "position": [
+      0.0,
+      40.550571,
+      3.05
+    ],
+    "forward": [
+      -0.551973,
+      0.833862,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 778,
+    "position": [
+      0.0,
+      40.584526,
+      3.05
+    ],
+    "forward": [
+      -0.512227,
+      0.85885,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 779,
+    "position": [
+      0.0,
+      40.618477,
+      3.05
+    ],
+    "forward": [
+      -0.471397,
+      0.881921,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 780,
+    "position": [
+      0.0,
+      40.652428,
+      3.05
+    ],
+    "forward": [
+      -0.434834,
+      0.90051,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 781,
+    "position": [
+      0.0,
+      40.686367,
+      3.05
+    ],
+    "forward": [
+      -0.397508,
+      0.917599,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033939
+  },
+  {
+    "frame": 782,
+    "position": [
+      0.0,
+      40.720314,
+      3.05
+    ],
+    "forward": [
+      -0.359513,
+      0.93314,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 783,
+    "position": [
+      0.0,
+      40.754276,
+      3.05
+    ],
+    "forward": [
+      -0.320944,
+      0.947098,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033962
+  },
+  {
+    "frame": 784,
+    "position": [
+      0.0,
+      40.788227,
+      3.05
+    ],
+    "forward": [
+      -0.288603,
+      0.957449,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 785,
+    "position": [
+      0.0,
+      40.822182,
+      3.05
+    ],
+    "forward": [
+      -0.25591,
+      0.966701,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 786,
+    "position": [
+      0.0,
+      40.856136,
+      3.05
+    ],
+    "forward": [
+      -0.222922,
+      0.974836,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 787,
+    "position": [
+      0.0,
+      40.890087,
+      3.05
+    ],
+    "forward": [
+      -0.189695,
+      0.981843,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 788,
+    "position": [
+      0.0,
+      40.924042,
+      3.05
+    ],
+    "forward": [
+      -0.164385,
+      0.986396,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033955
+  },
+  {
+    "frame": 789,
+    "position": [
+      0.0,
+      40.958,
+      3.05
+    ],
+    "forward": [
+      -0.138957,
+      0.990298,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033958
+  },
+  {
+    "frame": 790,
+    "position": [
+      0.0,
+      40.991951,
+      3.05
+    ],
+    "forward": [
+      -0.113437,
+      0.993545,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 791,
+    "position": [
+      0.0,
+      41.025898,
+      3.05
+    ],
+    "forward": [
+      -0.087851,
+      0.996134,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 792,
+    "position": [
+      0.0,
+      41.059845,
+      3.05
+    ],
+    "forward": [
+      -0.071607,
+      0.997433,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 793,
+    "position": [
+      0.0,
+      41.093784,
+      3.05
+    ],
+    "forward": [
+      -0.055342,
+      0.998467,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033939
+  },
+  {
+    "frame": 794,
+    "position": [
+      0.0,
+      41.127743,
+      3.05
+    ],
+    "forward": [
+      -0.039063,
+      0.999237,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033958
+  },
+  {
+    "frame": 795,
+    "position": [
+      0.0,
+      41.16169,
+      3.05
+    ],
+    "forward": [
+      -0.022775,
+      0.999741,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 796,
+    "position": [
+      0.0,
+      41.195641,
+      3.05
+    ],
+    "forward": [
+      -0.017082,
+      0.999854,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033951
+  },
+  {
+    "frame": 797,
+    "position": [
+      0.0,
+      41.229584,
+      3.05
+    ],
+    "forward": [
+      -0.011388,
+      0.999935,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033943
+  },
+  {
+    "frame": 798,
+    "position": [
+      0.0,
+      41.263531,
+      3.05
+    ],
+    "forward": [
+      -0.005694,
+      0.999984,
+      -0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033947
+  },
+  {
+    "frame": 799,
+    "position": [
+      0.0,
+      41.297493,
+      3.05
+    ],
+    "forward": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "room": "sanctuary",
+    "velocity": 0.033962
+  }
+]

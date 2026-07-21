@@ -1,0 +1,518 @@
+{
+  "pinEnd": 4420,
+  "samples": [
+    {
+      "i": 0,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 1,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 2,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 3,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 4,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 5,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 6,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 7,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 8,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 9,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 10,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 11,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 12,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 13,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 14,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 15,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 16,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 17,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 18,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 19,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 20,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 21,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 22,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 23,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 24,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 25,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 26,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 27,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 28,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 29,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 30,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 31,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 32,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 33,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 34,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 35,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 36,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 37,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 38,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 39,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 40,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 41,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 42,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 43,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 44,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 45,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 46,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 47,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 48,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 49,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 50,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 51,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 52,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 53,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 54,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 55,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    },
+    {
+      "i": 56,
+      "scrollY": 0,
+      "pathIndex0": 0,
+      "velocity": 0,
+      "room": "forecourt",
+      "studioPlaque": false,
+      "zone": "pre"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "hasBlastLayer": true,
+  "hasLogoStage": false,
+  "blastW": 1440,
+  "blastH": 900,
+  "canvasW": 1440,
+  "canvasH": 900,
+  "viewport": {
+    "vw": 1440,
+    "vh": 900
+  },
+  "fillsViewport": true,
+  "rootOverflow": "visible"
+}

@@ -1,0 +1,282 @@
+.room {
+  position: relative;
+  min-height: auto;
+  padding: 0 0 clamp(5rem, 12vh, 8rem);
+  background: transparent;
+  /* Visible so the CSS-3D ring can extend past the column */
+  overflow: visible;
+  color: var(--doc-ink, #1c1610);
+}
+
+/* —— Jesko: sanctuary page → Case Study iris —— */
+.jeskoTrack {
+  position: relative;
+  width: 100%;
+  height: 220vh;
+}
+
+.jeskoPin {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--doc-bg, #e6dcc8);
+}
+
+.jeskoReveal {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--doc-bg, #e6dcc8);
+  clip-path: circle(0px at 50% 46%);
+  will-change: clip-path;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.revealInner {
+  width: min(44rem, 92vw);
+  padding: clamp(2rem, 6vh, 4rem) clamp(1.5rem, 5vw, 3rem);
+}
+
+.jeskoPage {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  transform-origin: 50% 46%;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  background: #0a0806;
+}
+
+.heroJesko {
+  aspect-ratio: auto !important;
+  width: 100%;
+  height: 100%;
+  max-height: none !important;
+  min-height: 100%;
+}
+
+.atmosphere {
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+  background: radial-gradient(
+    ellipse 70% 40% at 50% 0%,
+    rgba(255, 248, 232, 0.55) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* —— Full-bleed case hero —— */
+.hero {
+  position: relative;
+  /* Match still aspect so cover doesn't crop into a pillar/logo macro */
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: min(92vh, 56rem);
+  overflow: hidden;
+  isolation: isolate;
+  background: #0a0806;
+}
+
+.heroBg {
+  position: absolute;
+  inset: -6% 0;
+  will-change: transform;
+  z-index: 0;
+}
+
+.heroImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1.05);
+}
+
+.heroScrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 8, 6, 0.15) 0%,
+    rgba(10, 8, 6, 0.35) 45%,
+    rgba(14, 10, 6, 0.72) 100%
+  );
+  pointer-events: none;
+}
+
+.heroCopy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  /* Clear fixed Sound Off control (bottom-right) */
+  padding: clamp(2rem, 6vw, 4.5rem) clamp(7rem, 14vw, 11rem)
+    clamp(2.5rem, 7vh, 4.5rem) clamp(1.75rem, 6vw, 5rem);
+  will-change: transform;
+  text-align: left;
+  max-width: 48rem;
+}
+
+.heroCategory {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #d4a054;
+}
+
+.heroTitle {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(2.4rem, 7vw, 4.25rem);
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+  color: #f5efe3;
+}
+
+.heroSubtitle {
+  margin: 0.65rem 0 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+  letter-spacing: 0.08em;
+  color: rgba(212, 160, 84, 0.92);
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: clamp(3.5rem, 9vh, 6rem) clamp(1.75rem, 6vw, 5rem) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(2.75rem, 7vh, 4.5rem);
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--doc-gold, #9a6b2f);
+  margin-bottom: 1.25rem;
+}
+
+.headerTitleBlock {
+  will-change: transform;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  letter-spacing: 0.06em;
+  color: var(--doc-ink, #1c1610);
+  line-height: 1.05;
+}
+
+.lede {
+  margin: 1.5rem auto 0;
+  max-width: 36rem;
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  line-height: 1.55;
+  color: var(--doc-ink-muted, rgba(28, 22, 16, 0.62));
+}
+
+.detail {
+  margin: 1rem auto 0;
+  max-width: 38rem;
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--doc-ink-faint, rgba(28, 22, 16, 0.5));
+}
+
+.footerTypo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.workCta {
+  align-self: center;
+  margin-top: clamp(2.75rem, 7vh, 4rem);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.05rem 2.4rem;
+  border: 1px solid rgba(28, 22, 16, 0.35);
+  border-radius: 2px;
+  background: rgba(28, 22, 16, 0.9);
+  color: #efe4cf;
+  font-family: var(--font-serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s var(--ease-premium);
+}
+
+.workCta:hover {
+  background: #1c1610;
+  letter-spacing: 0.3em;
+}
+
+@media (max-width: 720px) {
+  .jeskoTrack {
+    height: auto;
+  }
+
+  .jeskoPin {
+    height: auto;
+    overflow: visible;
+    background: transparent;
+  }
+
+  .jeskoReveal {
+    position: relative;
+    clip-path: none !important;
+    display: block;
+    pointer-events: auto;
+  }
+
+  .jeskoPage {
+    position: relative;
+  }
+
+  .heroJesko {
+    aspect-ratio: 16 / 9 !important;
+    max-height: min(92vh, 56rem) !important;
+    min-height: min(78vh, 36rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: min(78vh, 36rem);
+  }
+
+  .heroCopy {
+    text-align: center;
+    margin: 0 auto;
+  }
+}

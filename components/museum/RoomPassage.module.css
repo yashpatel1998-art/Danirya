@@ -1,0 +1,37 @@
+.passage {
+  position: relative;
+  height: 18vh;
+  min-height: 8rem;
+  margin-top: -1px;
+  background: var(--color-black);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cool {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(196, 165, 116, 0.03) 50%,
+    transparent 100%
+  );
+}
+
+.warm {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: radial-gradient(
+    ellipse 90% 60% at 50% 50%,
+    rgba(200, 164, 107, 0.12) 0%,
+    transparent 70%
+  );
+}
+
+@media (max-width: 540px) {
+  .passage {
+    height: 14vh;
+  }
+}

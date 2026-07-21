@@ -1,0 +1,25 @@
+{
+  "disciplines": [
+    "MATERIAL",
+    "LIGHT",
+    "STRUCTURE"
+  ],
+  "reducedMotionPass": {
+    "stableForm": true,
+    "reducedMotion": true,
+    "hasLenis": false,
+    "applyInAfterSlot": true,
+    "watermarkZoneContainsApply": false,
+    "railApplyOverlapPx": 0,
+    "hasCanvasInApply": false
+  },
+  "motionPass": {
+    "stableForm": true,
+    "reducedMotion": false,
+    "hasLenis": true,
+    "applyInAfterSlot": true,
+    "watermarkZoneContainsApply": false,
+    "railApplyOverlapPx": 0,
+    "hasCanvasInApply": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "orbitProbe": {
+    "widthPx": 721,
+    "hasRotateX": true,
+    "hasRotateZ": true,
+    "transformSample": "translate(-50%, calc(-50% + -90px)) rotateY(0deg) translateZ(var(--orbit-radius)) rotateX(12deg) rotateZ(7deg) scaleX(1.2) scaleY(1.2)"
+  },
+  "markAfterStudio": {
+    "overlayOpacity": "0",
+    "overlayVisibility": "hidden"
+  }
+}

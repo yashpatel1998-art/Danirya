@@ -1,0 +1,282 @@
+/* Nested stack — live home + /lab (Lenis via root SmoothScroll). */
+
+.root {
+  --nest-inset-y: max(1.25rem, 4.5vh);
+  --nest-inset-x: max(1.25rem, 3.5vw);
+  --nest-radius: 16px;
+  --nest-shadow: 0 22px 56px rgba(8, 10, 8, 0.35),
+    0 6px 18px rgba(8, 10, 8, 0.2);
+  --nest-ink: #1c1610;
+  --panel-bg: #e6dcc8;
+  min-height: 100vh;
+  color: var(--nest-ink);
+  background: #0c100c;
+}
+
+.banner {
+  position: relative;
+  z-index: 5;
+  padding: clamp(1.5rem, 4vh, 2.5rem) clamp(1.25rem, 4vw, 2.5rem);
+  max-width: 42rem;
+  background: rgba(12, 16, 12, 0.85);
+  color: rgba(247, 244, 238, 0.9);
+}
+
+.kicker {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(212, 160, 84, 0.95);
+}
+
+.bannerTitle {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.55rem, 3.6vw, 2.25rem);
+  letter-spacing: 0.03em;
+}
+
+.meta {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(247, 244, 238, 0.55);
+}
+
+.meta strong {
+  color: rgba(247, 244, 238, 0.92);
+  font-weight: 600;
+}
+
+.scrollCue {
+  margin: 1rem 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(212, 160, 84, 0.95);
+}
+
+.irisTrack,
+.stackTrack {
+  position: relative;
+  width: 100%;
+}
+
+.irisPin,
+.stackPin {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #0c100c;
+}
+
+.irisZoom {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  transform-origin: 50% 48%;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  pointer-events: none;
+}
+
+.templeBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse 90% 55% at 50% 18%,
+      #7eb6d4 0%,
+      #4a7fa3 35%,
+      #2a4a38 62%,
+      #1a2e1c 100%
+    ),
+    linear-gradient(180deg, #6aa3c4 0%, #3d6b48 48%, #1c2e18 100%);
+}
+
+.templeBg::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 42%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(45, 90, 40, 0.55) 35%,
+    #2a4a28 70%,
+    #1a3018 100%
+  );
+}
+
+.window {
+  position: absolute;
+  top: var(--nest-inset-y);
+  right: var(--nest-inset-x);
+  bottom: var(--nest-inset-y);
+  left: var(--nest-inset-x);
+  border-radius: var(--nest-radius);
+  overflow: hidden;
+  box-shadow: var(--nest-shadow);
+  border: 1px solid rgba(255, 248, 232, 0.12);
+  will-change: transform;
+  transform-origin: center center;
+  backface-visibility: hidden;
+}
+
+.windowCase {
+  z-index: 1;
+  background: var(--panel-bg);
+}
+
+.windowIris {
+  z-index: 2;
+  will-change: clip-path;
+}
+
+.windowStudio {
+  z-index: 2;
+  background: #efe6d2;
+  box-shadow:
+    -20px 0 44px rgba(8, 10, 8, 0.28),
+    var(--nest-shadow);
+}
+
+.windowApplication {
+  z-index: 3;
+  background: #f7f1e4;
+  box-shadow:
+    0 -18px 44px rgba(8, 10, 8, 0.28),
+    var(--nest-shadow);
+}
+
+.panelInner {
+  height: 100%;
+  overflow: hidden;
+  padding: clamp(1.2rem, 3vh, 2.25rem) clamp(1.1rem, 3vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-sizing: border-box;
+}
+
+.panelInnerForm {
+  gap: 0.65rem;
+}
+
+.panelScroll {
+  flex: 1;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.panelLabel {
+  margin: 0;
+  flex-shrink: 0;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(28, 22, 16, 0.42);
+}
+
+.panelTitle {
+  margin: 0;
+  flex-shrink: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.45rem, 3.4vw, 2.35rem);
+  letter-spacing: 0.03em;
+}
+
+.panelBody {
+  margin: 0;
+  flex-shrink: 0;
+  max-width: 36rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: rgba(28, 22, 16, 0.62);
+}
+
+.panelEmail {
+  flex-shrink: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2.4vw, 1.55rem);
+  color: var(--nest-ink);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.panelEmail:hover {
+  color: rgba(28, 22, 16, 0.7);
+}
+
+.irisLogoWrap {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  z-index: 2;
+  pointer-events: none;
+  width: min(48vw, 18rem);
+  height: min(48vw, 18rem);
+  display: grid;
+  place-items: center;
+  will-change: transform, opacity;
+  filter: drop-shadow(0 0 36px rgba(255, 230, 180, 0.45))
+    drop-shadow(0 16px 48px rgba(0, 0, 0, 0.55));
+}
+
+.irisLogo {
+  position: relative;
+  z-index: 1;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.irisHint {
+  position: absolute;
+  bottom: calc(var(--nest-inset-y) + 1.25rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(247, 244, 238, 0.55);
+  pointer-events: none;
+}
+
+.mobileStack {
+  display: none;
+  flex-direction: column;
+}
+
+@media (max-width: 720px) {
+  .irisTrack,
+  .stackTrack {
+    display: none;
+  }
+
+  .mobileStack {
+    display: block;
+  }
+
+  .root {
+    background: var(--panel-bg);
+  }
+}

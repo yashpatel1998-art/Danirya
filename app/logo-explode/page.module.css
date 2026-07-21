@@ -1,0 +1,59 @@
+.page {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 42%, #2a2218 0%, #0c0a08 62%, #050403 100%);
+  color: #f2e6d4;
+}
+
+.stage {
+  position: relative;
+  min-height: 70dvh;
+  display: grid;
+  place-items: center;
+}
+
+.intact {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem 1.75rem;
+  border-top: 1px solid rgba(242, 230, 212, 0.12);
+}
+
+.hint {
+  margin: 0;
+  font-family: var(--font-body, system-ui);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  opacity: 0.72;
+  max-width: 28rem;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid rgba(242, 230, 212, 0.35);
+  background: rgba(242, 230, 212, 0.08);
+  color: inherit;
+  font-family: var(--font-body, system-ui);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  padding: 0.7rem 1.25rem;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.btn:hover {
+  background: rgba(242, 230, 212, 0.16);
+  border-color: rgba(242, 230, 212, 0.55);
+}

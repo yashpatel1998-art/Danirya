@@ -1,0 +1,88 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(4rem, 10vh, 7rem) clamp(1.5rem, 5vw, 3rem);
+  background: #000;
+  overflow: hidden;
+}
+
+.atmosphere {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 30%, rgba(212, 160, 84, 0.1) 0%, transparent 65%),
+    linear-gradient(to bottom, #000 0%, #0a0a0a 55%, #0a0f1a 100%);
+  pointer-events: none;
+}
+
+.mark {
+  position: absolute;
+  top: clamp(1.1rem, 3vw, 1.75rem);
+  left: clamp(1.1rem, 3vw, 1.75rem);
+  width: clamp(2.5rem, 5vw, 3.25rem);
+  height: auto;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  max-width: 28rem;
+  text-align: center;
+  display: grid;
+  gap: 1.1rem;
+  justify-items: center;
+}
+
+.kicker {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(212, 160, 84, 0.75);
+}
+
+.headline {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.copy {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  max-width: 34ch;
+}
+
+.home {
+  margin-top: 1.25rem;
+  display: inline-block;
+  padding: 0.9rem 1.75rem;
+  border: 1px solid rgba(212, 160, 84, 0.45);
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition:
+    background 0.3s var(--ease-premium),
+    border-color 0.3s var(--ease-premium),
+    color 0.3s var(--ease-premium);
+}
+
+.home:hover {
+  background: rgba(212, 160, 84, 0.12);
+  border-color: rgba(212, 160, 84, 0.8);
+  color: #f2e8d6;
+}

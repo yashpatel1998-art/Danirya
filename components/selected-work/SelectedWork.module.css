@@ -1,0 +1,33 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-black);
+}
+
+.inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 4rem 1.5rem;
+  max-width: 36rem;
+}
+
+.label {
+  font-family: var(--font-serif);
+  font-size: 0.6875rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+}

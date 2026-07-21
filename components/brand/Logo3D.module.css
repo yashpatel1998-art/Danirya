@@ -1,0 +1,93 @@
+.host {
+  position: relative;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  background: transparent;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.canvasShow {
+  opacity: 1;
+}
+
+.fallback {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: logoSpinY 14s linear infinite;
+  transform-style: preserve-3d;
+}
+
+/* Hard cut — no crossfade with WebGL (avoids double-logo overlap) */
+.fallbackHide {
+  display: none !important;
+}
+
+@keyframes logoSpinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.mark {
+  width: clamp(2.75rem, 6vw, 3.75rem);
+  height: clamp(2.75rem, 6vw, 3.75rem);
+  filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.55));
+}
+
+.hero {
+  /* Loading brand mark — hero-sized, fully inside the viewport */
+  width: min(60vmin, 22rem);
+  height: min(60vmin, 22rem);
+  filter: drop-shadow(0 16px 48px rgba(0, 0, 0, 0.55));
+}
+
+@media (max-width: 720px) {
+  .hero {
+    width: min(68vw, 17.5rem);
+    height: min(68vw, 17.5rem);
+  }
+}
+
+.follow {
+  width: min(38vw, 15rem);
+  height: min(38vw, 15rem);
+  margin-inline: auto;
+  filter: drop-shadow(0 16px 48px rgba(0, 0, 0, 0.35));
+}
+
+/* Document watermark — preserve gold rim; do not desaturate to flat grey */
+.document {
+  filter: contrast(1.06) saturate(1.08)
+    drop-shadow(0 10px 28px rgba(28, 22, 16, 0.18));
+}
+
+.document .fallback {
+  filter: contrast(1.1) saturate(1.05);
+}
+
+@media (max-width: 720px) {
+  .follow {
+    width: min(46vw, 11rem);
+    height: min(46vw, 11rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fallback {
+    animation: none;
+  }
+}

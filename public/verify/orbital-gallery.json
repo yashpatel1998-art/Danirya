@@ -1,0 +1,86 @@
+{
+  "samples": [
+    {
+      "i": 0,
+      "y": 5738.53125,
+      "ringTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "frontCaption": "Temple forecourt pylons under a starry s",
+      "label": "Forecourt",
+      "hasOrbitalLogo": true,
+      "pinned": true
+    },
+    {
+      "i": 1,
+      "y": 5958.53125,
+      "ringTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "frontCaption": "Temple forecourt pylons under a starry s",
+      "label": "Forecourt",
+      "hasOrbitalLogo": true,
+      "pinned": true
+    },
+    {
+      "i": 2,
+      "y": 6178.53125,
+      "ringTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "frontCaption": "Temple forecourt pylons under a starry s",
+      "label": "Forecourt",
+      "hasOrbitalLogo": true,
+      "pinned": true
+    },
+    {
+      "i": 3,
+      "y": 6398.53125,
+      "ringTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "frontCaption": "Temple forecourt pylons under a starry s",
+      "label": "Forecourt",
+      "hasOrbitalLogo": true,
+      "pinned": true
+    },
+    {
+      "i": 4,
+      "y": 6618.53125,
+      "ringTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "frontCaption": "Temple forecourt pylons under a starry s",
+      "label": "Forecourt",
+      "hasOrbitalLogo": true,
+      "pinned": true
+    },
+    {
+      "i": 5,
+      "y": 6838.53125,
+      "ringTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "frontCaption": "Temple forecourt pylons under a starry s",
+      "label": "Forecourt",
+      "hasOrbitalLogo": true,
+      "pinned": true
+    },
+    {
+      "i": 6,
+      "y": 7058.53125,
+      "ringTransform": "matrix3d(-0.513994, 0, -0.857794, 0, 0, 1, 0, 0, 0.857794, 0, -0.513994, 0, 0, 0, 0, 1)",
+      "frontCaption": "Hero logo beside sanctuary torch flame",
+      "label": "Logo & torch",
+      "hasOrbitalLogo": true,
+      "pinned": true
+    },
+    {
+      "i": 7,
+      "y": 7278.53125,
+      "ringTransform": "matrix3d(-0.78147, 0, -0.623943, 0, 0, 1, 0, 0, 0.623943, 0, -0.78147, 0, 0, 0, 0, 1)",
+      "frontCaption": "Hero logo beside sanctuary torch flame",
+      "label": "Logo & torch",
+      "hasOrbitalLogo": true,
+      "pinned": true
+    },
+    {
+      "i": 8,
+      "y": 7498.53125,
+      "ringTransform": "matrix3d(-0.950301, 0, -0.311332, 0, 0, 1, 0, 0, 0.311332, 0, -0.950301, 0, 0, 0, 0, 1)",
+      "frontCaption": "Chapel corridor between pylons",
+      "label": "Chapel",
+      "hasOrbitalLogo": true,
+      "pinned": true
+    }
+  ],
+  "scaleWarnings": []
+}

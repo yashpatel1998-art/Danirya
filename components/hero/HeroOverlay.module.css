@@ -1,0 +1,166 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+  padding: clamp(1.5rem, 4vw, 4rem);
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 72% 68% at 50% 48%,
+    transparent 42%,
+    rgba(0, 0, 0, 0.42) 100%
+  );
+  transition: opacity 0.45s var(--ease-premium);
+}
+
+.panel {
+  position: relative;
+  z-index: 1;
+  max-width: min(40rem, 92vw);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  will-change: opacity, transform, filter;
+}
+
+/* Bookend scale — Hero wordmark + Sanctuary CTA */
+.scaleBookend .wordmark {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(2.4rem, 7vw, 4.5rem);
+  letter-spacing: 0.14em;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.scaleBookend .positioning {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: var(--text-muted);
+  max-width: 28rem;
+}
+
+/* One step below bookends — Work / Studio */
+.scaleSection .title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.75rem, 4.5vw, 2.85rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.scaleSection .body {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  letter-spacing: 0.03em;
+  line-height: 1.55;
+  color: var(--text-muted);
+  max-width: 32rem;
+}
+
+.projectName {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.35rem, 3.2vw, 2rem);
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+}
+
+.projectOutcome {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: clamp(0.9rem, 1.6vw, 1.05rem);
+  color: var(--text-muted);
+  max-width: 26rem;
+}
+
+.projectCategory {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(212, 160, 84, 0.85);
+  margin-top: 0.35rem;
+}
+
+/* Light type on temple frames — no beige card floating on black */
+.sanctuaryMinimal {
+  gap: 1rem;
+}
+
+.sanctuaryLabel {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: rgba(242, 232, 214, 0.55);
+}
+
+.sanctuaryEmail {
+  pointer-events: auto;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212, 160, 84, 0.4);
+  padding-bottom: 0.12rem;
+}
+
+.sanctuaryEmail:hover {
+  color: #ecd06f;
+}
+
+.sanctuaryCta {
+  pointer-events: auto;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 1.1rem 2.6rem;
+  border-radius: 2px;
+  border: 1px solid rgba(212, 160, 84, 0.75);
+  background: rgba(212, 160, 84, 0.14);
+  color: #ecd06f;
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  transition:
+    background 0.3s var(--ease-premium),
+    border-color 0.3s var(--ease-premium);
+}
+
+.sanctuaryCta:hover {
+  background: rgba(212, 160, 84, 0.26);
+  border-color: #ecd06f;
+}
+
+@media (max-width: 540px) {
+  .scaleBookend .wordmark {
+    letter-spacing: 0.1em;
+  }
+
+  .scaleSection .title {
+    letter-spacing: 0.12em;
+  }
+}

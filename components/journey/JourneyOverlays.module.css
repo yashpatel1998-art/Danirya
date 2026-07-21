@@ -1,0 +1,114 @@
+.root {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(3rem, 8vh, 6rem) clamp(1.75rem, 6vw, 5rem)
+    clamp(4rem, 10vh, 7rem);
+  max-width: 42rem;
+  transition: opacity 0.2s linear;
+}
+
+.panelLab {
+  max-width: 48rem;
+}
+
+.panelApp {
+  max-width: none;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(2rem, 6vh, 4rem) clamp(1.25rem, 4vw, 3rem);
+}
+
+.label {
+  font-family: var(--font-serif);
+  font-size: 0.6875rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.copy {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  max-width: 28rem;
+}
+
+.labGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .labGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.labHead {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.labText {
+  font-family: var(--font-serif);
+  font-size: clamp(0.95rem, 1.8vw, 1.125rem);
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.final {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background: #000;
+  transition: opacity 0.25s linear;
+}
+
+.finalMark {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  letter-spacing: 0.35em;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.finalSub {
+  font-family: var(--font-serif);
+  font-size: 0.6875rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}

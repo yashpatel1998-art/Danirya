@@ -1,0 +1,101 @@
+/* Temple inscriptions — left typography overlay on the continuous scroll */
+
+.root {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.1rem;
+  padding: clamp(1.75rem, 5vh, 3.5rem) clamp(1.25rem, 4vw, 3.5rem);
+  padding-right: min(42vw, 28rem);
+  pointer-events: none;
+  /* Left-weighted scrim — temple stays open on the right */
+  background: radial-gradient(
+    ellipse 70% 70% at 18% 48%,
+    rgba(12, 10, 8, 0.58) 0%,
+    rgba(12, 10, 8, 0.22) 48%,
+    transparent 72%
+  );
+  visibility: hidden;
+  opacity: 0;
+}
+
+.label {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: clamp(0.68rem, 1.4vw, 0.8rem);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: rgba(247, 244, 238, 0.72);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.28rem;
+  max-width: min(28rem, 78vw);
+  text-align: left;
+}
+
+.line {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: clamp(1.05rem, 2.35vw, 1.45rem);
+  letter-spacing: 0.015em;
+  line-height: 1.5;
+  color: rgba(247, 244, 238, 0.94);
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.08),
+    0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.lineLead {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.85rem, 5vw, 3rem);
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #f7f4ee;
+  margin-bottom: 0.35rem;
+}
+
+.stanzaGap {
+  height: 0.85rem;
+  width: 1px;
+  pointer-events: none;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+@media (max-width: 540px) {
+  .root {
+    padding-right: clamp(1.25rem, 6vw, 2rem);
+    background: radial-gradient(
+      ellipse 90% 65% at 30% 48%,
+      rgba(12, 10, 8, 0.62) 0%,
+      rgba(12, 10, 8, 0.28) 55%,
+      transparent 78%
+    );
+  }
+
+  .line {
+    font-size: clamp(0.98rem, 4.2vw, 1.2rem);
+  }
+
+  .lineLead {
+    font-size: clamp(1.55rem, 9vw, 2.25rem);
+  }
+}

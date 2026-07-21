@@ -1,0 +1,209 @@
+{
+  "geometry": {
+    "count": 6,
+    "angles": [
+      0,
+      60,
+      120,
+      180,
+      240,
+      300
+    ],
+    "transforms": [
+      "rotateY(0deg) translateZ(436.477px)",
+      "rotateY(60deg) translateZ(436.477px)",
+      "rotateY(120deg) translateZ(436.477px)",
+      "rotateY(180deg) translateZ(436.477px)",
+      "rotateY(240deg) translateZ(436.477px)",
+      "rotateY(300deg) translateZ(436.477px)"
+    ],
+    "rects": [
+      {
+        "w": 697,
+        "h": 436,
+        "l": 371,
+        "r": 1069,
+        "t": 230,
+        "opacity": 1
+      },
+      {
+        "w": 131,
+        "h": 431,
+        "l": 1091,
+        "r": 1222,
+        "t": 232,
+        "opacity": 0.343211
+      },
+      {
+        "w": 297,
+        "h": 298,
+        "l": 918,
+        "r": 1214,
+        "t": 293,
+        "opacity": 0
+      },
+      {
+        "w": 366,
+        "h": 229,
+        "l": 537,
+        "r": 903,
+        "t": 325,
+        "opacity": 0
+      },
+      {
+        "w": 297,
+        "h": 298,
+        "l": 226,
+        "r": 522,
+        "t": 293,
+        "opacity": 0
+      },
+      {
+        "w": 131,
+        "h": 431,
+        "l": 218,
+        "r": 349,
+        "t": 232,
+        "opacity": 0.34172
+      }
+    ],
+    "overflow": {
+      "stage": "visible",
+      "scene": "visible",
+      "room": "visible"
+    },
+    "hasRingMarker": true,
+    "glassGone": true,
+    "clippedHard": false
+  },
+  "waveSamples": [
+    {
+      "i": 0,
+      "y": 4500,
+      "transform": "matrix(1, 0, 0, 1, 0, 678.6)",
+      "ty": 678.6,
+      "progress": "0.000"
+    },
+    {
+      "i": 1,
+      "y": 4612.5,
+      "transform": "matrix(1, 0, 0, 1, 0, 590.459)",
+      "ty": 590.459,
+      "progress": "0.105"
+    },
+    {
+      "i": 2,
+      "y": 4725,
+      "transform": "matrix(1, 0, 0, 1, 0, 503.106)",
+      "ty": 503.106,
+      "progress": "0.208"
+    },
+    {
+      "i": 3,
+      "y": 4837.5,
+      "transform": "matrix(1, 0, 0, 1, 0, 415.029)",
+      "ty": 415.029,
+      "progress": "0.313"
+    },
+    {
+      "i": 4,
+      "y": 4950,
+      "transform": "matrix(1, 0, 0, 1, 0, 327.6)",
+      "ty": 327.6,
+      "progress": "0.417"
+    },
+    {
+      "i": 5,
+      "y": 5062.5,
+      "transform": "matrix(1, 0, 0, 1, 0, 239.462)",
+      "ty": 239.462,
+      "progress": "0.521"
+    },
+    {
+      "i": 6,
+      "y": 5175,
+      "transform": "matrix(1, 0, 0, 1, 0, 152.102)",
+      "ty": 152.102,
+      "progress": "0.625"
+    },
+    {
+      "i": 7,
+      "y": 5287.5,
+      "transform": "matrix(1, 0, 0, 1, 0, 63.9616)",
+      "ty": 63.9616,
+      "progress": "0.730"
+    },
+    {
+      "i": 8,
+      "y": 5400,
+      "transform": "matrix(1, 0, 0, 1, 0, -23.3965)",
+      "ty": -23.3965,
+      "progress": "0.833"
+    }
+  ],
+  "ringSamples": [
+    {
+      "i": 0,
+      "y": 6648.53125,
+      "ringTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "frontCaption": "Forecourt",
+      "frontCount": 1
+    },
+    {
+      "i": 1,
+      "y": 6928.53125,
+      "ringTransform": "matrix3d(0.655813, 0, 0.754924, 0, 0, 1, 0, 0, -0.754924, 0, 0.655813, 0, 0, 0, 0, 1)",
+      "frontCaption": "Threshold",
+      "frontCount": 1
+    },
+    {
+      "i": 2,
+      "y": 7208.53125,
+      "ringTransform": "matrix3d(-0.172931, 0, 0.984934, 0, 0, 1, 0, 0, -0.984934, 0, -0.172931, 0, 0, 0, 0, 1)",
+      "frontCaption": "Hall",
+      "frontCount": 1
+    },
+    {
+      "i": 3,
+      "y": 7488.53125,
+      "ringTransform": "matrix3d(-0.873446, 0, 0.486921, 0, 0, 1, 0, 0, -0.486921, 0, -0.873446, 0, 0, 0, 0, 1)",
+      "frontCaption": "Chapel",
+      "frontCount": 1
+    },
+    {
+      "i": 4,
+      "y": 7768.53125,
+      "ringTransform": "matrix3d(-0.928676, 0, -0.370891, 0, 0, 1, 0, 0, 0.370891, 0, -0.928676, 0, 0, 0, 0, 1)",
+      "frontCaption": "Chapel",
+      "frontCount": 1
+    },
+    {
+      "i": 5,
+      "y": 8048.53125,
+      "ringTransform": "matrix3d(-0.297701, 0, -0.954659, 0, 0, 1, 0, 0, 0.954659, 0, -0.297701, 0, 0, 0, 0, 1)",
+      "frontCaption": "Logo & torch",
+      "frontCount": 1
+    },
+    {
+      "i": 6,
+      "y": 8328.53125,
+      "ringTransform": "matrix3d(0.553139, 0, -0.833089, 0, 0, 1, 0, 0, 0.833089, 0, 0.553139, 0, 0, 0, 0, 1)",
+      "frontCaption": "Sanctuary monument",
+      "frontCount": 1
+    },
+    {
+      "i": 7,
+      "y": 8608.53125,
+      "ringTransform": "matrix3d(0.995385, 0, -0.0959656, 0, 0, 1, 0, 0, 0.0959656, 0, 0.995385, 0, 0, 0, 0, 1)",
+      "frontCaption": "Forecourt",
+      "frontCount": 1
+    },
+    {
+      "i": 8,
+      "y": 8888.53125,
+      "ringTransform": "matrix3d(1, 0, -1.22173e-05, 0, 0, 1, 0, 0, 1.22173e-05, 0, 1, 0, 0, 0, 0, 1)",
+      "frontCaption": "Forecourt",
+      "frontCount": 1
+    }
+  ]
+}

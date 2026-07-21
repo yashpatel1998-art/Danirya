@@ -1,0 +1,70 @@
+{
+  "pinEnd": 4460,
+  "rooms": [
+    {
+      "target": {
+        "room": "forecourt",
+        "frame": 50
+      },
+      "frame": 47,
+      "room": "forecourt",
+      "visible": true,
+      "opacity": 1,
+      "label": "FORECOURT",
+      "wordCount": 5,
+      "wordsOpaque": 5
+    },
+    {
+      "target": {
+        "room": "threshold",
+        "frame": 154
+      },
+      "frame": 156,
+      "room": "threshold",
+      "visible": true,
+      "opacity": 1,
+      "label": "THRESHOLD",
+      "wordCount": 6,
+      "wordsOpaque": 6
+    },
+    {
+      "target": {
+        "room": "hall",
+        "frame": 277
+      },
+      "frame": 277,
+      "room": "hall",
+      "visible": true,
+      "opacity": 1,
+      "label": "HALL",
+      "wordCount": 7,
+      "wordsOpaque": 7
+    },
+    {
+      "target": {
+        "room": "chapel",
+        "frame": 443
+      },
+      "frame": 478,
+      "room": "chapel",
+      "visible": true,
+      "opacity": 1,
+      "label": "CHAPEL",
+      "wordCount": 7,
+      "wordsOpaque": 7
+    },
+    {
+      "target": {
+        "room": "sanctuary",
+        "frame": 680
+      },
+      "frame": 676,
+      "room": "sanctuary",
+      "visible": true,
+      "opacity": 1,
+      "label": "SANCTUARY",
+      "wordCount": 3,
+      "wordsOpaque": 3
+    }
+  ]
+}

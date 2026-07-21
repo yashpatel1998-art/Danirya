@@ -1,0 +1,39 @@
+.bridge {
+  position: relative;
+  height: 28vh;
+  min-height: 12rem;
+  margin-top: -1px;
+  background: var(--color-black);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.void {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      #000000 0%,
+      #000000 35%,
+      rgba(8, 8, 8, 0.98) 70%,
+      rgba(12, 11, 10, 0.92) 100%
+    );
+}
+
+.warmEdge {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 40% at 50% 100%,
+    rgba(196, 165, 116, 0.06) 0%,
+    transparent 68%
+  );
+  mix-blend-mode: screen;
+}
+
+@media (max-width: 540px) {
+  .bridge {
+    height: 22vh;
+  }
+}

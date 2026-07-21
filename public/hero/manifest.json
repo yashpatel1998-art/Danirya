@@ -1,0 +1,40 @@
+{
+  "version": "hero_video_delivery",
+  "architecture": "dual-codec-scroll-scrub",
+  "master": {
+    "path": "renders/master_hero_sequence/",
+    "format": "PNG RGB 16-bit",
+    "resolution": "3840x2160",
+    "frameCount": 280,
+    "fps": 24,
+    "servedToBrowser": false
+  },
+  "delivery": {
+    "durationSeconds": 11.667,
+    "resolution": "2560x1440",
+    "opening": "2s fade-in from pure black",
+    "primary": {
+      "file": "/hero/video/hero_1440p_h265.mp4",
+      "codec": "h265",
+      "crf": 18,
+      "preset": "slow",
+      "pixelFormat": "yuv420p10le",
+      "gop": 12,
+      "tag": "hvc1"
+    },
+    "fallback": {
+      "file": "/hero/video/hero_1440p_vp9.webm",
+      "codec": "vp9",
+      "crf": 22,
+      "pixelFormat": "yuv420p",
+      "gop": 12
+    },
+    "poster": "/hero/video/hero_poster.jpg"
+  },
+  "playback": {
+    "autoplay": false,
+    "scrollDriven": true,
+    "scrubLagSeconds": 0.85,
+    "chapters": "HERO_CINEMATIC_CHAPTERS"
+  }
+}

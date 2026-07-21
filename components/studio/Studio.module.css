@@ -1,0 +1,95 @@
+.room {
+  position: relative;
+  min-height: auto;
+  padding: clamp(5rem, 12vh, 8rem) clamp(1.75rem, 6vw, 5rem)
+    clamp(6rem, 14vh, 10rem);
+  background: transparent;
+  overflow: hidden;
+  color: var(--doc-ink, #1c1610);
+}
+
+.atmosphere {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 70% 45% at 50% 100%,
+    rgba(201, 169, 126, 0.22) 0%,
+    transparent 65%
+  );
+  pointer-events: none;
+  will-change: transform;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.label {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--doc-gold, #9a6b2f);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--doc-ink, #1c1610);
+  line-height: 1.1;
+}
+
+.body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: var(--doc-ink-muted, rgba(28, 22, 16, 0.62));
+  max-width: 38ch;
+}
+
+.typoBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.continue {
+  margin-top: 1.75rem;
+  display: inline-flex;
+  padding: 1rem 2.2rem;
+  border: 1px solid rgba(28, 22, 16, 0.3);
+  border-radius: 2px;
+  font-family: var(--font-serif);
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--doc-ink, #1c1610);
+  text-decoration: none;
+  transition: letter-spacing 0.3s var(--ease-premium);
+}
+
+.continue:hover {
+  letter-spacing: 0.3em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .continue {
+    transition: none;
+  }
+}

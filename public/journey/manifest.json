@@ -1,0 +1,29 @@
+{
+  "version": "monument_journey_delivery",
+  "architecture": "dual-codec-scroll-scrub",
+  "note": "Hero portal remains locked separate delivery. Journey continues from Blender frame 240.",
+  "source": {
+    "blend": "Danirya_Studio_Master.blend",
+    "script": "scripts/sprint1_monument_journey.py",
+    "render": "scripts/render_master_journey.py",
+    "frameStart": 240,
+    "frameEnd": 900,
+    "fps": 24
+  },
+  "transitions": {
+    "t01": "White atmospheric smoke Hero→Gallery (T01_LensSmokeWorld)",
+    "t02": "Architectural dust Gallery→Lab (T02_DustVolume + Gallery_Dust)",
+    "t03": "Warm calmer haze into Application (T03_WarmHaze)"
+  },
+  "delivery": {
+    "primary": "/journey/video/journey_1440p_h265.mp4",
+    "fallback": "/journey/video/journey_1440p_vp9.webm",
+    "poster": "/journey/video/journey_poster.jpg",
+    "gop": 12
+  },
+  "web": {
+    "component": "components/journey/Journey.tsx",
+    "hook": "hooks/useJourneyVideoPlayback.ts",
+    "heroLocked": true
+  }
+}

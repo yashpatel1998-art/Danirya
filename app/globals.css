@@ -1,0 +1,95 @@
+/* Locked type: Fraunces (display) + General Sans (body).
+ * Fonts load via <link> in layout.tsx — never @import here.
+ * tokens.css + lenis.css are imported from layout.tsx so the bundler
+ * cannot push remote @imports below style rules (Chrome Issues warning).
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  background: var(--color-black);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+body[data-page-tone='document'] {
+  background: var(--doc-bg, #e6dcc8);
+  color: var(--doc-ink, #1c1610);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Phase 2 — hide system cursor when custom cursor is active */
+html.has-custom-cursor,
+html.has-custom-cursor * {
+  cursor: none !important;
+}
+
+html.has-custom-cursor a {
+  transition: letter-spacing 0.35s var(--ease-premium);
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: rgba(212, 160, 84, 0.42);
+  color: #0a0a0a;
+}
+
+::-moz-selection {
+  background: rgba(212, 160, 84, 0.42);
+  color: #0a0a0a;
+}
+
+/*
+ * Branded scrollbar on document pages only (/apply, /work, 404).
+ * Home keeps Lenis-driven scroll — avoid fighting that setup with a body thumb.
+ */
+body[data-scroll-chrome='branded'] {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 160, 84, 0.55) #0a0a0a;
+}
+
+body[data-scroll-chrome='branded']::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body[data-scroll-chrome='branded']::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+body[data-scroll-chrome='branded']::-webkit-scrollbar-thumb {
+  background: rgba(212, 160, 84, 0.45);
+  border-radius: 999px;
+  border: 2px solid #0a0a0a;
+}
+
+body[data-scroll-chrome='branded']::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 160, 84, 0.7);
+}
