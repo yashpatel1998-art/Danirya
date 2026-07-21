@@ -6,8 +6,4 @@ public/hero/frames
 .tmp-*
 .tmp-open-qc
 lighthouse-*.json
-<<<<<<< HEAD
-"*.tsbuildinfo" 
-=======
 *.tsbuildinfo
->>>>>>> 53ed7fe5fbe221ca7357d155ad84b866995a96e7
