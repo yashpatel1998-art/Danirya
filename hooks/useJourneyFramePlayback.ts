@@ -25,6 +25,15 @@ const LOAD_CONCURRENCY_MOBILE = 4;
 /** 1 viewport of scroll intent ≈ 15% loader progress (~6.67 pages → 100%). */
 const SCROLL_LOAD_PERCENT_PER_PAGE = 0.15;
 
+/** Pin document + Lenis to top so loader scroll-intent cannot leak into the film. */
+function pinScrollToOpening(lenis: Lenis | null | undefined) {
+  if (typeof window === 'undefined') return;
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  lenis?.scrollTo(0, { immediate: true });
+}
+
 type JourneyFramePlaybackResult = {
   framesReady: boolean;
   firstPaintDone: boolean;
@@ -278,6 +287,8 @@ export function useJourneyFramePlayback({
       if (deltaY < 8) return;
       const vh = Math.max(1, window.innerHeight);
       scrollPages += deltaY / vh;
+      // Intent-only: keep real scroll pinned so the temple never opens mid-film.
+      pinScrollToOpening(lenisRef.current);
       publish(scrollPages);
     };
 
@@ -290,6 +301,7 @@ export function useJourneyFramePlayback({
     const onTouchStart = (e: TouchEvent) => {
       if (finished) return;
       touchY = e.touches[0]?.clientY ?? null;
+      pinScrollToOpening(lenisRef.current);
     };
 
     const onTouchMove = (e: TouchEvent) => {
@@ -390,6 +402,10 @@ export function useJourneyFramePlayback({
     const verifyModeBoot =
       typeof window !== 'undefined' &&
       new URLSearchParams(window.location.search).has('verify');
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    pinScrollToOpening(lenisRef.current);
     if (!verifyModeBoot) {
       document.documentElement.style.overflow = 'hidden';
       lenisRef.current?.stop();
@@ -459,12 +475,17 @@ export function useJourneyFramePlayback({
       setOpeningHeld(false);
       document.documentElement.style.overflow = prevOverflow;
       const smooth = lenisRef.current;
+      // Always leave the held opening from frame 0 — never resume a leaked /
+      // restored scrollY (that jumped fresh visits into the Studio hold).
+      pinScrollToOpening(smooth);
       smooth?.start();
-      // Same gesture that unlocks should begin the dive (Lenis missed it while stopped).
+      // Same gesture that unlocks should begin the dive from the forecourt.
       if (scrollNudge !== 0) {
-        const target = Math.max(0, (smooth?.animatedScroll ?? window.scrollY) + scrollNudge);
+        const target = Math.max(0, scrollNudge);
         requestAnimationFrame(() => {
+          pinScrollToOpening(smooth);
           smooth?.scrollTo(target, { immediate: false });
+          window.scrollTo(0, target);
         });
       }
       onDiveUnlockRef.current?.();
@@ -515,12 +536,14 @@ export function useJourneyFramePlayback({
         return;
       }
 
+      pinScrollToOpening(lenisRef.current);
       paintFrame(1);
       publishJourneyFrame(frame1ToPathIndex(1));
 
       timeline?.kill();
       timeline = createJourneyFrameTimeline({ track, pin });
       requestAnimationFrame(() => {
+        pinScrollToOpening(lenisRef.current);
         ScrollTrigger.refresh();
         paintFrame(1);
       });
@@ -537,6 +560,7 @@ export function useJourneyFramePlayback({
       } else {
         lenisRef.current?.stop();
         document.documentElement.style.overflow = 'hidden';
+        pinScrollToOpening(lenisRef.current);
         armUnlockListeners();
       }
 
@@ -633,6 +657,7 @@ export function useJourneyFramePlayback({
       setOpeningHeld(false);
       setFirstPaintDone(true);
       document.documentElement.style.overflow = prevOverflow;
+      pinScrollToOpening(lenisRef.current);
       lenisRef.current?.start();
       removeUnlock?.();
       removeUnlock = null;

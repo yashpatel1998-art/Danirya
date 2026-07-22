@@ -25,6 +25,13 @@ export function SmoothScroll({ children }: SmoothScrollProps) {
       '(prefers-reduced-motion: reduce)'
     ).matches;
 
+    // Prevent browser restoring a mid-temple scrollY from a prior visit —
+    // that made fresh loads open on the Studio hold inside the film.
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     if (prefersReducedMotion) return;
 
     const instance = new Lenis({
@@ -34,6 +41,7 @@ export function SmoothScroll({ children }: SmoothScrollProps) {
       wheelMultiplier: 1,
     });
 
+    instance.scrollTo(0, { immediate: true });
     setLenis(instance);
     // Test / verify scripts drive Lenis through this handle (scrollTo, not native scrollTop).
     (window as Window & { __lenis?: Lenis }).__lenis = instance;

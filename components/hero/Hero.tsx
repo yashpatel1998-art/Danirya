@@ -125,9 +125,14 @@ export const Hero = memo(function Hero() {
       setBlastDone(true);
       setLoaderGone(true);
       document.documentElement.style.overflow = '';
-      (
-        window as Window & { __lenis?: { start: () => void } }
-      ).__lenis?.start();
+      window.scrollTo(0, 0);
+      const smooth = (
+        window as Window & {
+          __lenis?: { start: () => void; scrollTo: (y: number, opts?: { immediate?: boolean }) => void };
+        }
+      ).__lenis;
+      smooth?.scrollTo(0, { immediate: true });
+      smooth?.start();
     }, 16000);
     return () => clearTimeout(id);
   }, []);
