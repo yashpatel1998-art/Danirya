@@ -18,6 +18,11 @@ export type SnapPathConfig = {
    * Production Hero keeps this false — sky-ascend is the final beat.
    */
   loopAtEnd?: boolean;
+  /**
+   * Opening stop (default 0). Used for return-position restore so boot
+   * does not flash holdGate(0) before jumping.
+   */
+  initialIndex?: number;
 };
 
 export type SnapControllerHandlers = {
@@ -36,6 +41,12 @@ export type SnapController = {
   getFrame1: () => number;
   /** One gesture advance — discarded entirely while phase !== 'idle'. */
   advance: () => void;
+  /**
+   * Seek to a stop without replaying travels 0→N.
+   * Emits freeze frame and runs the same holdGate arrival as normal advance
+   * (statue → typology/lens enter; passage → idle).
+   */
+  jumpTo: (index: number) => void;
   destroy: () => void;
 };
 
@@ -44,6 +55,7 @@ const DEFAULT_PATH: SnapPathConfig = {
   frameCount: LAB_SNAP_FRAME_COUNT,
   travelFps: LAB_SNAP_TRAVEL_FPS,
   loopAtEnd: false,
+  initialIndex: 0,
 };
 
 /**
@@ -151,14 +163,33 @@ export function createSnapController(
     runTravel(pointIndex + 1);
   };
 
+  const jumpTo = (index: number) => {
+    if (destroyed) return;
+    if (!Number.isInteger(index) || index < 0 || index >= points.length) {
+      return;
+    }
+    if (rafId) {
+      cancelAnimationFrame(rafId);
+      rafId = 0;
+    }
+    beginHoldGate(index);
+  };
+
+  const startIndex = (() => {
+    const raw = cfg.initialIndex ?? 0;
+    if (!Number.isInteger(raw) || raw < 0 || raw >= points.length) return 0;
+    return raw;
+  })();
+
   // Opening freeze goes through the statue hold gate (typology unlock).
-  beginHoldGate(0);
+  beginHoldGate(startIndex);
 
   return {
     getPhase: () => phase,
     getPointIndex: () => pointIndex,
     getFrame1: () => frame1,
     advance,
+    jumpTo,
     destroy: () => {
       destroyed = true;
       if (rafId) cancelAnimationFrame(rafId);

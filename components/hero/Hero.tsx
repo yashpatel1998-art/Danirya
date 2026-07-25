@@ -63,6 +63,7 @@ export const Hero = memo(function Hero() {
     firstPaintDone,
     loadProgress,
     openingHeld,
+    restorePending,
     phase,
     pointIndex,
     frame1,
@@ -77,6 +78,7 @@ export const Hero = memo(function Hero() {
     onDiveUnlock,
     handoffReady,
     // Dive only after loader blast + fade — logo never rides the frame camera.
+    // Restore path self-arms inside the hook once frames are warm.
     diveArmed: loaderGone || verifyFast,
   });
 
@@ -98,6 +100,7 @@ export const Hero = memo(function Hero() {
         framesReady: boolean;
         loaderGone: boolean;
         firstPaintDone: boolean;
+        restorePending?: boolean;
       };
     };
     const prev = w.__HERO_SNAP_DEBUG__;
@@ -110,12 +113,13 @@ export const Hero = memo(function Hero() {
       statueId: prev?.statueId ?? typologyPoint?.statueId ?? null,
       masterFrame: prev?.masterFrame ?? typologyPoint?.masterFrame ?? null,
       typologyMode: typologyMode,
-      snapArmed: !openingHeld && (loaderGone || verifyFast),
+      snapArmed: !openingHeld && (loaderGone || verifyFast || restorePending),
       openingHeld,
       loadProgress,
       framesReady,
       loaderGone,
       firstPaintDone,
+      restorePending,
     };
   }, [
     phase,
@@ -129,13 +133,17 @@ export const Hero = memo(function Hero() {
     loaderGone,
     firstPaintDone,
     verifyFast,
+    restorePending,
   ]);
 
   // Blast as soon as frames + scroll-load are done — don't wait on audio decode.
+  // Return-position restore skips scroll-loader + blast entirely.
   const readyToBlast =
-    verifyFast || (framesReady && fontsReady && loadProgress >= 1);
+    verifyFast ||
+    restorePending ||
+    (framesReady && fontsReady && loadProgress >= 1);
   const showScrollCue =
-    loaderGone && firstPaintDone && openingHeld;
+    loaderGone && firstPaintDone && openingHeld && !restorePending;
 
   const onBlastComplete = useCallback(() => {
     setBlastDone(true);
@@ -144,12 +152,15 @@ export const Hero = memo(function Hero() {
   const onLoaderGone = useCallback(() => setLoaderGone(true), []);
 
   useEffect(() => {
-    const fast = new URLSearchParams(window.location.search).has('verify');
-    if (!fast) return;
-    setVerifyFast(true);
-    setBlastDone(true);
-    setLoaderGone(true);
-  }, []);
+    const params = new URLSearchParams(window.location.search);
+    const fast = params.has('verify');
+    if (fast) setVerifyFast(true);
+    // Restore / verify: dismiss loader immediately (no scroll-intent + no blast).
+    if (fast || restorePending) {
+      setBlastDone(true);
+      setLoaderGone(true);
+    }
+  }, [restorePending]);
 
   // If the mark exit never finishes, don't leave the loader up forever.
   useEffect(() => {
@@ -210,7 +221,7 @@ export const Hero = memo(function Hero() {
       aria-label="Hero"
       data-cursor-scroll
       data-hero-snap="1"
-      data-dive-armed={loaderGone ? 'true' : 'false'}
+      data-dive-armed={loaderGone || restorePending ? 'true' : 'false'}
       data-opening-held={openingHeld ? 'true' : 'false'}
       data-hero-phase={phase}
       data-hero-frame={String(frame1)}

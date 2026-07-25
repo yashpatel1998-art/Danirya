@@ -1,6 +1,7 @@
 'use client';
 
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { usePathname, useRouter } from 'next/navigation';
 import {
   createContext,
@@ -11,21 +12,32 @@ import {
   useRef,
   type ReactNode,
 } from 'react';
+import { captureActiveTempleSnap } from '@/lib/lab/snap/templeSnapRestore';
 import {
   playMarkSignatureEnter,
   prefersReducedMotion,
 } from '@/lib/transition/playMarkSignature';
 import styles from './RouteTransition.module.css';
 
-const MARK_SRC = '/brand/danirya-mark.png';
+gsap.registerPlugin(ScrollTrigger);
+
+const MARK_SRC = '/brand/gf-mark.svg';
 const EXIT_S = 0.42;
 
-const BRIDGED = new Set(['/', '/apply', '/work']);
+const BRIDGED = new Set(['/', '/apply', '/work', '/studio']);
+/** Document exits from the temple — persist active snap stop for return restore. */
+const TEMPLE_EXITS = new Set(['/apply', '/work', '/studio']);
 
 type BridgeApi = {
   /** Play the logo veil, then navigate. */
   go: (href: string) => void;
 };
+
+function maybePersistTempleSnap(from: string, dest: string) {
+  if (from !== '/') return;
+  if (!TEMPLE_EXITS.has(dest)) return;
+  captureActiveTempleSnap(dest);
+}
 
 const BridgeContext = createContext<BridgeApi | null>(null);
 
@@ -68,6 +80,23 @@ export function RouteTransition({ children }: { children: ReactNode }) {
     document.body.dataset.pageTone = pathname === '/' ? 'temple' : 'document';
   }, [pathname]);
 
+  // Phase 2 separate pages share one Lenis instance from the root layout.
+  // Without a reset, leaving the temple at ~500vh lands /work mid-Jesko
+  // (animation looks "gone") and returning home can reopen mid-film.
+  useEffect(() => {
+    if (!mountedRef.current) return;
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    const smooth = (
+      window as Window & {
+        __lenis?: { scrollTo: (y: number, opts?: { immediate?: boolean }) => void };
+      }
+    ).__lenis;
+    smooth?.scrollTo(0, { immediate: true });
+    requestAnimationFrame(() => ScrollTrigger.refresh());
+  }, [pathname]);
+
   const playEnter = useCallback(() => {
     const overlay = overlayRef.current;
     const mark = markRef.current;
@@ -81,6 +110,8 @@ export function RouteTransition({ children }: { children: ReactNode }) {
       mark,
       onComplete: () => {
         busyRef.current = false;
+        // Jesko / section pins measure after the veil lifts.
+        ScrollTrigger.refresh();
       },
     });
   }, []);
@@ -88,6 +119,10 @@ export function RouteTransition({ children }: { children: ReactNode }) {
   const runExitThenNavigate = useCallback(
     (dest: string) => {
       if (busyRef.current) return;
+      const from = pathRef.current.replace(/\/$/, '') || '/';
+      // Mid-journey leave: capture live stop before the veil navigates away.
+      maybePersistTempleSnap(from, dest);
+
       const overlay = overlayRef.current;
       const mark = markRef.current;
 

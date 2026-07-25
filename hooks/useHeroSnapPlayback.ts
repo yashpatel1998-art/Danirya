@@ -11,6 +11,11 @@ import {
   LAB_SNAP_POINTS,
   type LabSnapPoint,
 } from '@/lib/lab/snap/stubPath';
+import {
+  latchTempleSnapRestoreForBoot,
+  publishTempleSnapLive,
+  type TempleSnapRestoreV1,
+} from '@/lib/lab/snap/templeSnapRestore';
 import { frame1ToPathIndex } from '@/lib/journey/frames';
 import { publishJourneyFrame } from '@/lib/journey/frameBus';
 import {
@@ -76,6 +81,11 @@ export type HeroSnapPlaybackResult = {
   loadProgress: number;
   /** True until snap controller arms after loader / dive unlock. */
   openingHeld: boolean;
+  /**
+   * Valid return-position restore pending — skip scroll-loader + blast;
+   * warm + jump to the saved stop.
+   */
+  restorePending: boolean;
   phase: SnapPhase;
   pointIndex: number;
   frame1: number;
@@ -107,13 +117,23 @@ export function useHeroSnapPlayback({
   handoffReady = true,
   diveArmed = false,
 }: Options): HeroSnapPlaybackResult {
+  const [restoreTarget] = useState<TempleSnapRestoreV1 | null>(() =>
+    typeof window === 'undefined' ? null : latchTempleSnapRestoreForBoot()
+  );
+  const restorePending = restoreTarget != null;
+  const restoreIndex = restoreTarget?.pointIndex ?? 0;
+  const restoreFrame1 =
+    LAB_SNAP_POINTS[restoreIndex]?.frame ?? LAB_SNAP_POINTS[0]?.frame ?? 1;
+
   const [framesReady, setFramesReady] = useState(false);
   const [firstPaintDone, setFirstPaintDone] = useState(false);
-  const [loadProgress, setLoadProgress] = useState(0);
+  const [loadProgress, setLoadProgress] = useState(() =>
+    restorePending ? 1 : 0
+  );
   const [openingHeld, setOpeningHeld] = useState(true);
   const [phase, setPhase] = useState<SnapPhase>('idle');
-  const [pointIndex, setPointIndex] = useState(0);
-  const [frame1, setFrame1] = useState(LAB_SNAP_POINTS[0]?.frame ?? 1);
+  const [pointIndex, setPointIndex] = useState(restoreIndex);
+  const [frame1, setFrame1] = useState(restoreFrame1);
   const [typologyPoint, setTypologyPoint] = useState<LabSnapPoint | null>(null);
   const [typologyMode, setTypologyMode] =
     useState<LabSnapTypologyMode>('enter');
@@ -123,7 +143,7 @@ export function useHeroSnapPlayback({
   const handoffReadyRef = useRef(handoffReady);
   const diveArmedRef = useRef(diveArmed);
   const framesReadyRef = useRef(false);
-  const loadProgressRef = useRef(0);
+  const loadProgressRef = useRef(restorePending ? 1 : 0);
   const endScrollCaptureRef = useRef<(() => void) | null>(null);
   const unlockHoldRef = useRef<(() => void) | null>(null);
   const exitingStopIdRef = useRef<string | null>(null);
@@ -138,7 +158,14 @@ export function useHeroSnapPlayback({
   loadProgressRef.current = loadProgress;
 
   // Scroll intent drives loader % (assets preload separately).
+  // Restore path skips scroll-loader entirely.
   useEffect(() => {
+    if (restorePending) {
+      loadProgressRef.current = 1;
+      setLoadProgress(1);
+      return;
+    }
+
     let scrollPages = 0;
     let touchY: number | null = null;
     let finished = false;
@@ -256,7 +283,7 @@ export function useHeroSnapPlayback({
       endScrollCaptureRef.current = null;
       teardown();
     };
-  }, []);
+  }, [restorePending]);
 
   useEffect(() => {
     if (!framesReady) return;
@@ -278,7 +305,10 @@ export function useHeroSnapPlayback({
     let removeResize: (() => void) | null = null;
     const frameStride = resolveFrameStride();
     const windowCfg = resolveSlidingWindowConfig(frameStride);
-    const openingFrame1 = LAB_SNAP_POINTS[0]?.frame ?? 1;
+    // Restore warms the saved freeze; cold boot warms lying Hanuman (not f1).
+    const warmFrame1 = restorePending
+      ? restoreFrame1
+      : (LAB_SNAP_POINTS[0]?.frame ?? 1);
 
     const prevOverflow = document.documentElement.style.overflow;
     const verifyModeBoot =
@@ -288,7 +318,7 @@ export function useHeroSnapPlayback({
       history.scrollRestoration = 'manual';
     }
     pinScrollToOpening(lenisRef.current);
-    if (!verifyModeBoot) {
+    if (!verifyModeBoot || restorePending) {
       document.documentElement.style.overflow = 'hidden';
       lenisRef.current?.stop();
     }
@@ -392,10 +422,10 @@ export function useHeroSnapPlayback({
     const bootId = window.setTimeout(() => {
       void (async () => {
         cache = createSlidingFrameCache(windowCfg);
-        // Warm around first snap freeze (lying Hanuman), not frame 1 title island.
-        await cache.ensureWindow(openingFrame1, () => active);
+        // Warm around opening freeze (or restored stop) — confirm resident paint.
+        await cache.ensureWindow(warmFrame1, () => active);
         if (!active) return;
-        const warmed = cache.lookup(openingFrame1).source;
+        const warmed = cache.lookup(warmFrame1).source;
         if (!warmed) {
           console.error('[hero-snap] preload failed; releasing opening hold');
           framesReadyRef.current = true;
@@ -405,8 +435,8 @@ export function useHeroSnapPlayback({
           endScrollCaptureRef.current?.();
           return;
         }
-        paintFrame(openingFrame1);
-        publishJourneyFrame(frame1ToPathIndex(openingFrame1));
+        paintFrame(warmFrame1);
+        publishJourneyFrame(frame1ToPathIndex(warmFrame1));
         framesReadyRef.current = true;
         setFramesReady(true);
       })();
@@ -445,7 +475,7 @@ export function useHeroSnapPlayback({
     };
     // frame1 only used for resize repaint seed; paint driven by snap effect.
     // eslint-disable-next-line react-hooks/exhaustive-deps -- mount-once cache
-  }, [canvasRef, pinRef]);
+  }, [canvasRef, pinRef, restorePending, restoreFrame1]);
 
   // Latch once ready so loadProgress/handoff flaps don't remount the controller.
   const [snapArmed, setSnapArmed] = useState(false);
@@ -456,10 +486,10 @@ export function useHeroSnapPlayback({
     const canArm =
       framesReady &&
       handoffReady &&
-      diveArmed &&
-      (verifyMode || loadProgress >= 1);
+      (diveArmed || restorePending) &&
+      (verifyMode || restorePending || loadProgress >= 1);
     if (canArm) setSnapArmed(true);
-  }, [framesReady, handoffReady, diveArmed, loadProgress]);
+  }, [framesReady, handoffReady, diveArmed, loadProgress, restorePending]);
 
   // Snap controller — arms after loader dive unlock (not continuous scrub).
   useEffect(() => {
@@ -491,9 +521,9 @@ export function useHeroSnapPlayback({
     ) => {
       if (typeof window === 'undefined') return;
       const point = LAB_SNAP_POINTS[patch.pointIndex];
+      const stopId = patch.stopId ?? point?.id ?? null;
       const w = window as Window & { __HERO_SNAP_DEBUG__?: HeroSnapDebug };
       w.__HERO_SNAP_DEBUG__ = {
-        stopId: point?.id ?? null,
         kind: point?.kind ?? null,
         statueId: point?.statueId ?? null,
         masterFrame: point?.masterFrame ?? null,
@@ -501,64 +531,85 @@ export function useHeroSnapPlayback({
         snapArmed: true,
         openingHeld: false,
         ...patch,
+        stopId,
       };
+      publishTempleSnapLive({
+        pointIndex: patch.pointIndex,
+        stopId,
+      });
     };
 
     const resolvedStride = resolveLabSnapStride();
+    const bootIndex = restorePending ? restoreIndex : 0;
     let livePhase: SnapPhase = 'idle';
-    let livePointIndex = 0;
-    let liveFrame1 = LAB_SNAP_POINTS[0]?.frame ?? 1;
+    let livePointIndex = bootIndex;
+    let liveFrame1 =
+      LAB_SNAP_POINTS[bootIndex]?.frame ?? LAB_SNAP_POINTS[0]?.frame ?? 1;
 
-    const controller = createSnapController(resolvedStride, {
-      onFrame: (f) => {
-        liveFrame1 = f;
-        setFrame1(f);
-        publishJourneyFrame(frame1ToPathIndex(f));
-        scheduleWindowRef.current(f);
-        paintFrameRef.current(f);
-        publishDebug({
-          phase: livePhase,
-          pointIndex: livePointIndex,
-          frame1: f,
-        });
-      },
-      onPhase: (p, idx) => {
-        livePhase = p;
-        livePointIndex = idx;
-        setPhase(p);
-        setPointIndex(idx);
-        publishDebug({
-          phase: p,
-          pointIndex: idx,
-          frame1: liveFrame1,
-          typologyMode: p === 'traveling' ? 'exit' : null,
-        });
-        if (p === 'traveling') {
-          setTypologyPoint((pt) => {
-            exitingStopIdRef.current = pt?.id ?? null;
-            return pt;
+    const controller = createSnapController(
+      resolvedStride,
+      {
+        onFrame: (f) => {
+          liveFrame1 = f;
+          setFrame1(f);
+          publishJourneyFrame(frame1ToPathIndex(f));
+          scheduleWindowRef.current(f);
+          paintFrameRef.current(f);
+          publishDebug({
+            phase: livePhase,
+            pointIndex: livePointIndex,
+            frame1: f,
           });
-          setTypologyMode((mode) => (mode === 'exit' ? mode : 'exit'));
-          unlockHoldRef.current = null;
-        }
+        },
+        onPhase: (p, idx) => {
+          livePhase = p;
+          livePointIndex = idx;
+          setPhase(p);
+          setPointIndex(idx);
+          publishDebug({
+            phase: p,
+            pointIndex: idx,
+            frame1: liveFrame1,
+            typologyMode: p === 'traveling' ? 'exit' : null,
+          });
+          if (p === 'traveling') {
+            setTypologyPoint((pt) => {
+              exitingStopIdRef.current = pt?.id ?? null;
+              return pt;
+            });
+            setTypologyMode((mode) => (mode === 'exit' ? mode : 'exit'));
+            unlockHoldRef.current = null;
+          }
+        },
+        onHoldGate: (point, complete) => {
+          exitingStopIdRef.current = null;
+          unlockHoldRef.current = complete;
+          setTypologyPoint(point);
+          setTypologyMode('enter');
+          publishDebug({
+            phase: 'holdGate',
+            pointIndex: livePointIndex,
+            frame1: liveFrame1,
+            typologyMode: 'enter',
+            stopId: point.id,
+            kind: point.kind,
+            statueId: point.statueId,
+            masterFrame: point.masterFrame,
+          });
+        },
       },
-      onHoldGate: (point, complete) => {
-        exitingStopIdRef.current = null;
-        unlockHoldRef.current = complete;
-        setTypologyPoint(point);
-        setTypologyMode('enter');
-        publishDebug({
-          phase: 'holdGate',
-          pointIndex: livePointIndex,
-          frame1: liveFrame1,
-          typologyMode: 'enter',
-          stopId: point.id,
-          kind: point.kind,
-          statueId: point.statueId,
-          masterFrame: point.masterFrame,
-        });
-      },
-    });
+      { initialIndex: bootIndex }
+    );
+
+    // Restore: confirm resident freeze, then jumpTo (idempotent with initialIndex).
+    // Storage was already consumed into the boot latch; latch resets on next leave-write.
+    if (restorePending && restoreTarget) {
+      const targetFrame =
+        LAB_SNAP_POINTS[restoreTarget.pointIndex]?.frame ?? restoreFrame1;
+      scheduleWindowRef.current(targetFrame);
+      paintFrameRef.current(targetFrame);
+      controller.jumpTo(restoreTarget.pointIndex);
+    }
 
     let touchY: number | null = null;
     let touchAcc = 0;
@@ -672,6 +723,7 @@ export function useHeroSnapPlayback({
     firstPaintDone,
     loadProgress,
     openingHeld,
+    restorePending,
     phase,
     pointIndex,
     frame1,

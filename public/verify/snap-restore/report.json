@@ -1,0 +1,90 @@
+{
+  "base": "http://localhost:3000/",
+  "target": {
+    "pointIndex": 1,
+    "id": "standing-hanuman",
+    "masterFrame": 430,
+    "statueId": "standing-hanuman"
+  },
+  "checks": {
+    "staleStopIdCleared": true,
+    "staleFellBackStop0": true,
+    "reachedTargetBeforeLeave": {
+      "pointIndex": 1,
+      "id": "standing-hanuman",
+      "frame1": 430,
+      "phase": "idle",
+      "typo": "hold",
+      "lensVisible": true
+    },
+    "storageAfterLeave": {
+      "v": 1,
+      "pointIndex": 1,
+      "stopId": "standing-hanuman",
+      "writtenAt": 1785017545454,
+      "exitHref": "/work"
+    },
+    "restoredDebug": {
+      "phase": "holdGate",
+      "typo": "enter",
+      "pointIndex": 1,
+      "id": "standing-hanuman",
+      "kind": "statue",
+      "statue": "standing-hanuman",
+      "frame1": 430,
+      "masterFrame": 430,
+      "snapArmed": true,
+      "openingHeld": false,
+      "diveArmed": true,
+      "loadProgress": 1,
+      "framesReady": true,
+      "loaderGone": true,
+      "firstPaintDone": true,
+      "restorePending": true,
+      "lensVisible": true,
+      "lensSrc": "/lab/snap/lenses/02_standing_hanuman.png",
+      "eyebrow": "STANDING HANUMAN",
+      "paint": {
+        "req": 430,
+        "drawn": 430,
+        "kind": "exact"
+      },
+      "resident": 109
+    },
+    "loaderSkipped": true,
+    "frameMatch": true,
+    "typologyEnterOrHold": true,
+    "lensVisible": true,
+    "storageClearedAfterRestore": true,
+    "canvas": {
+      "meanR": 158.67055555555555,
+      "meanG": 133.02138888888888,
+      "meanB": 111.71055555555556,
+      "blackRatio": 0,
+      "w": 160,
+      "h": 90
+    },
+    "notBlankPaint": true,
+    "reachedShiva": {
+      "pointIndex": 2,
+      "id": "shiva",
+      "frame1": 530
+    },
+    "storageShiva": {
+      "v": 1,
+      "pointIndex": 2,
+      "stopId": "shiva",
+      "writtenAt": 1785017555341,
+      "exitHref": "/work"
+    },
+    "restoredShiva": {
+      "pointIndex": 2,
+      "id": "shiva",
+      "frame1": 530,
+      "typo": "enter",
+      "lensVisible": true
+    }
+  },
+  "pass": true,
+  "error": null
+}

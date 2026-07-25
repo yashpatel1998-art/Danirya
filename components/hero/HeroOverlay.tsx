@@ -8,6 +8,7 @@ import {
 } from '@/lib/camera/roomTypography';
 import { SANCTUARY_COPY } from '@/lib/content/sectionCopy';
 import { MOTION } from '@/lib/constants/motion';
+import { captureActiveTempleSnap } from '@/lib/lab/snap/templeSnapRestore';
 import { subscribeJourneyFrame } from '@/lib/journey/frameBus';
 import { prefersReducedMotion } from '@/lib/motion/prefersReducedMotion';
 import { EntranceBrandOverlay } from '@/components/hero/EntranceBrandOverlay';
@@ -190,6 +191,10 @@ export function HeroOverlay({
                   data-magnetic
                   data-cursor="enter"
                   data-cursor-label={exit.cursorLabel}
+                  onClick={() => {
+                    // Persist active sanctuary stop before RouteTransition bridges away.
+                    captureActiveTempleSnap(exit.href);
+                  }}
                 >
                   {exit.label}
                 </a>
