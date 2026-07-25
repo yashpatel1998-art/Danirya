@@ -12,6 +12,7 @@ import {
   useRef,
   type ReactNode,
 } from 'react';
+import { Logo3D } from '@/components/brand/Logo3D';
 import { captureActiveTempleSnap } from '@/lib/lab/snap/templeSnapRestore';
 import {
   playMarkSignatureEnter,
@@ -21,7 +22,6 @@ import styles from './RouteTransition.module.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const MARK_SRC = '/brand/gf-mark.svg';
 const EXIT_S = 0.42;
 
 const BRIDGED = new Set(['/', '/apply', '/work', '/studio']);
@@ -61,7 +61,7 @@ function shouldBridge(from: string, to: string): boolean {
 }
 
 /**
- * Near-black → gold logo mark → arrive — route navigations only.
+ * Near-black → Meshy 3D logo → arrive — route navigations only.
  * Do NOT fire on continuous-scroll section boundaries (that caused the
  * black-screen + logo flash while scrolling Work → Studio / Apply).
  */
@@ -69,7 +69,7 @@ export function RouteTransition({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const overlayRef = useRef<HTMLDivElement>(null);
-  const markRef = useRef<HTMLImageElement>(null);
+  const markRef = useRef<HTMLDivElement>(null);
   const busyRef = useRef(false);
   const pendingEnterRef = useRef(false);
   const pathRef = useRef(pathname);
@@ -242,16 +242,9 @@ export function RouteTransition({ children }: { children: ReactNode }) {
         data-mark-signature
         aria-hidden
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          ref={markRef}
-          src={MARK_SRC}
-          alt=""
-          width={280}
-          height={280}
-          className={styles.mark}
-          draggable={false}
-        />
+        <div ref={markRef} className={styles.mark}>
+          <Logo3D variant="hero" spin={0.55} className={styles.logo3d} />
+        </div>
       </div>
     </BridgeContext.Provider>
   );

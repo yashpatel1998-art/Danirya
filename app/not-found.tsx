@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Logo3D } from '@/components/brand/Logo3D';
 import { PAGE_TITLES } from '@/lib/content/pageTitles';
 import styles from '@/components/shared/NotFound.module.css';
 
@@ -12,14 +13,9 @@ export default function NotFound() {
   return (
     <main className={styles.page}>
       <div className={styles.atmosphere} aria-hidden />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/brand/danirya-mark.png"
-        alt=""
-        width={72}
-        height={72}
-        className={styles.mark}
-      />
+      <div className={styles.mark} aria-hidden>
+        <Logo3D variant="mark" spin={0.35} />
+      </div>
       <div className={styles.inner}>
         <p className={styles.kicker}>404</p>
         <h1 className={styles.headline}>This path does not open.</h1>

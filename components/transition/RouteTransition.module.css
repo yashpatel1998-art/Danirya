@@ -12,15 +12,19 @@
 
 .mark {
   width: min(48vw, 16rem);
-  height: auto;
-  aspect-ratio: 1;
-  object-fit: contain;
+  height: min(48vw, 16rem);
   opacity: 0;
   /* scaleX/Y — avoid GSAP shorthand scale reset warnings */
   transform: scaleX(0.88) scaleY(0.88);
   filter: drop-shadow(0 16px 48px rgba(0, 0, 0, 0.65));
   user-select: none;
   pointer-events: none;
+}
+
+.logo3d {
+  width: 100% !important;
+  height: 100% !important;
+  filter: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

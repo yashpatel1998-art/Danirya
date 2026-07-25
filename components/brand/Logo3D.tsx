@@ -1,12 +1,11 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { cloneLogoScene, normalizeLogo } from '@/lib/brand/loadLogoGltf';
 import { addHeroLogoLights } from '@/lib/brand/logoLights';
-import { LOGO_MARK_PNG } from '@/lib/brand/logoUrl';
 import styles from './Logo3D.module.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -37,7 +36,7 @@ type Logo3DProps = {
 };
 
 /**
- * Meshy GLB logo (danirya-logo.glb) — Y-spin + optional scroll-linked yaw.
+ * Meshy GLB logo (gf-logo.glb) — Y-spin + optional scroll-linked yaw.
  * Follow/hero never use the flat PNG mark. Temple pedestal bake is never touched.
  */
 export function Logo3D({
@@ -56,7 +55,6 @@ export function Logo3D({
   const hostRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const scrollYawRef = useRef(0);
-  const [webglReady, setWebglReady] = useState(false);
 
   useEffect(() => {
     const host = hostRef.current;
@@ -169,18 +167,17 @@ export function Logo3D({
       try {
         const logo = await cloneLogoScene();
         if (disposed) return;
-        // Hero fills the loader stage; mark/follow stay compact
+        // GF monogram is wider than the old D — slightly smaller targets avoid clip.
         const target =
-          variant === 'mark' ? 1.15 : sculpt ? 1.62 : variant === 'hero' ? 1.45 : 1.55;
+          variant === 'mark' ? 1.05 : sculpt ? 1.28 : variant === 'hero' ? 1.22 : 1.2;
         normalizeLogo(logo, target);
         // Pitch so Y-spin / scrub yaw reads volume (stronger in sculpt hub)
         logo.rotation.x = THREE.MathUtils.degToRad(
-          sculpt ? 16 : variant === 'follow' ? 12 : 8
+          sculpt ? 14 : variant === 'follow' ? 10 : 8
         );
         pivot.add(logo);
-        setWebglReady(true);
       } catch (err) {
-        console.error('[danirya logo3d]', err);
+        console.error('[giltfoundry logo3d]', err);
       }
     })();
 
@@ -236,20 +233,7 @@ export function Logo3D({
       className={`${styles.host} ${styles[variant]} ${tone === 'document' ? styles.document : ''} ${className ?? ''}`}
       aria-hidden={ariaHidden}
     >
-      {/* Flat PNG only for tiny marks — follow/hero are Meshy WebGL only */}
-      {variant === 'mark' && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={LOGO_MARK_PNG}
-          alt=""
-          className={`${styles.fallback} ${webglReady ? styles.fallbackHide : ''}`}
-          draggable={false}
-        />
-      )}
-      <canvas
-        ref={canvasRef}
-        className={`${styles.canvas} ${webglReady ? styles.canvasShow : ''}`}
-      />
+      <canvas ref={canvasRef} className={styles.canvas} />
     </div>
   );
 }

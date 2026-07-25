@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { cloneLogoScene, normalizeLogo } from '@/lib/brand/loadLogoGltf';
 import { addHeroLogoLights } from '@/lib/brand/logoLights';
-import { LOGO_MARK_PNG } from '@/lib/brand/logoUrl';
 import styles from './LogoShowcase.module.css';
 
 /** One full turn every ~25s — display piece, not a spinner. */
@@ -15,9 +14,8 @@ const PITCH_MAX = THREE.MathUtils.degToRad(28);
 const VELOCITY_DAMP = 0.92;
 
 /**
- * Interactive Meshy D — same GLB clone + hero lighting.
+ * Interactive Meshy mark — same GLB clone + hero lighting.
  * Separate canvas (temple film is 2D WebP); RAF pauses when off-screen.
- * Host is visible immediately (PNG), then upgrades to WebGL when ready.
  */
 export function LogoShowcase() {
   const hostRef = useRef<HTMLDivElement>(null);
@@ -102,8 +100,9 @@ export function LogoShowcase() {
       try {
         const logo = await cloneLogoScene();
         if (disposed || !renderer) return;
-        normalizeLogo(logo, 1.55);
-        logo.rotation.x = 0;
+        // GF monogram is wider than the old D — keep full glyph inside the frame.
+        normalizeLogo(logo, 1.18);
+        logo.rotation.x = THREE.MathUtils.degToRad(6);
         pivot.clear();
         pivot.add(logo);
         hasLogo = true;
@@ -228,20 +227,12 @@ export function LogoShowcase() {
         ref={hostRef}
         className={styles.host}
         role="img"
-        aria-label="Danirya rotating logo — drag to turn"
+        aria-label="Gilt Foundry rotating logo — drag to turn"
         data-rotating-logo-stage
         data-cursor="view"
         data-cursor-label="Drag"
         tabIndex={0}
       >
-        {/* Visible immediately — GLB upgrade replaces this when WebGL is ready */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={LOGO_MARK_PNG}
-          alt=""
-          className={`${styles.fallback} ${webglReady ? styles.fallbackHide : ''}`}
-          draggable={false}
-        />
         <canvas
           ref={canvasRef}
           className={`${styles.canvas} ${webglReady ? styles.canvasShow : ''}`}

@@ -12,34 +12,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  opacity: 0;
-}
-
-.canvasShow {
   opacity: 1;
-}
-
-.fallback {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  animation: logoSpinY 14s linear infinite;
-  transform-style: preserve-3d;
-}
-
-/* Hard cut — no crossfade with WebGL (avoids double-logo overlap) */
-.fallbackHide {
-  display: none !important;
-}
-
-@keyframes logoSpinY {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
 }
 
 .mark {
@@ -75,19 +48,9 @@
     drop-shadow(0 10px 28px rgba(28, 22, 16, 0.18));
 }
 
-.document .fallback {
-  filter: contrast(1.1) saturate(1.05);
-}
-
 @media (max-width: 720px) {
   .follow {
     width: min(46vw, 11rem);
     height: min(46vw, 11rem);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .fallback {
-    animation: none;
   }
 }

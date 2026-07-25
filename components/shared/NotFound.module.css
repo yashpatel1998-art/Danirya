@@ -22,7 +22,7 @@
   top: clamp(1.1rem, 3vw, 1.75rem);
   left: clamp(1.1rem, 3vw, 1.75rem);
   width: clamp(2.5rem, 5vw, 3.25rem);
-  height: auto;
+  height: clamp(2.5rem, 5vw, 3.25rem);
   opacity: 0.85;
   pointer-events: none;
 }
