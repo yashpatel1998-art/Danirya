@@ -276,7 +276,9 @@ export const Hero = memo(function Hero() {
           />
           <ScrollCue visible={showScrollCue} />
         </div>
-        <HeroOverlay suppressInscriptions={suppressInscriptions} />
+        {loaderGone ? (
+          <HeroOverlay suppressInscriptions={suppressInscriptions} />
+        ) : null}
       </div>
     </section>
   );

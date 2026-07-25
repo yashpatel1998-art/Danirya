@@ -22,8 +22,8 @@ import type Lenis from 'lenis';
 
 const LOAD_CONCURRENCY_DESKTOP = 8;
 const LOAD_CONCURRENCY_MOBILE = 4;
-/** 1 viewport of scroll intent ≈ 15% loader progress (~6.67 pages → 100%). */
-const SCROLL_LOAD_PERCENT_PER_PAGE = 0.15;
+/** 1 viewport of scroll intent ≈ 28% loader progress (~3.6 pages → 100%). */
+const SCROLL_LOAD_PERCENT_PER_PAGE = 0.28;
 
 /** Pin document + Lenis to top so loader scroll-intent cannot leak into the film. */
 function pinScrollToOpening(lenis: Lenis | null | undefined) {

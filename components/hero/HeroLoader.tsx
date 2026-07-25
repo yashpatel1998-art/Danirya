@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { Logo3D } from '@/components/brand/Logo3D';
-import { BRAND } from '@/lib/content/brand';
-import { LOADER_STAGES, loaderStageIndex } from '@/lib/content/loaderCopy';
 import { MOTION } from '@/lib/constants/motion';
 import styles from './HeroLoader.module.css';
 
@@ -16,8 +14,8 @@ type HeroLoaderProps = {
 };
 
 /**
- * Phase 1 — arrival preloader: Meshy 3D mark + torch meter + status line.
- * Leaves via iris fade; never fakes a minimum wait.
+ * Arrival screen — static Meshy GF mark, brand line, gold meter, scroll cue.
+ * Opaque near-black stage; leaves via iris fade (no fragment blast).
  */
 export function HeroLoader({
   loadProgress,
@@ -26,8 +24,6 @@ export function HeroLoader({
   onExplosionComplete,
   onGone,
 }: HeroLoaderProps) {
-  const stage = loaderStageIndex(loadProgress);
-  const copy = LOADER_STAGES[stage];
   const [leaving, setLeaving] = useState(false);
   const [gone, setGone] = useState(false);
 
@@ -68,48 +64,38 @@ export function HeroLoader({
       }`}
       aria-live="polite"
       aria-busy={visible || explode}
+      data-hero-loader="1"
     >
-      <div className={styles.blastLayer}>
+      <div className={styles.stage}>
         <div
           className={`${styles.markHost} ${explode ? styles.markExplode : ''}`}
           aria-hidden
         >
-          <Logo3D variant="hero" spin={0.7} className={styles.mark} />
+          <Logo3D
+            variant="hero"
+            spin={0}
+            restYawDeg={22}
+            className={styles.mark}
+          />
         </div>
+
+        {!explode && (
+          <>
+            <p className={styles.tagline}>A studio, not a template.</p>
+
+            <div className={styles.meter} role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={pct}>
+              <span className={styles.pct}>{pct}%</span>
+              <div className={styles.track} aria-hidden>
+                <div className={styles.fill} style={{ transform: `scaleX(${p})` }} />
+              </div>
+            </div>
+
+            {visible && pct < 100 && (
+              <span className={styles.hint}>Scroll to enter</span>
+            )}
+          </>
+        )}
       </div>
-
-      {!explode && p >= 0.12 && (
-        <p
-          className={`${styles.brandName} ${p >= 0.35 ? styles.brandNameSettled : ''}`}
-          aria-hidden
-        >
-          {BRAND.nameUpper}
-        </p>
-      )}
-
-      {!explode && (
-        <div className={styles.center}>
-          {/* Torch flame meter — height tracks readiness */}
-          <div className={styles.torch} aria-hidden>
-            <div
-              className={styles.flame}
-              style={{ transform: `scaleY(${0.18 + p * 0.82})` }}
-            />
-            <div className={styles.torchBase} />
-          </div>
-
-          <p
-            key={copy.id}
-            className={`${styles.copy} ${copy.emphasis ? styles.copyEmphasis : ''}`}
-          >
-            {copy.text}
-          </p>
-          <span className={styles.pct}>{pct}%</span>
-          {visible && pct < 100 && (
-            <span className={styles.hint}>Scroll to enter</span>
-          )}
-        </div>
-      )}
     </div>
   );
 }

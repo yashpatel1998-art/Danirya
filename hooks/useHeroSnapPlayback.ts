@@ -25,8 +25,8 @@ import {
 } from '@/lib/journey/slidingFrameCache';
 import type Lenis from 'lenis';
 
-/** 1 viewport of scroll intent ≈ 15% loader progress (~6.67 pages → 100%). */
-const SCROLL_LOAD_PERCENT_PER_PAGE = 0.15;
+/** 1 viewport of scroll intent ≈ 28% loader progress (~3.6 pages → 100%). */
+const SCROLL_LOAD_PERCENT_PER_PAGE = 0.28;
 const IDLE_WHEEL_THRESHOLD = 28;
 
 function pinScrollToOpening(lenis: Lenis | null | undefined) {
