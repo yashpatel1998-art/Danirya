@@ -105,18 +105,6 @@
   max-width: min(36rem, 92vw);
 }
 
-.sanctuaryMark {
-  width: min(38vmin, 12.5rem);
-  height: min(38vmin, 12.5rem);
-  margin-bottom: 0.15rem;
-  pointer-events: none;
-}
-
-.sanctuaryLogo {
-  width: 100%;
-  height: 100%;
-}
-
 .sanctuaryBrand {
   margin: 0 0 0.35rem;
   font-family: var(--font-serif);

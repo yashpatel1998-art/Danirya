@@ -9,9 +9,7 @@ import {
 import { SANCTUARY_COPY } from '@/lib/content/sectionCopy';
 import { MOTION } from '@/lib/constants/motion';
 import { subscribeJourneyFrame } from '@/lib/journey/frameBus';
-import { Logo3D } from '@/components/brand/Logo3D';
 import { EntranceBrandOverlay } from '@/components/hero/EntranceBrandOverlay';
-import { SanctuaryLogoOverlay } from '@/components/hero/SanctuaryLogoOverlay';
 import { TempleInscriptions } from '@/components/hero/TempleInscriptions';
 import { BRAND } from '@/lib/content/brand';
 import styles from './HeroOverlay.module.css';
@@ -82,22 +80,12 @@ export function HeroOverlay({
       {/* Room inscriptions — suppressed during statue typology holds */}
       <TempleInscriptions suppressed={suppressInscriptions} />
       <EntranceBrandOverlay />
-      <SanctuaryLogoOverlay />
 
       {primary?.id === 'sanctuary' && (
         <div
           className={`${styles.panel} ${styles.scaleBookend} ${styles.sanctuaryMinimal}`}
           style={revealStyle(primary.progress)}
         >
-          <div className={styles.sanctuaryMark}>
-            <Logo3D
-              variant="hero"
-              spin={0.2}
-              spinAxis="y"
-              restYawDeg={16}
-              className={styles.sanctuaryLogo}
-            />
-          </div>
           <p className={styles.sanctuaryBrand}>{BRAND.nameUpper}</p>
           <p className={styles.sanctuaryLabel}>Continue</p>
           <p className={styles.sanctuaryLead}>
