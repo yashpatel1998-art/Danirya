@@ -493,9 +493,6 @@ export function useHeroSnapPlayback({
       const point = LAB_SNAP_POINTS[patch.pointIndex];
       const w = window as Window & { __HERO_SNAP_DEBUG__?: HeroSnapDebug };
       w.__HERO_SNAP_DEBUG__ = {
-        phase: patch.phase,
-        pointIndex: patch.pointIndex,
-        frame1: patch.frame1,
         stopId: point?.id ?? null,
         kind: point?.kind ?? null,
         statueId: point?.statueId ?? null,
