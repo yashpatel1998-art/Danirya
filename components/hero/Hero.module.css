@@ -21,7 +21,7 @@
   min-height: 100vh;
   background-color: #000;
   /* Poster fallback only before first canvas paint — removed once live */
-  background-image: url('/journey/frames/v2/frame_0001.webp');
+  background-image: url('/journey/frames/v3/frame_0001.webp');
   background-size: cover;
   background-position: center;
 }
