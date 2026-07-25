@@ -66,6 +66,18 @@ export const HOLD_WORK_TYPO: TypographyHold = {
 };
 
 /**
+ * Sanctuary CTA — handoff as sky-ascend finishes (entrance-sky-ascend → f1200).
+ * fadeOut: 0 keeps the final beat latched (no reverse-return / no loop).
+ */
+export const HOLD_SANCTUARY_CTA: TypographyHold = {
+  id: 'sanctuary',
+  enter: 1175,
+  exit: 1200,
+  fadeIn: 20,
+  fadeOut: 0,
+};
+
+/**
  * Per-bay project peaks — Hall only, after Work plaque, before Chapel.
  */
 export function workBayHold(bay: number): TypographyHold {

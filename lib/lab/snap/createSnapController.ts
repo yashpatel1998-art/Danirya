@@ -13,6 +13,11 @@ export type SnapPathConfig = {
   points: LabSnapPoint[];
   frameCount: number;
   travelFps?: number;
+  /**
+   * When true, advancing past the last stop restarts at point 0.
+   * Production Hero keeps this false — sky-ascend is the final beat.
+   */
+  loopAtEnd?: boolean;
 };
 
 export type SnapControllerHandlers = {
@@ -38,6 +43,7 @@ const DEFAULT_PATH: SnapPathConfig = {
   points: LAB_SNAP_POINTS,
   frameCount: LAB_SNAP_FRAME_COUNT,
   travelFps: LAB_SNAP_TRAVEL_FPS,
+  loopAtEnd: false,
 };
 
 /**
@@ -48,11 +54,13 @@ const DEFAULT_PATH: SnapPathConfig = {
 export function createSnapController(
   stride: number,
   handlers: SnapControllerHandlers,
-  path: SnapPathConfig = DEFAULT_PATH
+  path: Partial<SnapPathConfig> = {}
 ): SnapController {
-  const points = path.points;
-  const frameCount = path.frameCount;
-  const travelFps = path.travelFps ?? LAB_SNAP_TRAVEL_FPS;
+  const cfg: SnapPathConfig = { ...DEFAULT_PATH, ...path };
+  const points = cfg.points;
+  const frameCount = cfg.frameCount;
+  const travelFps = cfg.travelFps ?? LAB_SNAP_TRAVEL_FPS;
+  const loopAtEnd = cfg.loopAtEnd ?? false;
 
   let phase: SnapPhase = 'idle';
   let pointIndex = 0;
@@ -132,7 +140,11 @@ export function createSnapController(
     // Full discard while locked — nothing carries over into the next idle.
     if (phase !== 'idle') return;
     if (pointIndex >= points.length - 1) {
-      // Loop to start — same statue gate as a fresh boot (not a silent idle jump).
+      if (!loopAtEnd) {
+        // Final beat — discard further advances (no reverse-return).
+        return;
+      }
+      // Lab harness: restart at opening statue gate.
       beginHoldGate(0);
       return;
     }

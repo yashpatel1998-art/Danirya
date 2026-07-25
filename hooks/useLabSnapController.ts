@@ -49,29 +49,34 @@ export function useLabSnapController(): LabSnapUiState {
     document.documentElement.style.overflow = 'hidden';
     lenis?.stop();
 
-    const controller = createSnapController(resolvedStride, {
-      onFrame: (f) => setFrame1(f),
-      onPhase: (p, idx) => {
-        setPhase(p);
-        setPointIndex(idx);
-        // Couple typology exit to the same advance that starts travel.
-        if (p === 'traveling') {
-          setTypologyPoint((pt) => {
-            exitingStopIdRef.current = pt?.id ?? null;
-            return pt;
-          });
-          setTypologyMode((mode) => (mode === 'exit' ? mode : 'exit'));
-          unlockHoldRef.current = null;
-        }
+    const controller = createSnapController(
+      resolvedStride,
+      {
+        onFrame: (f) => setFrame1(f),
+        onPhase: (p, idx) => {
+          setPhase(p);
+          setPointIndex(idx);
+          // Couple typology exit to the same advance that starts travel.
+          if (p === 'traveling') {
+            setTypologyPoint((pt) => {
+              exitingStopIdRef.current = pt?.id ?? null;
+              return pt;
+            });
+            setTypologyMode((mode) => (mode === 'exit' ? mode : 'exit'));
+            unlockHoldRef.current = null;
+          }
+        },
+        onHoldGate: (point, complete) => {
+          // New gate supersedes any in-flight exit for a prior stop.
+          exitingStopIdRef.current = null;
+          unlockHoldRef.current = complete;
+          setTypologyPoint(point);
+          setTypologyMode('enter');
+        },
       },
-      onHoldGate: (point, complete) => {
-        // New gate supersedes any in-flight exit for a prior stop.
-        exitingStopIdRef.current = null;
-        unlockHoldRef.current = complete;
-        setTypologyPoint(point);
-        setTypologyMode('enter');
-      },
-    });
+      // Lab may restart; production Hero keeps loopAtEnd false (final CTA beat).
+      { loopAtEnd: true }
+    );
 
     let touchY: number | null = null;
     let touchAcc = 0;
