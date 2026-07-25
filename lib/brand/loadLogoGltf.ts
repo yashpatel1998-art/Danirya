@@ -6,7 +6,7 @@ let template: THREE.Group | null = null;
 let loading: Promise<THREE.Group> | null = null;
 
 /**
- * Load the Meshy cracked-stone logo once; callers clone for each canvas.
+ * Load the Meshy golden cracked-forge logo once; callers clone for each canvas.
  * Materials stay as authored in the GLB — no MeshStandard overrides.
  */
 export function loadLogoTemplate(): Promise<THREE.Group> {
@@ -25,6 +25,25 @@ export function loadLogoTemplate(): Promise<THREE.Group> {
               mesh.receiveShadow = false;
               // Keep GPU happy on many instances
               mesh.frustumCulled = true;
+              // Meshy often ships emissiveFactor [1,1,1] + map — that washes out
+              // the hero gold rim rig. Keep authored maps; soften intensity only.
+              const mats = Array.isArray(mesh.material)
+                ? mesh.material
+                : [mesh.material];
+              for (const mat of mats) {
+                if (!mat || !(mat as THREE.MeshStandardMaterial).isMeshStandardMaterial) {
+                  continue;
+                }
+                const std = mat as THREE.MeshStandardMaterial;
+                if (
+                  std.emissiveMap &&
+                  std.emissive.r >= 0.99 &&
+                  std.emissive.g >= 0.99 &&
+                  std.emissive.b >= 0.99
+                ) {
+                  std.emissiveIntensity = 0.42;
+                }
+              }
             }
           });
           resolve(template);

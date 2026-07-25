@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { LOGO_MARK_PNG } from '@/lib/brand/logoUrl';
+import { Logo3D } from '@/components/brand/Logo3D';
 import { BRAND } from '@/lib/content/brand';
 import { LOADER_STAGES, loaderStageIndex } from '@/lib/content/loaderCopy';
 import { MOTION } from '@/lib/constants/motion';
@@ -16,7 +16,7 @@ type HeroLoaderProps = {
 };
 
 /**
- * Phase 1 — arrival preloader: 2D brand mark + torch meter + status line.
+ * Phase 1 — arrival preloader: Meshy 3D mark + torch meter + status line.
  * Leaves via iris fade; never fakes a minimum wait.
  */
 export function HeroLoader({
@@ -45,7 +45,7 @@ export function HeroLoader({
     return () => clearTimeout(id);
   }, [visible, onGone]);
 
-  // Fade/scale exit replaces the former WebGL fragment blast.
+  // Fade/scale exit — clean 3D mark exit (no fragment blast).
   useEffect(() => {
     if (!explode) return;
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -74,13 +74,7 @@ export function HeroLoader({
           className={`${styles.markHost} ${explode ? styles.markExplode : ''}`}
           aria-hidden
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={LOGO_MARK_PNG}
-            alt=""
-            className={styles.mark}
-            draggable={false}
-          />
+          <Logo3D variant="hero" spin={0.7} className={styles.mark} />
         </div>
       </div>
 
