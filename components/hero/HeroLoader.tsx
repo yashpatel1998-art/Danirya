@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { OpeningLogo } from '@/components/brand/OpeningLogo';
+import { LOGO_MARK_PNG } from '@/lib/brand/logoUrl';
 import { BRAND } from '@/lib/content/brand';
 import { LOADER_STAGES, loaderStageIndex } from '@/lib/content/loaderCopy';
 import { MOTION } from '@/lib/constants/motion';
@@ -16,7 +16,7 @@ type HeroLoaderProps = {
 };
 
 /**
- * Phase 1 — arrival preloader: torch-like ember meter + status line.
+ * Phase 1 — arrival preloader: 2D brand mark + torch meter + status line.
  * Leaves via iris fade; never fakes a minimum wait.
  */
 export function HeroLoader({
@@ -45,6 +45,17 @@ export function HeroLoader({
     return () => clearTimeout(id);
   }, [visible, onGone]);
 
+  // Fade/scale exit replaces the former WebGL fragment blast.
+  useEffect(() => {
+    if (!explode) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const id = window.setTimeout(
+      () => onExplosionComplete?.(),
+      reduced ? 0 : MOTION.duration.slow
+    );
+    return () => clearTimeout(id);
+  }, [explode, onExplosionComplete]);
+
   if (gone) return null;
 
   const p = Math.max(0, Math.min(1, loadProgress));
@@ -58,13 +69,19 @@ export function HeroLoader({
       aria-live="polite"
       aria-busy={visible || explode}
     >
-      {/* Full-viewport canvas host — never a small logoStage box */}
       <div className={styles.blastLayer}>
-        <OpeningLogo
-          spin={0.55}
-          explode={explode}
-          onExplosionComplete={onExplosionComplete}
-        />
+        <div
+          className={`${styles.markHost} ${explode ? styles.markExplode : ''}`}
+          aria-hidden
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={LOGO_MARK_PNG}
+            alt=""
+            className={styles.mark}
+            draggable={false}
+          />
+        </div>
       </div>
 
       {!explode && p >= 0.12 && (

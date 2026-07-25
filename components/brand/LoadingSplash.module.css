@@ -21,6 +21,18 @@
   text-align: center;
 }
 
+.mark {
+  width: min(46vmin, 14rem);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  opacity: 0;
+  transform: scale(0.88);
+  filter: drop-shadow(0 12px 36px rgba(28, 22, 16, 0.28));
+  user-select: none;
+  animation: markEnter 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
 .copy {
   margin: 0;
   max-width: 22rem;
@@ -29,4 +41,23 @@
   font-size: 0.9rem;
   letter-spacing: 0.06em;
   line-height: 1.45;
+}
+
+@keyframes markEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }

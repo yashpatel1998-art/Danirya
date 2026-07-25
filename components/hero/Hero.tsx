@@ -6,7 +6,6 @@ import { LabSnapTypology } from '@/components/lab/snap/LabSnapTypology';
 import { StatueLens } from '@/components/lab/snap/StatueLens';
 import { useLenis } from '@/components/shared/LenisContext';
 import { useHeroSnapPlayback } from '@/hooks/useHeroSnapPlayback';
-import { loadLogoTemplate } from '@/lib/brand/loadLogoGltf';
 import { JOURNEY_POSTER } from '@/lib/journey/frames';
 import { HeroLoader } from './HeroLoader';
 import { HeroOverlay } from './HeroOverlay';
@@ -47,13 +46,6 @@ export const Hero = memo(function Hero() {
       cancelled = true;
       clearTimeout(fallback);
     };
-  }, []);
-
-  // Warm Meshy logo template used by the loader explosion.
-  useEffect(() => {
-    void loadLogoTemplate().catch(() => {
-      /* OpeningLogo will retry */
-    });
   }, []);
 
   // Opening settle after loader blast + iris: arm beds, then unmute on gesture.
@@ -159,7 +151,7 @@ export const Hero = memo(function Hero() {
     setLoaderGone(true);
   }, []);
 
-  // If the Meshy explode never finishes, don't leave the loader up forever.
+  // If the mark exit never finishes, don't leave the loader up forever.
   useEffect(() => {
     if (!readyToBlast || blastDone) return;
     const id = window.setTimeout(() => {
