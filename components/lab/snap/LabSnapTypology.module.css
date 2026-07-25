@@ -1,0 +1,133 @@
+.root {
+
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  padding: 0 clamp(1.5rem, 6vw, 5rem);
+
+  pointer-events: none;
+
+  z-index: 4;
+
+}
+
+
+
+/* Clip edge for statue-hold wipe — GSAP drives clip-path; no opacity fade. */
+
+.mask {
+
+  max-width: min(28rem, 42vw);
+
+  /* Fully clipped from the right → reveal LTR (toward the text from the lens). */
+
+  clip-path: inset(0 100% 0 0);
+
+  will-change: clip-path;
+
+}
+
+
+
+.block {
+
+  max-width: 100%;
+
+  text-align: left;
+
+}
+
+
+
+@media (max-width: 720px) {
+
+  .root {
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    padding: 0 1.25rem 18vh;
+
+  }
+
+
+
+  .mask {
+
+    max-width: 100%;
+
+  }
+
+}
+
+
+
+.eyebrow {
+
+  margin: 0 0 0.85rem;
+
+  font-family: var(--font-sans, 'General Sans', system-ui, sans-serif);
+
+  font-size: 0.7rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+
+  color: rgba(201, 169, 110, 0.72);
+
+}
+
+
+
+.line {
+
+  margin: 0 0 0.4rem;
+
+  font-family: var(--font-serif, 'Fraunces', Georgia, serif);
+
+  font-size: clamp(1.05rem, 2.1vw, 1.4rem);
+
+  font-weight: 400;
+
+  line-height: 1.35;
+
+  color: rgba(244, 240, 232, 0.92);
+
+}
+
+
+
+.line:last-child {
+
+  margin-bottom: 0;
+
+}
+
+
+
+.word {
+
+  display: inline-block;
+
+}
+
+
+
+.word + .word {
+
+  margin-left: 0.28em;
+
+}
+
+

@@ -1,0 +1,90 @@
+.root {
+  position: absolute;
+  left: clamp(6%, 10vw, 14%);
+  top: 50%;
+  z-index: 3;
+  /* Crop size; ornament frame extends beyond via percentage inset. */
+  width: min(36vh, 32vw, 18.5rem);
+  aspect-ratio: 1;
+  transform: translateY(-50%);
+  pointer-events: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.anim {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  /* Start hidden so first paint before useLayoutEffect cannot flash full-opaque. */
+  opacity: 0;
+  will-change: opacity, transform;
+  transform-origin: center center;
+}
+
+.crop {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/**
+ * Figma export is 806×806 with 562 aperture → frame scale 806/562 ≈ 1.434.
+ * Mask: transparent aperture (crop shows through) + transparent outer corners
+ * so the PNG’s solid rectangular backdrop never reads as a card.
+ * Charcoal disc between aperture and gold ornament stays visible (desired ring).
+ * Scallop outer ≈ 720/806 ≈ 89% of closest-side.
+ */
+.frame {
+  position: absolute;
+  inset: -21.7%;
+  width: 143.4%;
+  height: 143.4%;
+  max-width: none;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  -webkit-mask-image: radial-gradient(
+    circle closest-side at 50% 50%,
+    transparent 69.5%,
+    #000 70.2%,
+    #000 91.5%,
+    transparent 93%
+  );
+  mask-image: radial-gradient(
+    circle closest-side at 50% 50%,
+    transparent 69.5%,
+    #000 70.2%,
+    #000 91.5%,
+    transparent 93%
+  );
+}
+
+@media (max-width: 720px) {
+  .root {
+    left: 50%;
+    top: 22%;
+    width: min(42vw, 10.5rem);
+    transform: translate(-50%, 0);
+  }
+}

@@ -1,8 +1,11 @@
 /**
- * Frame markers aligned with camera_path.json (0-based indices).
+ * Frame markers aligned with `camera_path.json` (800-sample Hero path, 0-based).
+ * Phase B 1200 bake path is at `/data/camera_path_1200.json` — not wired to Hero yet.
  * Room ranges from path room labels; lookback turn end matches Blender LOOKBACK_TURN_END.
  */
 export const CAMERA_PATH_URL = '/data/camera_path.json';
+/** Phase B master path (1200 samples). Lab/data only until Hero is rewired. */
+export const CAMERA_PATH_1200_URL = '/data/camera_path_1200.json';
 
 /** First frame of each room (inclusive). */
 export const ROOM_ENTER_FRAME = {
@@ -25,4 +28,5 @@ export const WHOOSH_ENTER_FRAMES = [
  */
 export const LOOKBACK_COMPLETE_FRAME = 720;
 
+/** Length of `camera_path.json` (Hero). Frame stills are 1200; path rewire pending. */
 export const TOTAL_CAMERA_FRAMES = 800;

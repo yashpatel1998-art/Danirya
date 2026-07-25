@@ -1,0 +1,99 @@
+.stage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0a0a;
+  color: #f4f0e8;
+  user-select: none;
+  touch-action: none;
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hud {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 5;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid rgba(201, 169, 110, 0.28);
+  background: rgba(8, 8, 8, 0.72);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  color: rgba(244, 240, 232, 0.82);
+  pointer-events: none;
+}
+
+.hud strong {
+  color: rgba(201, 169, 110, 0.95);
+  font-weight: 600;
+}
+
+.hint {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  margin: 0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(8, 8, 8, 0.55);
+  font-family: var(--font-sans, 'General Sans', system-ui, sans-serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(244, 240, 232, 0.55);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.dim {
+  /* legacy alias — scene wash replaces solid dim */
+  display: none;
+}
+
+/**
+ * Desaturate + dim the temple scene; mask punches a full-color hole under the lens.
+ * Typology / lens sit above this layer so they stay sharp.
+ */
+.sceneWash {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  /* Soft grey veil — scene stays faintly visible, not crushed to black. */
+  background: rgba(18, 18, 18, 0.18);
+  -webkit-backdrop-filter: grayscale(0.92) brightness(0.62) saturate(0.12);
+  backdrop-filter: grayscale(0.92) brightness(0.62) saturate(0.12);
+  -webkit-mask-image: radial-gradient(
+    circle var(--lens-r, 140px) at var(--lens-cx, 22%) var(--lens-cy, 50%),
+    transparent 0,
+    transparent 96%,
+    #000 100%
+  );
+  mask-image: radial-gradient(
+    circle var(--lens-r, 140px) at var(--lens-cx, 22%) var(--lens-cy, 50%),
+    transparent 0,
+    transparent 96%,
+    #000 100%
+  );
+}
+
+.sceneWashActive {
+  opacity: 1;
+}
+
+.sceneWashExit {
+  transition-duration: 0.45s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}

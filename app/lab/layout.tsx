@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Lab — Danirya effects scratch',
+  title: 'Lab — Gilt Foundry effects scratch',
   robots: { index: false, follow: false },
 };
 

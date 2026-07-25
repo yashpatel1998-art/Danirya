@@ -1,5 +1,9 @@
-/** Full walkthrough WebP sequence (Blender bake frames 1–800). */
-export const JOURNEY_FRAME_COUNT = 800;
+/**
+ * Full walkthrough WebP sequence (Phase B bake).
+ * On-disk: `public/journey/frames/frame_0001.webp` … `frame_1200.webp` (1280×720).
+ * Sliding-window sizes in the frame cache are tuned for 1200-frame memory pressure.
+ */
+export const JOURNEY_FRAME_COUNT = 1200;
 export const JOURNEY_FRAME_DIR = '/journey/frames';
 
 /** First drawable still — matches loader / opening handoff. */
