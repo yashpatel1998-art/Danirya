@@ -1,0 +1,31 @@
+<svg width="879" height="879" viewBox="0 0 879 879" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ornament-only lens frame: no dark aperture disc, no atmosphere fill. -->
+  <g id="Ornamented Lens Frame">
+    <path
+      id="Scalloped Ring"
+      d="M439.2 79.2L468.694 102.088L501.714 84.6692L526.785 112.331L562.327 100.911L582.214 132.505L619.2 127.431L633.298 161.999L670.604 163.424L678.485 199.915L714.976 207.796L716.401 245.102L750.969 259.2L745.895 296.186L777.49 316.073L766.069 351.616L793.731 376.687L776.312 409.706L799.2 439.2L776.312 468.693L793.731 501.713L766.069 526.784L777.49 562.327L745.895 582.214L750.969 619.2L716.401 633.298L714.976 670.604L678.485 678.485L670.604 714.976L633.298 716.401L619.2 750.969L582.214 745.895L562.327 777.489L526.785 766.069L501.714 793.731L468.694 776.312L439.2 799.2L409.707 776.312L376.687 793.731L351.616 766.069L316.073 777.489L296.186 745.895L259.2 750.969L245.102 716.401L207.797 714.976L199.915 678.485L163.424 670.604L161.999 633.298L127.431 619.2L132.506 582.214L100.911 562.327L112.331 526.784L84.6694 501.713L102.088 468.693L79.2002 439.2L102.088 409.706L84.6694 376.687L112.331 351.616L100.911 316.073L132.506 296.186L127.431 259.2L161.999 245.102L163.424 207.796L199.915 199.915L207.797 163.424L245.102 161.999L259.2 127.431L296.186 132.505L316.073 100.911L351.616 112.331L376.687 84.6692L409.707 102.088L439.2 79.2Z"
+      fill="none"
+      stroke="#D4A054"
+      stroke-opacity="0.9"
+      stroke-width="2.5"
+    />
+    <circle
+      id="Gold Inlay Ring"
+      cx="439.2"
+      cy="439.2"
+      r="325.175"
+      fill="none"
+      stroke="#D4A054"
+      stroke-opacity="0.7"
+      stroke-width="1.5"
+    />
+    <rect id="Inlay Bead 1" x="435.7" y="100.9" width="7" height="7" transform="rotate(-45 435.7 100.9)" fill="#D4A054" fill-opacity="0.9"/>
+    <rect id="Inlay Bead 2" x="672.439" y="198.961" width="7" height="7" transform="rotate(-45 672.439 198.961)" fill="#D4A054" fill-opacity="0.5"/>
+    <rect id="Inlay Bead 3" x="770.5" y="435.7" width="7" height="7" transform="rotate(-45 770.5 435.7)" fill="#D4A054" fill-opacity="0.9"/>
+    <rect id="Inlay Bead 4" x="672.439" y="672.439" width="7" height="7" transform="rotate(-45 672.439 672.439)" fill="#D4A054" fill-opacity="0.5"/>
+    <rect id="Inlay Bead 5" x="435.7" y="770.5" width="7" height="7" transform="rotate(-45 435.7 770.5)" fill="#D4A054" fill-opacity="0.9"/>
+    <rect id="Inlay Bead 6" x="198.961" y="672.439" width="7" height="7" transform="rotate(-45 198.961 672.439)" fill="#D4A054" fill-opacity="0.5"/>
+    <rect id="Inlay Bead 7" x="100.9" y="435.7" width="7" height="7" transform="rotate(-45 100.9 435.7)" fill="#D4A054" fill-opacity="0.9"/>
+    <rect id="Inlay Bead 8" x="198.961" y="198.961" width="7" height="7" transform="rotate(-45 198.961 198.961)" fill="#D4A054" fill-opacity="0.5"/>
+  </g>
+</svg>
