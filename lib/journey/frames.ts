@@ -1,10 +1,11 @@
 /**
  * Full walkthrough WebP sequence (Phase B bake).
- * On-disk: `public/journey/frames/frame_0001.webp` … `frame_1200.webp` (1280×720).
+ * On-disk: `public/journey/frames/v2/frame_0001.webp` … `frame_1200.webp` (1280×720).
+ * v1 at `public/journey/frames/frame_####.webp` kept for dead cached refs.
  * Sliding-window sizes in the frame cache are tuned for 1200-frame memory pressure.
  */
 export const JOURNEY_FRAME_COUNT = 1200;
-export const JOURNEY_FRAME_DIR = '/journey/frames';
+export const JOURNEY_FRAME_DIR = '/journey/frames/v2';
 
 /** First drawable still — matches loader / opening handoff. */
 export const JOURNEY_POSTER = `${JOURNEY_FRAME_DIR}/frame_0001.webp`;
