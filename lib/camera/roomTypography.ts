@@ -6,7 +6,6 @@
  * so the temple film stays clean through the Studio hold.
  */
 
-import { LOOKBACK_COMPLETE_FRAME } from '@/lib/camera/constants';
 import { WORK_HERO_PATH } from '@/lib/journey/workStudioScrollRemap';
 import { workProjects } from '@/lib/content/workProjects';
 
@@ -64,15 +63,6 @@ export const HOLD_WORK_TYPO: TypographyHold = {
   exit: WORK_HERO_PATH.end + 1,
   fadeIn: 4,
   fadeOut: 5,
-};
-
-/** Sanctuary CTA — sky-ascend bookend through journey end. */
-export const HOLD_SANCTUARY_CTA: TypographyHold = {
-  id: 'sanctuary',
-  enter: LOOKBACK_COMPLETE_FRAME,
-  exit: 1200,
-  fadeIn: 12,
-  fadeOut: 0,
 };
 
 /**
