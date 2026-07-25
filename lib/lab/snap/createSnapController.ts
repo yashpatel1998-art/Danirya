@@ -41,7 +41,7 @@ const DEFAULT_PATH: SnapPathConfig = {
 };
 
 /**
- * Discrete snap state machine for /lab/snap.
+ * Discrete snap state machine for Phase B journey (/ and /lab/snap).
  * Travel = linear rAF frame-index tween (no re-easing).
  * Input during travel + holdGate is discarded (no queue / no replay on unlock).
  */

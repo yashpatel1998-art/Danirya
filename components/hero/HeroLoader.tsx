@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { OpeningLogo } from '@/components/brand/OpeningLogo';
+import { BRAND } from '@/lib/content/brand';
 import { LOADER_STAGES, loaderStageIndex } from '@/lib/content/loaderCopy';
 import { MOTION } from '@/lib/constants/motion';
 import styles from './HeroLoader.module.css';
@@ -65,6 +66,15 @@ export function HeroLoader({
           onExplosionComplete={onExplosionComplete}
         />
       </div>
+
+      {!explode && p >= 0.12 && (
+        <p
+          className={`${styles.brandName} ${p >= 0.35 ? styles.brandNameSettled : ''}`}
+          aria-hidden
+        >
+          {BRAND.nameUpper}
+        </p>
+      )}
 
       {!explode && (
         <div className={styles.center}>

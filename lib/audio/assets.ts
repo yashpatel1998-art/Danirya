@@ -1,5 +1,6 @@
 export const AUDIO_ASSETS = {
-  ambient: '/audio/dark-ambient-22319.mp3',
+  /** Journey bed: ancestral flute (lazy; does not block frame load). */
+  ambient: '/audio/ancestral-flute.mp3',
   crackle: '/audio/crackle-fireplace-campfire-402289.mp3',
   whoosh: '/audio/whoosh-cinematic-sound-effect-376889.mp3',
   sanctuary: '/audio/eerie-shimmer-32212.mp3',
@@ -21,3 +22,15 @@ export const SANCTUARY_TONE = {
 export const AMBIENT_BASE_VOLUME = 0.42;
 export const CRACKLE_BASE_VOLUME = 0.38;
 export const WHOOSH_VOLUME = 0.55;
+
+/**
+ * Radha & Krishna statue hold — Phase B master mid-window 611–660 (1-based),
+ * stored as 0-based path indices (matches stubPath freeze ~635).
+ */
+export const RADHA_KRISHNA_HOLD = {
+  enter: 610,
+  exit: 659,
+} as const;
+
+/** Same ambient bed — subtle lift only while inside RADHA_KRISHNA_HOLD. */
+export const RADHA_KRISHNA_AMBIENT_SWELL = 1.28;

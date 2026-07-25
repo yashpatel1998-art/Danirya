@@ -1,23 +1,31 @@
 import { CAMERA_PATH_URL } from '@/lib/camera/constants';
+import { normalizeTempleRoom } from '@/lib/camera/normalizeRoom';
 import type { CameraPathFrame } from '@/lib/camera/types';
 import { JOURNEY_FRAME_COUNT } from '@/lib/journey/frames';
 
 let cache: CameraPathFrame[] | null = null;
 let loading: Promise<CameraPathFrame[]> | null = null;
 
-/** Fetch + cache camera_path.json (shared by audio / typography settle gates). */
+function normalizePath(raw: CameraPathFrame[]): CameraPathFrame[] {
+  return raw.map((sample) => ({
+    ...sample,
+    room: normalizeTempleRoom(sample.room as unknown as string),
+  }));
+}
+
+/** Fetch + cache camera_path_1200.json (shared by audio / typography settle gates). */
 export function ensureCameraPath(): Promise<CameraPathFrame[]> {
   if (cache) return Promise.resolve(cache);
   if (loading) return loading;
   loading = fetch(CAMERA_PATH_URL)
     .then((r) => {
-      if (!r.ok) throw new Error('camera_path.json missing');
+      if (!r.ok) throw new Error('camera_path_1200.json missing');
       return r.json() as Promise<CameraPathFrame[]>;
     })
     .then((path) => {
-      cache = path;
+      cache = normalizePath(path);
       loading = null;
-      return path;
+      return cache;
     })
     .catch((err) => {
       loading = null;

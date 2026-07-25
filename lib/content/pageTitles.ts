@@ -1,20 +1,25 @@
-import { ROOM_ENTER_FRAME } from '@/lib/camera/constants';
+import { BRAND } from '@/lib/content/brand';
+import { roomAtPathIndex0 } from '@/lib/content/templeInscriptions';
 
-export const BASE_TITLE =
-  'Danirya Studio — Premium digital craftsmanship';
+export const BASE_TITLE = `${BRAND.name} — Premium digital craftsmanship`;
 
 export const PAGE_TITLES = {
   home: BASE_TITLE,
-  apply: 'Danirya Studio — Begin your project',
-  work: 'Danirya Studio — Work',
-  notFound: 'Danirya Studio — Path unseen',
+  apply: `${BRAND.name} — Begin your project`,
+  work: `${BRAND.name} — Work`,
+  studio: `${BRAND.name} — Studio`,
+  notFound: `${BRAND.name} — Path unseen`,
 } as const;
 
-/** Room-marker titles for the main 3D scroll experience (0-based path index). */
+const ROOM_TITLE: Record<string, string> = {
+  forecourt: BASE_TITLE,
+  threshold: `${BRAND.name} — Threshold`,
+  hall: `${BRAND.name} — Work`,
+  chapel: `${BRAND.name} — Chapel`,
+  sanctuary: `${BRAND.name} — Sanctuary`,
+};
+
+/** Room-marker titles for the main journey (0-based path index). */
 export function titleForJourneyFrame(pathIndex0: number): string {
-  const i = Math.max(0, pathIndex0);
-  if (i >= ROOM_ENTER_FRAME.sanctuary) return 'Danirya Studio — Contact';
-  if (i >= ROOM_ENTER_FRAME.chapel) return 'Danirya Studio — Studio';
-  if (i >= ROOM_ENTER_FRAME.hall) return 'Danirya Studio — Work';
-  return BASE_TITLE;
+  return ROOM_TITLE[roomAtPathIndex0(pathIndex0)] ?? BASE_TITLE;
 }

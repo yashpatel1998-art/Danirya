@@ -101,7 +101,44 @@
 
 /* Light type on temple frames — no beige card floating on black */
 .sanctuaryMinimal {
-  gap: 1rem;
+  gap: 0.85rem;
+  max-width: min(36rem, 92vw);
+}
+
+.sanctuaryMark {
+  width: min(38vmin, 12.5rem);
+  height: min(38vmin, 12.5rem);
+  margin-bottom: 0.15rem;
+  pointer-events: none;
+}
+
+.sanctuaryLogo {
+  width: 100%;
+  height: 100%;
+}
+
+.sanctuaryBrand {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2.4vw, 1.2rem);
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #ecd06f;
+  animation: sanctuaryNameIn 0.85s var(--ease-premium) both;
+}
+
+@keyframes sanctuaryNameIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 0.95;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
 }
 
 .sanctuaryLabel {
@@ -113,20 +150,24 @@
   color: rgba(242, 232, 214, 0.55);
 }
 
-.sanctuaryEmail {
-  pointer-events: auto;
+.sanctuaryLead {
+  margin: 0;
   font-family: var(--font-serif);
-  font-weight: 500;
-  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  font-weight: 400;
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
   letter-spacing: 0.04em;
-  color: var(--gold);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(212, 160, 84, 0.4);
-  padding-bottom: 0.12rem;
+  line-height: 1.45;
+  color: rgba(242, 232, 214, 0.82);
 }
 
-.sanctuaryEmail:hover {
-  color: #ecd06f;
+.sanctuaryCtas {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.65rem;
+  width: min(22rem, 92vw);
+  margin-top: 0.35rem;
 }
 
 .sanctuaryCta {
@@ -135,16 +176,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.5rem;
-  padding: 1.1rem 2.6rem;
+  padding: 1.1rem 2rem;
   border-radius: 2px;
   border: 1px solid rgba(212, 160, 84, 0.75);
   background: rgba(212, 160, 84, 0.14);
   color: #ecd06f;
   font-family: var(--font-serif);
-  font-size: 0.75rem;
-  letter-spacing: 0.28em;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
+  text-decoration: none;
   transition:
     background 0.3s var(--ease-premium),
     border-color 0.3s var(--ease-premium);
@@ -153,6 +194,20 @@
 .sanctuaryCta:hover {
   background: rgba(212, 160, 84, 0.26);
   border-color: #ecd06f;
+}
+
+@media (min-width: 720px) {
+  .sanctuaryCtas {
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sanctuaryCta {
+    min-width: 11.5rem;
+    padding: 1.1rem 1.6rem;
+  }
 }
 
 @media (max-width: 540px) {

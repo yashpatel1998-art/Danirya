@@ -103,11 +103,11 @@ function roomSpan(room: TempleRoomId): {
   span: number;
 } {
   const start = ROOM_ENTER_FRAME[room];
-  const idx = ROOM_ORDER.indexOf(room);
-  const next =
-    idx < ROOM_ORDER.length - 1
-      ? ROOM_ENTER_FRAME[ROOM_ORDER[idx + 1]!]
-      : TOTAL_CAMERA_FRAMES;
+  // Phase B room enters are non-monotonic vs temple order — next = soonest later enter.
+  let next = TOTAL_CAMERA_FRAMES;
+  for (const enter of Object.values(ROOM_ENTER_FRAME)) {
+    if (enter > start && enter < next) next = enter;
+  }
   return { start, next, span: Math.max(1, next - start) };
 }
 

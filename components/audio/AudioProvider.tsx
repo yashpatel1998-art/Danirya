@@ -22,6 +22,11 @@ type AudioContextValue = {
   ready: boolean;
   muted: boolean;
   setMuted: (muted: boolean) => void;
+  /**
+   * Arm journey beds after Hero loader / title / opening settle
+   * (`onDiveUnlock`). Ambient stays silent until this + unmute.
+   */
+  armJourney: () => void;
   /** Current camera_path frame index (0-based). */
   frame: number;
   /** True once lookback-complete frame has been reached (CTA sync). */
@@ -60,6 +65,10 @@ export function AudioProvider({ children }: { children: ReactNode }) {
     setMutedState(sc.isMuted());
   }, []);
 
+  const armJourney = useCallback(() => {
+    soundscapeRef.current?.armJourney();
+  }, []);
+
   useEffect(() => {
     let cancelled = false;
     const soundscape = new TempleSoundscape();
@@ -67,6 +76,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
 
     const boot = async () => {
       try {
+        // Camera path + element wiring only — ambient bed is preload=none.
         const [pathRes] = await Promise.all([
           ensureCameraPath(),
           soundscape.preload(),
@@ -92,15 +102,23 @@ export function AudioProvider({ children }: { children: ReactNode }) {
       });
     }, 8000);
 
+    const w = window as Window & {
+      __TEMPLE_SOUNDSCAPE__?: TempleSoundscape;
+    };
+    w.__TEMPLE_SOUNDSCAPE__ = soundscape;
+
     return () => {
       cancelled = true;
       clearTimeout(readyWatchdog);
       soundscape.dispose();
       soundscapeRef.current = null;
+      if (w.__TEMPLE_SOUNDSCAPE__ === soundscape) {
+        delete w.__TEMPLE_SOUNDSCAPE__;
+      }
     };
   }, []);
 
-  // Driven by journey frame scrub (same index as the visible frame).
+  // Driven by journey frame bus (snap playhead — same index as the visible frame).
   useEffect(() => {
     if (!ready) return;
 
@@ -135,10 +153,11 @@ export function AudioProvider({ children }: { children: ReactNode }) {
       ready,
       muted,
       setMuted,
+      armJourney,
       frame,
       lookbackComplete,
     }),
-    [ready, muted, setMuted, frame, lookbackComplete]
+    [ready, muted, setMuted, armJourney, frame, lookbackComplete]
   );
 
   return (

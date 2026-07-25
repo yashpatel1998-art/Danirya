@@ -31,6 +31,30 @@ export const HOLD_HERO: TypographyHold = {
 };
 
 /**
+ * Entrance door plaque (baked DANIRYA text) — HTML cover shows GILT FOUNDRY.
+ * Tuned to the threshold approach where the sign fills the doorway.
+ */
+export const HOLD_ENTRANCE_PLAQUE: TypographyHold = {
+  id: 'entrance-plaque',
+  enter: 78,
+  exit: 145,
+  fadeIn: 8,
+  fadeOut: 10,
+};
+
+/**
+ * Pedestal logo cover — disabled on Phase B (no sanctuary lookback composition).
+ * exit < enter keeps holdEnvelope at 0.
+ */
+export const HOLD_SANCTUARY_LOGO: TypographyHold = {
+  id: 'sanctuary-logo',
+  enter: 0,
+  exit: -1,
+  fadeIn: 14,
+  fadeOut: 18,
+};
+
+/**
  * WORK focus (path 236–240) — title lives in the bake.
  * Kept for vignette timing only; HeroOverlay does not paint Work HTML here.
  */
@@ -42,11 +66,11 @@ export const HOLD_WORK_TYPO: TypographyHold = {
   fadeOut: 5,
 };
 
-/** Sanctuary CTA — only after 180° lookback completes; stays through journey end. */
+/** Sanctuary CTA — sky-ascend bookend through journey end. */
 export const HOLD_SANCTUARY_CTA: TypographyHold = {
   id: 'sanctuary',
   enter: LOOKBACK_COMPLETE_FRAME,
-  exit: 800,
+  exit: 1200,
   fadeIn: 12,
   fadeOut: 0,
 };

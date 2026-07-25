@@ -2,29 +2,25 @@
 
 import { useEffect, useMemo, useState, type CSSProperties } from 'react';
 import {
-  ensureCameraPath,
-  getCameraVelocity,
-  settleFactor,
-} from '@/lib/camera/cameraPath';
-import {
   HOLD_SANCTUARY_CTA,
   holdEnvelope,
   smoothstep01,
-  workBayHold,
 } from '@/lib/camera/roomTypography';
 import { SANCTUARY_COPY } from '@/lib/content/sectionCopy';
-import { workProjects } from '@/lib/content/workProjects';
 import { MOTION } from '@/lib/constants/motion';
 import { subscribeJourneyFrame } from '@/lib/journey/frameBus';
+import { Logo3D } from '@/components/brand/Logo3D';
+import { EntranceBrandOverlay } from '@/components/hero/EntranceBrandOverlay';
+import { SanctuaryLogoOverlay } from '@/components/hero/SanctuaryLogoOverlay';
 import { TempleInscriptions } from '@/components/hero/TempleInscriptions';
+import { BRAND } from '@/lib/content/brand';
 import styles from './HeroOverlay.module.css';
 
-type LayerId = 'workBay' | 'sanctuary';
+type LayerId = 'sanctuary';
 
 type ActiveLayer = {
   id: LayerId;
   progress: number;
-  bay?: number;
 };
 
 function revealStyle(progress: number): CSSProperties {
@@ -38,29 +34,16 @@ function revealStyle(progress: number): CSSProperties {
   };
 }
 
-/** Journey typography — room inscriptions, work bays, sanctuary CTA. */
-export function HeroOverlay() {
+type HeroOverlayProps = {
+  /** Hide room inscriptions while statue typology / lens owns the hold. */
+  suppressInscriptions?: boolean;
+};
+
+/** Journey typography — room inscriptions + sanctuary CTA (Phase B snap). */
+export function HeroOverlay({
+  suppressInscriptions = false,
+}: HeroOverlayProps) {
   const [frame1, setFrame1] = useState(1);
-  const [pathReady, setPathReady] = useState(false);
-
-  const bayHolds = useMemo(
-    () => workProjects.map((p) => workBayHold(p.bay)),
-    []
-  );
-
-  useEffect(() => {
-    let cancelled = false;
-    void ensureCameraPath()
-      .then(() => {
-        if (!cancelled) setPathReady(true);
-      })
-      .catch(() => {
-        /* settle gate stays closed until path loads */
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
 
   useEffect(() => {
     return subscribeJourneyFrame((pathIndex0) => {
@@ -70,20 +53,12 @@ export function HeroOverlay() {
 
   const layers = useMemo(() => {
     const next: ActiveLayer[] = [];
-    const pathIndex0 = frame1 - 1;
-    const velocity = pathReady ? getCameraVelocity(pathIndex0) : 1;
-    const baySettle = pathReady ? settleFactor(velocity, 0.04, 0.14) : 0;
-
-    bayHolds.forEach((hold, i) => {
-      const p = holdEnvelope(frame1, hold) * baySettle;
-      if (p > 0.01) next.push({ id: 'workBay', progress: p, bay: i });
-    });
-
+    // Phase B snap: statue typology replaces work-bay HTML plaques.
     const sanctuary = holdEnvelope(frame1, HOLD_SANCTUARY_CTA);
     if (sanctuary > 0) next.push({ id: 'sanctuary', progress: sanctuary });
 
     return next;
-  }, [frame1, bayHolds, pathReady]);
+  }, [frame1]);
 
   const vignette = layers.reduce((max, layer) => {
     const peak =
@@ -104,45 +79,44 @@ export function HeroOverlay() {
         aria-hidden
       />
 
-      {/* Room inscriptions — same continuous-scroll settle system as room markers */}
-      <TempleInscriptions />
-
-      {primary?.id === 'workBay' && primary.bay != null && (
-        <div
-          className={`${styles.panel} ${styles.scaleSection}`}
-          style={revealStyle(primary.progress)}
-        >
-          <p className={styles.projectName}>{workProjects[primary.bay]?.name}</p>
-          <p className={styles.projectOutcome}>
-            {workProjects[primary.bay]?.outcome}
-          </p>
-          <p className={styles.projectCategory}>
-            {workProjects[primary.bay]?.category}
-          </p>
-        </div>
-      )}
+      {/* Room inscriptions — suppressed during statue typology holds */}
+      <TempleInscriptions suppressed={suppressInscriptions} />
+      <EntranceBrandOverlay />
+      <SanctuaryLogoOverlay />
 
       {primary?.id === 'sanctuary' && (
         <div
           className={`${styles.panel} ${styles.scaleBookend} ${styles.sanctuaryMinimal}`}
           style={revealStyle(primary.progress)}
         >
-          <p className={styles.sanctuaryLabel}>{SANCTUARY_COPY.emailLabel}</p>
-          <a
-            className={styles.sanctuaryEmail}
-            href={`mailto:${SANCTUARY_COPY.email}`}
-          >
-            {SANCTUARY_COPY.email}
-          </a>
-          <a
-            href="#apply"
-            className={styles.sanctuaryCta}
-            data-magnetic
-            data-cursor="enter"
-            data-cursor-label="Enter"
-          >
-            {SANCTUARY_COPY.cta}
-          </a>
+          <div className={styles.sanctuaryMark}>
+            <Logo3D
+              variant="hero"
+              spin={0.2}
+              spinAxis="y"
+              restYawDeg={16}
+              className={styles.sanctuaryLogo}
+            />
+          </div>
+          <p className={styles.sanctuaryBrand}>{BRAND.nameUpper}</p>
+          <p className={styles.sanctuaryLabel}>Continue</p>
+          <p className={styles.sanctuaryLead}>
+            The temple ends here — choose where to go next.
+          </p>
+          <div className={styles.sanctuaryCtas}>
+            {SANCTUARY_COPY.exits.map((exit) => (
+              <a
+                key={exit.href}
+                href={exit.href}
+                className={styles.sanctuaryCta}
+                data-magnetic
+                data-cursor="enter"
+                data-cursor-label={exit.cursorLabel}
+              >
+                {exit.label}
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </div>

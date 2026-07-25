@@ -1,3 +1,4 @@
+import { getCameraSample } from '@/lib/camera/cameraPath';
 import { ROOM_ENTER_FRAME } from '@/lib/camera/constants';
 import type { TypographyHold } from '@/lib/camera/roomTypography';
 import { plannedInscriptionHold } from '@/lib/content/inscriptionHoldTiming';
@@ -48,7 +49,7 @@ export const TEMPLE_INSCRIPTIONS: readonly TempleInscription[] = [
   {
     room: 'sanctuary',
     label: 'SANCTUARY',
-    lines: ['This is Danirya.'],
+    lines: ['This is Gilt Foundry.'],
   },
 ] as const;
 
@@ -62,11 +63,15 @@ const ROOM_ORDER: TempleRoomId[] = [
 
 export function roomAtPathIndex0(pathIndex0: number): TempleRoomId {
   const i = Math.max(0, pathIndex0);
+  // Prefer live path sample — Phase B rooms are non-monotonic (reverse exit).
+  const sampleRoom = getCameraSample(i)?.room;
+  if (sampleRoom) return sampleRoom;
+
   if (i >= ROOM_ENTER_FRAME.sanctuary) return 'sanctuary';
-  if (i >= ROOM_ENTER_FRAME.chapel) return 'chapel';
-  if (i >= ROOM_ENTER_FRAME.hall) return 'hall';
+  if (i >= ROOM_ENTER_FRAME.forecourt) return 'forecourt';
   if (i >= ROOM_ENTER_FRAME.threshold) return 'threshold';
-  return 'forecourt';
+  if (i >= ROOM_ENTER_FRAME.chapel) return 'chapel';
+  return 'hall';
 }
 
 /**

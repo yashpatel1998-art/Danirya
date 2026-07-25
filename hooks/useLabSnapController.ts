@@ -25,8 +25,8 @@ export type LabSnapUiState = {
 const IDLE_WHEEL_THRESHOLD = 28;
 
 /**
- * /lab/snap only — exclusive wheel/touch owner; Lenis stopped for the segment.
- * Does not touch production journey playback.
+ * /lab/snap harness — exclusive wheel/touch owner; Lenis stopped for the segment.
+ * Production `/` uses the same createSnapController via useHeroSnapPlayback.
  */
 export function useLabSnapController(): LabSnapUiState {
   const lenis = useLenis();

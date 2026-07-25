@@ -2,14 +2,12 @@
 
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import { useTempleAudioOptional } from '@/components/audio/AudioProvider';
+import { LabSnapTypology } from '@/components/lab/snap/LabSnapTypology';
+import { StatueLens } from '@/components/lab/snap/StatueLens';
 import { useLenis } from '@/components/shared/LenisContext';
-import { useJourneyFramePlayback } from '@/hooks/useJourneyFramePlayback';
+import { useHeroSnapPlayback } from '@/hooks/useHeroSnapPlayback';
 import { loadLogoTemplate } from '@/lib/brand/loadLogoGltf';
 import { JOURNEY_POSTER } from '@/lib/journey/frames';
-import {
-  getTempleScrollMobileVh,
-  getTempleScrollVh,
-} from '@/lib/journey/templeFilmMap';
 import { HeroLoader } from './HeroLoader';
 import { HeroOverlay } from './HeroOverlay';
 import { ScrollCue } from './ScrollCue';
@@ -58,7 +56,9 @@ export const Hero = memo(function Hero() {
     });
   }, []);
 
+  // Opening settle after loader blast + iris: arm beds, then unmute on gesture.
   const onDiveUnlock = useCallback(() => {
+    audio?.armJourney();
     void audio?.setMuted(false);
   }, [audio]);
 
@@ -71,16 +71,73 @@ export const Hero = memo(function Hero() {
     firstPaintDone,
     loadProgress,
     openingHeld,
-  } = useJourneyFramePlayback({
-    trackRef,
-    pinRef,
+    phase,
+    pointIndex,
+    frame1,
+    typologyPoint,
+    typologyMode,
+    onTypologyEntranceComplete,
+    onTypologyExitComplete,
+  } = useHeroSnapPlayback({
     canvasRef,
+    pinRef,
     lenis,
     onDiveUnlock,
     handoffReady,
     // Dive only after loader blast + fade — logo never rides the frame camera.
     diveArmed: loaderGone || verifyFast,
   });
+
+  // Pre-arm debug surface for Playwright (controller fills fields after snap arm).
+  useEffect(() => {
+    const w = window as Window & {
+      __HERO_SNAP_DEBUG__?: {
+        phase: string;
+        pointIndex: number;
+        frame1: number;
+        stopId: string | null;
+        kind: string | null;
+        statueId: string | null;
+        masterFrame: number | null;
+        typologyMode: string | null;
+        snapArmed: boolean;
+        openingHeld: boolean;
+        loadProgress: number;
+        framesReady: boolean;
+        loaderGone: boolean;
+        firstPaintDone: boolean;
+      };
+    };
+    const prev = w.__HERO_SNAP_DEBUG__;
+    w.__HERO_SNAP_DEBUG__ = {
+      phase: prev?.phase ?? phase,
+      pointIndex: prev?.pointIndex ?? pointIndex,
+      frame1: prev?.frame1 ?? frame1,
+      stopId: prev?.stopId ?? typologyPoint?.id ?? null,
+      kind: prev?.kind ?? typologyPoint?.kind ?? null,
+      statueId: prev?.statueId ?? typologyPoint?.statueId ?? null,
+      masterFrame: prev?.masterFrame ?? typologyPoint?.masterFrame ?? null,
+      typologyMode: typologyMode,
+      snapArmed: !openingHeld && (loaderGone || verifyFast),
+      openingHeld,
+      loadProgress,
+      framesReady,
+      loaderGone,
+      firstPaintDone,
+    };
+  }, [
+    phase,
+    pointIndex,
+    frame1,
+    typologyPoint,
+    typologyMode,
+    openingHeld,
+    loadProgress,
+    framesReady,
+    loaderGone,
+    firstPaintDone,
+    verifyFast,
+  ]);
 
   // Blast as soon as frames + scroll-load are done — don't wait on audio decode.
   const readyToBlast =
@@ -119,43 +176,58 @@ export const Hero = memo(function Hero() {
     return () => clearTimeout(id);
   }, [blastDone, loaderGone]);
 
-  // Absolute failsafe after hard refresh — never leave the first screen frozen.
+  // Absolute failsafe after hard refresh — dismiss a stuck loader only.
   useEffect(() => {
     const id = window.setTimeout(() => {
       setBlastDone(true);
       setLoaderGone(true);
       document.documentElement.style.overflow = '';
-      window.scrollTo(0, 0);
       const smooth = (
         window as Window & {
-          __lenis?: { start: () => void; scrollTo: (y: number, opts?: { immediate?: boolean }) => void };
+          __lenis?: { start: () => void };
         }
       ).__lenis;
-      smooth?.scrollTo(0, { immediate: true });
       smooth?.start();
     }, 16000);
     return () => clearTimeout(id);
   }, []);
 
-  // Track grows with inscription hold plateaus so travel frames stay 1:1.
-  const templeScrollStyle = {
-    ['--hero-scroll-vh' as string]: getTempleScrollVh(),
-    ['--hero-scroll-mobile-vh' as string]: getTempleScrollMobileVh(),
-  };
+  const washActive =
+    typologyPoint != null &&
+    typologyPoint.kind === 'statue' &&
+    (typologyMode === 'enter' ||
+      typologyMode === 'hold' ||
+      typologyMode === 'exit');
+  const washExiting = typologyMode === 'exit';
+  const showLens =
+    typologyPoint?.kind === 'statue' &&
+    typologyPoint.lensSrc != null &&
+    (typologyMode === 'enter' ||
+      typologyMode === 'hold' ||
+      typologyMode === 'exit');
+  const suppressInscriptions =
+    typologyPoint?.kind === 'statue' &&
+    (typologyMode === 'enter' ||
+      typologyMode === 'hold' ||
+      typologyMode === 'exit');
 
   return (
     <section
       ref={trackRef}
       className={styles.track}
-      style={templeScrollStyle}
       aria-label="Hero"
       data-cursor-scroll
+      data-hero-snap="1"
       data-dive-armed={loaderGone ? 'true' : 'false'}
       data-opening-held={openingHeld ? 'true' : 'false'}
+      data-hero-phase={phase}
+      data-hero-frame={String(frame1)}
+      data-hero-stop={String(pointIndex + 1)}
     >
       <div ref={pinRef} className={styles.sticky}>
         <div
           className={`${styles.stage} ${loaderGone && firstPaintDone ? styles.stageLive : ''}`}
+          data-hero-snap-stage="1"
         >
           {!loaderGone && (
             <img
@@ -170,6 +242,28 @@ export const Hero = memo(function Hero() {
             className={`${styles.canvas} ${loaderGone && firstPaintDone ? styles.canvasReady : ''}`}
             aria-hidden
           />
+          <div
+            className={`${styles.sceneWash} ${washActive && !washExiting ? styles.sceneWashActive : ''} ${washExiting ? styles.sceneWashExit : ''}`}
+            aria-hidden
+          />
+          {showLens && typologyPoint?.lensSrc ? (
+            <StatueLens
+              key={`lens-${typologyPoint.id}`}
+              src={typologyPoint.lensSrc}
+              alt={typologyPoint.eyebrow}
+              mode={typologyMode}
+              stageSelector="[data-hero-snap-stage='1']"
+            />
+          ) : null}
+          {typologyPoint ? (
+            <LabSnapTypology
+              key={typologyPoint.id}
+              point={typologyPoint}
+              mode={typologyMode}
+              onEntranceComplete={onTypologyEntranceComplete}
+              onExitComplete={onTypologyExitComplete}
+            />
+          ) : null}
           <HeroLoader
             loadProgress={loadProgress}
             explode={readyToBlast}
@@ -179,7 +273,7 @@ export const Hero = memo(function Hero() {
           />
           <ScrollCue visible={showScrollCue} />
         </div>
-        <HeroOverlay />
+        <HeroOverlay suppressInscriptions={suppressInscriptions} />
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 .track {
   position: relative;
-  height: calc(var(--hero-scroll-vh) * 1vh);
+  /* Snap journey owns wheel/touch — no Lenis scrub runway. */
+  height: 100vh;
   background: var(--color-black);
 }
 
@@ -46,6 +47,43 @@
   opacity: 1;
 }
 
+/**
+ * Desaturate + dim during statue holds; mask punches a full-color hole under the lens.
+ * Matches /lab/snap scene wash.
+ */
+.sceneWash {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  background: rgba(18, 18, 18, 0.18);
+  -webkit-backdrop-filter: grayscale(0.92) brightness(0.62) saturate(0.12);
+  backdrop-filter: grayscale(0.92) brightness(0.62) saturate(0.12);
+  -webkit-mask-image: radial-gradient(
+    circle var(--lens-r, 140px) at var(--lens-cx, 22%) var(--lens-cy, 50%),
+    transparent 0,
+    transparent 96%,
+    #000 100%
+  );
+  mask-image: radial-gradient(
+    circle var(--lens-r, 140px) at var(--lens-cx, 22%) var(--lens-cy, 50%),
+    transparent 0,
+    transparent 96%,
+    #000 100%
+  );
+}
+
+.sceneWashActive {
+  opacity: 1;
+}
+
+.sceneWashExit {
+  transition-duration: 0.45s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
 .poster {
   position: absolute;
   inset: 0;
@@ -55,12 +93,6 @@
   object-fit: cover;
   background: #000;
   pointer-events: none;
-}
-
-@media (max-width: 540px) {
-  .track {
-    height: calc(var(--hero-scroll-mobile-vh) * 1vh);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

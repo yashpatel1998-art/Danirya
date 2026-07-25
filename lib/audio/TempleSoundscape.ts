@@ -8,6 +8,8 @@ import {
   AUDIO_ASSETS,
   CRACKLE_BASE_VOLUME,
   CRACKLE_LOOP,
+  RADHA_KRISHNA_AMBIENT_SWELL,
+  RADHA_KRISHNA_HOLD,
   SANCTUARY_TONE,
   WHOOSH_VOLUME,
 } from '@/lib/audio/assets';
@@ -39,14 +41,20 @@ function lerp(a: number, b: number, t: number): number {
   return a + (b - a) * t;
 }
 
+function inRadhaKrishnaHold(frame0: number): boolean {
+  return frame0 >= RADHA_KRISHNA_HOLD.enter && frame0 <= RADHA_KRISHNA_HOLD.exit;
+}
+
 /**
  * Scroll-driven temple soundscape.
- * Muted by default; visitor unmute starts ambient + crackle loops.
+ * Muted by default; visitor unmute + journey settle starts ambient + crackle loops.
  */
 export class TempleSoundscape {
   private layers = new Map<LayerName, HTMLAudioElement>();
   private muted = true;
   private unlocked = false;
+  /** True after Hero dive unlock (loader / title / opening settle complete). */
+  private journeyArmed = false;
   private ready = false;
   private lastFrame = -1;
   private lastRoom: TempleRoom | null = null;
@@ -60,7 +68,12 @@ export class TempleSoundscape {
   private displayedAmbient = 0;
   private displayedCrackle = 0;
   private rafId = 0;
+  private ambientLoadStarted = false;
 
+  /**
+   * Wire elements only — do not decode the large ambient bed up front.
+   * FX layers use metadata; ambient stays preload=none until settle/unmute.
+   */
   async preload(): Promise<void> {
     const entries: [LayerName, string][] = [
       ['ambient', AUDIO_ASSETS.ambient],
@@ -72,15 +85,23 @@ export class TempleSoundscape {
     await Promise.all(
       entries.map(async ([name, src]) => {
         const el = new Audio();
-        el.preload = 'auto';
+        el.preload = name === 'ambient' ? 'none' : 'metadata';
         el.src = src;
         el.crossOrigin = 'anonymous';
-        if (name === 'ambient' || name === 'crackle') {
-          el.loop = name === 'ambient';
+        if (name === 'ambient') {
+          el.loop = true;
         }
         el.volume = 0;
         this.layers.set(name, el);
-        await this.waitCanPlay(el);
+
+        // Never block site ready on ambient decode (large stream).
+        if (name === 'ambient') return;
+
+        try {
+          await this.waitCanPlay(el);
+        } catch {
+          // FX failure must not block the soundscape / loader handoff.
+        }
       })
     );
 
@@ -94,6 +115,47 @@ export class TempleSoundscape {
 
   isMuted(): boolean {
     return this.muted;
+  }
+
+  /**
+   * Call once when the temple opening settles after loader / title / smoke handoff
+   * (Hero `onDiveUnlock`). Beds may play only after this + unmute.
+   */
+  armJourney(): void {
+    if (this.journeyArmed) return;
+    this.journeyArmed = true;
+    if (!this.muted) {
+      void this.unlockAndStartBeds();
+    }
+    this.applyVolumes(false);
+  }
+
+  isJourneyArmed(): boolean {
+    return this.journeyArmed;
+  }
+
+  /** Playwright / verify probe — gain targets + RK hold flag. */
+  getDebugSnapshot(): {
+    muted: boolean;
+    journeyArmed: boolean;
+    unlocked: boolean;
+    lastFrame: number;
+    inRadhaKrishnaHold: boolean;
+    targetAmbient: number;
+    displayedAmbient: number;
+    ambientElVolume: number;
+  } {
+    const ambient = this.layers.get('ambient');
+    return {
+      muted: this.muted,
+      journeyArmed: this.journeyArmed,
+      unlocked: this.unlocked,
+      lastFrame: this.lastFrame,
+      inRadhaKrishnaHold: inRadhaKrishnaHold(this.lastFrame),
+      targetAmbient: this.targetAmbient,
+      displayedAmbient: this.displayedAmbient,
+      ambientElVolume: ambient?.volume ?? 0,
+    };
   }
 
   /** Visitor gesture — required before any audible playback. */
@@ -118,7 +180,7 @@ export class TempleSoundscape {
     const room = sample.room;
     const crossedForward = this.lastFrame >= 0 && frame > this.lastFrame;
 
-    this.targetAmbient = this.ambientGainFor(room);
+    this.targetAmbient = this.ambientGainFor(room, frame);
     this.targetCrackle = this.crackleGainFor(room, sample.velocity);
 
     if (crossedForward) {
@@ -162,13 +224,14 @@ export class TempleSoundscape {
     this.layers.clear();
   }
 
-  private ambientGainFor(room: TempleRoom): number {
-    if (this.muted || !this.unlocked) return 0;
-    return AMBIENT_BASE_VOLUME * AMBIENT_ROOM_GAIN[room];
+  private ambientGainFor(room: TempleRoom, frame0: number): number {
+    if (this.muted || !this.unlocked || !this.journeyArmed) return 0;
+    const swell = inRadhaKrishnaHold(frame0) ? RADHA_KRISHNA_AMBIENT_SWELL : 1;
+    return AMBIENT_BASE_VOLUME * AMBIENT_ROOM_GAIN[room] * swell;
   }
 
   private crackleGainFor(room: TempleRoom, velocity: number): number {
-    if (this.muted || !this.unlocked) return 0;
+    if (this.muted || !this.unlocked || !this.journeyArmed) return 0;
     // Lower velocity (lingering / holds) → more crackle presence
     const linger = clamp01(1 - velocity / 0.12);
     const roomGain = CRACKLE_ROOM_GAIN[room];
@@ -209,8 +272,21 @@ export class TempleSoundscape {
     this.ensureVolumeLoop();
   }
 
+  private ensureAmbientLoading(): void {
+    const ambient = this.layers.get('ambient');
+    if (!ambient || this.ambientLoadStarted) return;
+    this.ambientLoadStarted = true;
+    // Stream on demand — first play() after load() kicks network fetch.
+    ambient.load();
+  }
+
   private async unlockAndStartBeds(): Promise<void> {
     this.unlocked = true;
+    // Gesture unlock is recorded, but beds stay silent until journey settle.
+    if (!this.journeyArmed) return;
+
+    this.ensureAmbientLoading();
+
     const ambient = this.layers.get('ambient');
     const crackle = this.layers.get('crackle');
     try {
@@ -306,7 +382,7 @@ export class TempleSoundscape {
   }
 
   private waitCanPlay(el: HTMLAudioElement): Promise<void> {
-    if (el.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
+    if (el.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
       return Promise.resolve();
     }
     return new Promise((resolve, reject) => {
@@ -319,9 +395,11 @@ export class TempleSoundscape {
         reject(new Error(`Failed to load ${el.src}`));
       };
       const cleanup = () => {
+        el.removeEventListener('loadedmetadata', onReady);
         el.removeEventListener('canplaythrough', onReady);
         el.removeEventListener('error', onError);
       };
+      el.addEventListener('loadedmetadata', onReady, { once: true });
       el.addEventListener('canplaythrough', onReady, { once: true });
       el.addEventListener('error', onError, { once: true });
       el.load();
