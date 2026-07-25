@@ -162,13 +162,13 @@ export const Hero = memo(function Hero() {
     }
   }, [restorePending]);
 
-  // If the mark exit never finishes, don't leave the loader up forever.
+  // If the fragment blast never finishes, don't leave the loader up forever.
   useEffect(() => {
     if (!readyToBlast || blastDone) return;
     const id = window.setTimeout(() => {
       console.warn('[hero] blast watchdog — dismissing loader');
       setBlastDone(true);
-    }, 5000);
+    }, 6000);
     return () => clearTimeout(id);
   }, [readyToBlast, blastDone]);
 

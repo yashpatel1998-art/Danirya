@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Logo3D } from '@/components/brand/Logo3D';
+import { OpeningLogo } from '@/components/brand/OpeningLogo';
 import { MOTION } from '@/lib/constants/motion';
 import styles from './HeroLoader.module.css';
 
@@ -14,8 +14,8 @@ type HeroLoaderProps = {
 };
 
 /**
- * Arrival screen — static Meshy GF mark, brand line, gold meter, scroll cue.
- * Opaque near-black stage; leaves via iris fade (no fragment blast).
+ * Arrival screen — spinning Meshy GF mark (OpeningLogo), beige+grey vignette,
+ * gold meter, scroll cue. Leaves via fragment blast then iris fade.
  */
 export function HeroLoader({
   loadProgress,
@@ -41,17 +41,6 @@ export function HeroLoader({
     return () => clearTimeout(id);
   }, [visible, onGone]);
 
-  // Fade/scale exit — clean 3D mark exit (no fragment blast).
-  useEffect(() => {
-    if (!explode) return;
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const id = window.setTimeout(
-      () => onExplosionComplete?.(),
-      reduced ? 0 : MOTION.duration.slow
-    );
-    return () => clearTimeout(id);
-  }, [explode, onExplosionComplete]);
-
   if (gone) return null;
 
   const p = Math.max(0, Math.min(1, loadProgress));
@@ -66,36 +55,36 @@ export function HeroLoader({
       aria-busy={visible || explode}
       data-hero-loader="1"
     >
-      <div className={styles.stage}>
-        <div
-          className={`${styles.markHost} ${explode ? styles.markExplode : ''}`}
-          aria-hidden
-        >
-          <Logo3D
-            variant="hero"
-            spin={0}
-            restYawDeg={22}
-            className={styles.mark}
-          />
-        </div>
-
-        {!explode && (
-          <>
-            <p className={styles.tagline}>A studio, not a template.</p>
-
-            <div className={styles.meter} role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={pct}>
-              <span className={styles.pct}>{pct}%</span>
-              <div className={styles.track} aria-hidden>
-                <div className={styles.fill} style={{ transform: `scaleX(${p})` }} />
-              </div>
-            </div>
-
-            {visible && pct < 100 && (
-              <span className={styles.hint}>Scroll to enter</span>
-            )}
-          </>
-        )}
+      <div className={styles.blastLayer}>
+        <OpeningLogo
+          spin={0.7}
+          explode={explode}
+          onExplosionComplete={onExplosionComplete}
+        />
       </div>
+
+      {!explode && (
+        <div className={styles.stage}>
+          <p className={styles.tagline}>A studio, not a template.</p>
+
+          <div
+            className={styles.meter}
+            role="progressbar"
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={pct}
+          >
+            <span className={styles.pct}>{pct}%</span>
+            <div className={styles.track} aria-hidden>
+              <div className={styles.fill} style={{ transform: `scaleX(${p})` }} />
+            </div>
+          </div>
+
+          {visible && pct < 100 && (
+            <span className={styles.hint}>Scroll to enter</span>
+          )}
+        </div>
+      )}
     </div>
   );
 }
