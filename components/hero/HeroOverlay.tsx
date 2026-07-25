@@ -6,7 +6,6 @@ import {
   holdEnvelope,
   smoothstep01,
 } from '@/lib/camera/roomTypography';
-import { SANCTUARY_COPY } from '@/lib/content/sectionCopy';
 import { MOTION } from '@/lib/constants/motion';
 import { subscribeJourneyFrame } from '@/lib/journey/frameBus';
 import { EntranceBrandOverlay } from '@/components/hero/EntranceBrandOverlay';
@@ -87,24 +86,6 @@ export function HeroOverlay({
           style={revealStyle(primary.progress)}
         >
           <p className={styles.sanctuaryBrand}>{BRAND.nameUpper}</p>
-          <p className={styles.sanctuaryLabel}>Continue</p>
-          <p className={styles.sanctuaryLead}>
-            The temple ends here — choose where to go next.
-          </p>
-          <div className={styles.sanctuaryCtas}>
-            {SANCTUARY_COPY.exits.map((exit) => (
-              <a
-                key={exit.href}
-                href={exit.href}
-                className={styles.sanctuaryCta}
-                data-magnetic
-                data-cursor="enter"
-                data-cursor-label={exit.cursorLabel}
-              >
-                {exit.label}
-              </a>
-            ))}
-          </div>
         </div>
       )}
     </div>

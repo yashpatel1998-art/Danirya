@@ -26,9 +26,4 @@ export const SANCTUARY_COPY = {
   emailLabel: 'Enquiries',
   email: BRAND.email,
   cta: 'Begin Your Project',
-  exits: [
-    { href: '/work', label: 'View Work', cursorLabel: 'Work' },
-    { href: '/studio', label: 'About the Studio', cursorLabel: 'Studio' },
-    { href: '/apply', label: 'Start a Project', cursorLabel: 'Enter' },
-  ],
 } as const;
