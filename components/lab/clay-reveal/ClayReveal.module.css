@@ -1,0 +1,210 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  background: #0a0a0a;
+  color: #f4f0e8;
+}
+
+/* Stage-only wrapper for embedding in other lab compositions */
+.embed {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.embed .stage {
+  width: min(100%, 960px);
+}
+
+.kicker {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(212, 160, 84, 0.55);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  letter-spacing: 0.04em;
+}
+
+.note {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: rgba(244, 240, 232, 0.42);
+}
+
+/* 16:9 registration box — both layers fill identically */
+.stage {
+  position: relative;
+  width: min(100%, 960px);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: ew-resize;
+  background: #111;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.gold {
+  z-index: 1;
+}
+
+.label {
+  position: absolute;
+  top: 0.85rem;
+  z-index: 3;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  color: rgba(212, 160, 84, 0.45);
+  pointer-events: none;
+}
+
+.labelClay {
+  left: 0.9rem;
+}
+
+.labelFinal {
+  right: 0.9rem;
+}
+
+.divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+  width: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  background: #d4a054;
+  box-shadow: 0 0 0 0.5px rgba(212, 160, 84, 0.35);
+}
+
+/**
+ * Draggable handle — isolated so a scalloped lens motif can replace it later.
+ * Edit only this rule (or swap the element in TSX).
+ */
+.handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #d4a054;
+  border-radius: 50%;
+  background: rgba(10, 10, 10, 0.72);
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  cursor: ew-resize;
+  touch-action: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.handle::before,
+.handle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid rgba(212, 160, 84, 0.85);
+  border-right: 1px solid rgba(212, 160, 84, 0.85);
+}
+
+.handle::before {
+  left: 10px;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.handle::after {
+  right: 10px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* One-time discoverability cue — fades out on first drag */
+.cue {
+  position: absolute;
+  top: calc(50% + 28px);
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  color: #d4a054;
+  opacity: 0.4;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.cueHidden {
+  opacity: 0;
+}
+
+/* Applied to <body> while dragging — blocks text selection globally */
+.draggingBody {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  cursor: ew-resize !important;
+}
+
+@media (max-width: 600px) {
+  .note {
+    margin-bottom: 0.85rem;
+  }
+
+  .handle {
+    width: 42px;
+    height: 42px;
+  }
+
+  .cue {
+    top: calc(50% + 32px);
+  }
+}
