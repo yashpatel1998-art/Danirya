@@ -173,7 +173,18 @@ export function HeroOverlay({
             className={`${styles.panel} ${styles.scaleBookend} ${styles.sanctuaryPanel}`}
           >
             <div ref={copyRef} className={styles.sanctuaryCopy}>
-              <p className={styles.sanctuaryLabel}>Continue</p>
+              <p className={styles.sanctuaryLabel}>
+                {SANCTUARY_COPY.emailLabel}
+              </p>
+              <a
+                className={styles.sanctuaryEmail}
+                href={`mailto:${SANCTUARY_COPY.email}`}
+                data-magnetic
+                data-cursor="enter"
+                data-cursor-label="Write"
+              >
+                {SANCTUARY_COPY.email}
+              </a>
               <p className={styles.sanctuaryLead}>
                 The temple ends here — choose where to go next.
               </p>

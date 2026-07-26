@@ -1,6 +1,7 @@
 'use client';
 
 import type { CSSProperties } from 'react';
+import { SANCTUARY_COPY } from '@/lib/content/sectionCopy';
 import { ContactForm } from './ContactForm';
 import { revealStyle, useContactReveal } from './useContactReveal';
 import styles from './ContactSection.module.css';
@@ -22,13 +23,13 @@ export function ContactSection() {
       <div className={styles.inner}>
         <header className={styles.emailHero} style={revealStyle(stages.email)}>
           <span className={styles.emailLabel} aria-hidden>
-            Enquiries
+            {SANCTUARY_COPY.emailLabel}
           </span>
           <a
-            href="mailto:hello@daniryastudio.com"
+            href={`mailto:${SANCTUARY_COPY.email}`}
             className={styles.emailLink}
           >
-            hello@daniryastudio.com
+            {SANCTUARY_COPY.email}
           </a>
         </header>
 

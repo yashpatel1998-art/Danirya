@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from 'react';
 import { SelectField } from '@/components/ui/SelectField';
+import { SANCTUARY_COPY } from '@/lib/content/sectionCopy';
 import styles from './ApplicationPanel.module.css';
 
 const BUDGETS = [
@@ -122,9 +123,12 @@ export function ApplicationPanel({ active }: ApplicationPanelProps) {
   return (
     <div className={styles.shell}>
       <header className={styles.header}>
-        <p className={styles.emailLabel}>Enquiries</p>
-        <a href="mailto:hello@daniryastudio.com" className={styles.emailHero}>
-          hello@daniryastudio.com
+        <p className={styles.emailLabel}>{SANCTUARY_COPY.emailLabel}</p>
+        <a
+          href={`mailto:${SANCTUARY_COPY.email}`}
+          className={styles.emailHero}
+        >
+          {SANCTUARY_COPY.email}
         </a>
         <h2 className={styles.headline}>Begin a conversation</h2>
         <p className={styles.sub}>A quiet note after the lookback.</p>
