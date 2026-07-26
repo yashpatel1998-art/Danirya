@@ -25,6 +25,9 @@ export const STUDIO_SECTION_COPY = {
 export const SANCTUARY_COPY = {
   emailLabel: 'Enquiries',
   email: BRAND.email,
+  eyebrow: 'THE THRESHOLD',
+  heading: 'Every build begins at a door.',
+  line: 'Choose where yours opens.',
   cta: 'Begin Your Project',
   exits: [
     { href: '/work', label: 'View Work', cursorLabel: 'Work' },

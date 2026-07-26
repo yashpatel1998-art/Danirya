@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ClayReveal } from '@/components/lab/clay-reveal/ClayReveal';
+import { LAB_BACKDROP_SRC } from '@/lib/lab/backdrop';
 import { prefersReducedMotion } from '@/lib/motion/prefersReducedMotion';
 import styles from './LabWorkCase.module.css';
 
@@ -47,8 +48,8 @@ function bindReplayEntrance(
 }
 
 /**
- * /lab/work — single Temple case-study flagship (lab only).
- * Does not touch live /work, journey, or contact UX.
+ * Temple case-study flagship — shared by /work (production) and /lab/work.
+ * Dimmed elephant backdrop only; clay reveal stays the star. No journey/snap.
  */
 export function LabWorkCase() {
   const pageRef = useRef<HTMLElement>(null);
@@ -82,6 +83,20 @@ export function LabWorkCase() {
 
   return (
     <main ref={pageRef} className={styles.page}>
+      {/* Quiet elephant-entrance atmosphere — behind reveal + type only. */}
+      <div className={styles.backdrop} aria-hidden>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className={styles.backdropImg}
+          src={LAB_BACKDROP_SRC}
+          alt=""
+          width={1920}
+          height={1080}
+          decoding="async"
+        />
+        <div className={styles.backdropWash} />
+      </div>
+
       {/* 1. Hero */}
       <section
         ref={heroRef}

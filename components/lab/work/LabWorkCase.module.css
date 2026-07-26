@@ -1,20 +1,55 @@
-/* /lab/work — Temple flagship case study (lab only). Near-black + gold. */
+/* /lab/work — Temple flagship case study (lab only). Quiet still + gold. */
 
 .page {
+  position: relative;
+  isolation: isolate;
   min-height: 100vh;
-  background:
-    radial-gradient(
-      ellipse 80% 40% at 50% 0%,
-      rgba(212, 160, 84, 0.07) 0%,
-      transparent 55%
-    ),
-    #0a0a0a;
+  background: #0a0a0a;
   color: #f4f0e8;
   font-family: var(--font-sans, 'General Sans', system-ui, sans-serif);
 }
 
+/* Fixed atmosphere — darker than /lab/cta (~25% brightness). */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.backdropImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  filter: brightness(0.25);
+}
+
+.backdropWash {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 10, 10, 0.72) 0%,
+      rgba(10, 10, 10, 0.55) 32%,
+      rgba(32, 22, 10, 0.58) 68%,
+      rgba(10, 10, 10, 0.82) 100%
+    ),
+    radial-gradient(
+      ellipse 78% 70% at 50% 42%,
+      rgba(212, 160, 84, 0.1) 0%,
+      transparent 62%
+    );
+}
+
 /* —— 1. Hero —— */
 .hero {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,6 +83,8 @@
 
 /* —— 2. Framed clay reveal (statue-hold typology hierarchy) —— */
 .reveal {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +142,8 @@
 
 /* —— 3. Closing —— */
 .close {
+  position: relative;
+  z-index: 1;
   padding: clamp(4rem, 12vh, 7.5rem) 1.5rem clamp(5rem, 14vh, 8rem);
   text-align: center;
 }
