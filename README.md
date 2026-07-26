@@ -19,7 +19,7 @@ Production 4K PNG sequence (280 frames) integrated via canvas scroll playback.
 ## Contact Form
 
 The contact section features:
-- Floating email hero: `hello@daniryastudio.com`
+- Application form notifications route to `hello@giltfoundry.com`
 - Form fades up 0.8s after section enters viewport
 - Premium dark museum aesthetic
 - Full validation and success state
@@ -38,7 +38,10 @@ Open http://localhost:3000 — scroll the Hero, then continue to Contact.
 
 | Variable | Description |
 |----------|-------------|
-| `CONTACT_WEBHOOK_URL` | Optional webhook URL for form submissions (Zapier, Make, custom API) |
+| `RESEND_API_KEY` | **Required.** Resend API key for application email delivery |
+| `RESEND_FROM` | **Required.** Verified Resend from address (e.g. `Gilt Foundry <onboarding@yourdomain.com>`) |
+| `CONTACT_TO_EMAIL` | Inbox for applications (defaults to `hello@giltfoundry.com`) |
+| `CONTACT_WEBHOOK_URL` | Optional secondary webhook (Zapier, Make, custom API) |
 
 ## Production (Railway)
 
@@ -47,7 +50,7 @@ npm run build
 npm start
 ```
 
-Set `CONTACT_WEBHOOK_URL` in Railway environment variables.
+Set `RESEND_API_KEY`, `RESEND_FROM`, and optionally `CONTACT_TO_EMAIL` in Railway.
 
 ## Blender Production
 
