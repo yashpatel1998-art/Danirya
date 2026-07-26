@@ -105,8 +105,8 @@ export async function POST(request: NextRequest) {
   `;
 
   let emailId: string | undefined;
+  const resend = new Resend(apiKey);
   try {
-    const resend = new Resend(apiKey);
     const { data, error } = await resend.emails.send({
       from,
       to: [to],
@@ -126,6 +126,39 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Unable to deliver request.' }, { status: 502 });
   }
 
+  // Applicant confirmation — best-effort; never fail the request if this send fails.
+  let confirmId: string | undefined;
+  const confirmText = [
+    'Thanks for applying to Gilt Foundry.',
+    '',
+    "I read every application personally — no queue, no autoresponder chain. If there's a fit, you'll hear from me directly within 24 hours.",
+    '',
+    '— Gilt Foundry',
+  ].join('\n');
+  const confirmHtml = `
+    <div style="font-family:Georgia,serif;color:#1a1a1a;line-height:1.6;max-width:520px">
+      <p style="margin:0 0 1em">Thanks for applying to Gilt Foundry.</p>
+      <p style="margin:0 0 1em">I read every application personally — no queue, no autoresponder chain. If there's a fit, you'll hear from me directly within 24 hours.</p>
+      <p style="margin:0;color:#b8860b">— Gilt Foundry</p>
+    </div>
+  `;
+  try {
+    const { data: confirmData, error: confirmError } = await resend.emails.send({
+      from,
+      to: [enquiry.email],
+      subject: 'Your Gilt Foundry application',
+      text: confirmText,
+      html: confirmHtml,
+    });
+    if (confirmError) {
+      console.error('[contact] Applicant confirmation Resend error:', confirmError);
+    } else {
+      confirmId = confirmData?.id;
+    }
+  } catch (confirmErr) {
+    console.error('[contact] Applicant confirmation send failed:', confirmErr);
+  }
+
   const webhook = process.env.CONTACT_WEBHOOK_URL;
   if (webhook) {
     try {
@@ -140,5 +173,9 @@ export async function POST(request: NextRequest) {
     }
   }
 
-  return NextResponse.json({ ok: true, id: emailId });
+  return NextResponse.json({
+    ok: true,
+    id: emailId,
+    ...(confirmId ? { confirmId } : {}),
+  });
 }
