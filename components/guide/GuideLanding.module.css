@@ -1,0 +1,210 @@
+/* Lead-magnet landing — warm paper tone, static GF mark, no WebGL. */
+
+.root {
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  --paper: #f4efe6;
+  --ink: #1c1610;
+  --muted: rgba(28, 22, 16, 0.62);
+  --gold: #9a6b2f;
+  --line: rgba(28, 22, 16, 0.14);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:
+    max(1.5rem, env(safe-area-inset-top))
+    1.25rem
+    max(1.25rem, env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans, 'General Sans', system-ui, sans-serif);
+}
+
+.stack {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.logoMark {
+  width: min(120px, 32vw);
+  margin-bottom: 0.35rem;
+}
+
+.logoMarkImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display, Fraunces, Georgia, serif);
+  font-size: clamp(1.75rem, 5.8vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.18;
+  color: var(--ink);
+}
+
+.tagline {
+  margin: 0 0 0.35rem;
+  max-width: 34ch;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.input {
+  width: 100%;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.95rem;
+  transition:
+    border-color 0.2s var(--ease-premium),
+    box-shadow 0.2s var(--ease-premium);
+}
+
+.input::placeholder {
+  color: rgba(28, 22, 16, 0.35);
+}
+
+.input:focus {
+  outline: none;
+  border-color: rgba(154, 107, 47, 0.45);
+  box-shadow: 0 0 0 3px rgba(154, 107, 47, 0.12);
+}
+
+.submit {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid rgba(154, 107, 47, 0.35);
+  border-radius: 999px;
+  background: rgba(154, 107, 47, 0.1);
+  color: var(--gold);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.2s var(--ease-premium),
+    border-color 0.2s var(--ease-premium),
+    transform 0.2s var(--ease-premium);
+}
+
+.submit:hover:not(:disabled) {
+  background: rgba(154, 107, 47, 0.16);
+  border-color: rgba(154, 107, 47, 0.55);
+}
+
+.submit:active:not(:disabled) {
+  transform: scale(0.985);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.error {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #a33b2e;
+}
+
+.success {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.successTitle {
+  margin: 0;
+  font-family: var(--font-display, Fraunces, Georgia, serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.successBody {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  width: 100%;
+  padding: 0 1.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(154, 107, 47, 0.45);
+  background: rgba(154, 107, 47, 0.12);
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s var(--ease-premium);
+}
+
+.download:hover {
+  background: rgba(154, 107, 47, 0.2);
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.footerLink {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: rgba(28, 22, 16, 0.42);
+  text-decoration: none;
+  transition: color 0.2s var(--ease-premium);
+}
+
+.footerLink:hover {
+  color: var(--gold);
+}

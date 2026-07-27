@@ -1,10 +1,15 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { useTempleAudioOptional } from '@/components/audio/AudioProvider';
 import styles from './AudioToggle.module.css';
 
+const GUIDE_PATHS = new Set(['/guide', '/lab/guide']);
+
 export function AudioToggle() {
+  const pathname = usePathname();
   const audio = useTempleAudioOptional();
+  if (GUIDE_PATHS.has(pathname)) return null;
   if (!audio) return null;
 
   const { ready, muted, setMuted } = audio;
