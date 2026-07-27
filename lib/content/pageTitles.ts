@@ -5,7 +5,7 @@ export const BASE_TITLE = `${BRAND.name} — Premium digital craftsmanship`;
 
 export const PAGE_TITLES = {
   home: BASE_TITLE,
-  apply: `${BRAND.name} — Apply`,
+  apply: `${BRAND.name} · Apply`,
   work: `${BRAND.name} — Work`,
   studio: `${BRAND.name} — Studio`,
   notFound: `${BRAND.name} — Path unseen`,
