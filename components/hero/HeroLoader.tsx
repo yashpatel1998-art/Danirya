@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { OpeningLogo } from '@/components/brand/OpeningLogo';
+import { shouldUseStaticHomeLoader } from '@/lib/device/capabilities';
 import { MOTION } from '@/lib/constants/motion';
+import { StaticLoaderMark } from './StaticLoaderMark';
 import styles from './HeroLoader.module.css';
 
 type HeroLoaderProps = {
@@ -24,6 +25,7 @@ export function HeroLoader({
   onExplosionComplete,
   onGone,
 }: HeroLoaderProps) {
+  const staticLoader = shouldUseStaticHomeLoader();
   const [leaving, setLeaving] = useState(false);
   const [gone, setGone] = useState(false);
 
@@ -56,8 +58,7 @@ export function HeroLoader({
       data-hero-loader="1"
     >
       <div className={styles.blastLayer}>
-        <OpeningLogo
-          spin={0.7}
+        <StaticLoaderMark
           explode={explode}
           onExplosionComplete={onExplosionComplete}
         />
@@ -81,7 +82,7 @@ export function HeroLoader({
           </div>
 
           {visible && pct < 100 && (
-            <span className={styles.hint}>Scroll to enter</span>
+            <span className={styles.hint}>Scroll or tap to enter</span>
           )}
         </div>
       )}

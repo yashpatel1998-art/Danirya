@@ -1,0 +1,59 @@
+.root {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.spin {
+  animation: markSpin 14s linear infinite;
+  will-change: transform;
+}
+
+.mark {
+  width: min(140px, 36vw);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 28px rgba(28, 22, 16, 0.18));
+}
+
+.explode .spin {
+  animation: markExit 0.52s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes markSpin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes markExit {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.35) rotateY(18deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spin {
+    animation: none;
+  }
+
+  .explode .spin {
+    animation: markFade 0.35s ease forwards;
+  }
+}
+
+@keyframes markFade {
+  to {
+    opacity: 0;
+  }
+}

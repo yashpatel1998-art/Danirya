@@ -27,9 +27,9 @@
   --form-gold-glow: rgba(212, 160, 84, 0.18);
   --form-radius: 2px;
 
-  /* Typography — locked: Fraunces (headings/CTA) + General Sans (body) */
-  --font-serif: 'Fraunces', 'Times New Roman', serif;
-  --font-sans: 'General Sans', system-ui, sans-serif;
+  /* Typography — self-hosted via next/font (no third-party CDN) */
+  --font-serif: var(--font-fraunces), 'Times New Roman', serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
 
   /* Spacing */
   --space-section: clamp(6rem, 14vh, 10rem);

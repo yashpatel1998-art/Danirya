@@ -1,10 +1,11 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { AudioProvider } from '@/components/audio/AudioProvider';
 import { CustomCursor } from '@/components/cursor/CustomCursor';
 import { DocumentTitle } from '@/components/shared/DocumentTitle';
 import { SmoothScroll } from '@/components/shared/SmoothScroll';
 import { RouteTransition } from '@/components/transition/RouteTransition';
 import { PAGE_TITLES } from '@/lib/content/pageTitles';
+import { dmSans, fraunces } from './fonts';
 import './tokens.css';
 import 'lenis/dist/lenis.css';
 import './globals.css';
@@ -14,32 +15,21 @@ export const metadata: Metadata = {
   description:
     'A guided architectural experience. Premium digital craftsmanship for ambitious brands.',
   openGraph: {
-    title: 'Danirya Studio',
+    title: 'Gilt Foundry',
     description: 'Craft extraordinary digital experiences.',
     type: 'website',
   },
 };
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link rel="preconnect" href="https://api.fontshare.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={`${fraunces.variable} ${dmSans.variable}`}>
       <body data-scroll-chrome="lenis">
         <SmoothScroll>
           <AudioProvider>

@@ -24,9 +24,12 @@ import {
   type SlidingFrameCache,
 } from '@/lib/journey/slidingFrameCache';
 import type Lenis from 'lenis';
+import { shouldReduceLoaderExperience } from '@/lib/device/capabilities';
 
-/** 1 viewport of scroll intent ≈ 28% loader progress (~3.6 pages → 100%). */
-const SCROLL_LOAD_PERCENT_PER_PAGE = 0.28;
+/** Desktop: ~3.6 pages to 100%. Mobile: ~2 pages (less friction). */
+function scrollLoadPercentPerPage(): number {
+  return shouldReduceLoaderExperience() ? 0.48 : 0.28;
+}
 const IDLE_WHEEL_THRESHOLD = 28;
 
 function pinScrollToOpening(lenis: Lenis | null | undefined) {
@@ -170,6 +173,7 @@ export function useHeroSnapPlayback({
     let touchY: number | null = null;
     let finished = false;
     let removeScroll: (() => void) | null = null;
+    const scrollPctPerPage = scrollLoadPercentPerPage();
 
     const teardown = () => {
       removeScroll?.();
@@ -177,7 +181,7 @@ export function useHeroSnapPlayback({
     };
 
     const publish = (pages: number) => {
-      const raw = Math.min(1, Math.max(0, pages) * SCROLL_LOAD_PERCENT_PER_PAGE);
+      const raw = Math.min(1, Math.max(0, pages) * scrollPctPerPage);
       const next = !framesReadyRef.current && raw >= 1 ? 0.99 : raw;
       loadProgressRef.current = next;
       setLoadProgress(next);
@@ -242,24 +246,32 @@ export function useHeroSnapPlayback({
       }
     };
 
+    const onTapEnter = () => {
+      if (finished) return;
+      scrollPages = 1 / scrollPctPerPage;
+      publish(scrollPages);
+    };
+
     const onClick = () => {
       if (finished) return;
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        scrollPages = 1 / SCROLL_LOAD_PERCENT_PER_PAGE;
-        publish(scrollPages);
+      if (
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+        window.matchMedia('(pointer: coarse)').matches
+      ) {
+        onTapEnter();
       }
     };
 
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduced) {
+    const coarse = window.matchMedia('(pointer: coarse)').matches;
+    if (reduced || coarse) {
       window.addEventListener('click', onClick);
+      window.addEventListener('touchend', onTapEnter, { passive: true });
       window.addEventListener('keydown', onKey);
-      const timer = window.setTimeout(() => {
-        scrollPages = 1 / SCROLL_LOAD_PERCENT_PER_PAGE;
-        publish(scrollPages);
-      }, 1200);
+      const timer = window.setTimeout(onTapEnter, coarse ? 2200 : 1200);
       removeScroll = () => {
         window.removeEventListener('click', onClick);
+        window.removeEventListener('touchend', onTapEnter);
         window.removeEventListener('keydown', onKey);
         clearTimeout(timer);
       };
@@ -442,6 +454,8 @@ export function useHeroSnapPlayback({
       })();
     }, 50);
 
+    const warmTimeoutMs = shouldReduceLoaderExperience() ? 6000 : 12000;
+
     const stuckTimer = window.setTimeout(() => {
       if (!active) return;
       console.warn('[hero-snap] opening warm timed out; unblocking');
@@ -450,7 +464,7 @@ export function useHeroSnapPlayback({
       loadProgressRef.current = 1;
       setLoadProgress(1);
       endScrollCaptureRef.current?.();
-    }, 12000);
+    }, warmTimeoutMs);
 
     return () => {
       active = false;

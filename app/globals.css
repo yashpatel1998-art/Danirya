@@ -1,8 +1,4 @@
-/* Locked type: Fraunces (display) + General Sans (body).
- * Fonts load via <link> in layout.tsx — never @import here.
- * tokens.css + lenis.css are imported from layout.tsx so the bundler
- * cannot push remote @imports below style rules (Chrome Issues warning).
- */
+/* Locked type: Fraunces (display) + DM Sans (body) via next/font in layout.tsx. */
 
 *,
 *::before,
@@ -23,6 +19,8 @@ body {
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: none;
 }
 
 body[data-page-tone='document'] {

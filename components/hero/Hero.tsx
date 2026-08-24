@@ -6,6 +6,7 @@ import { LabSnapTypology } from '@/components/lab/snap/LabSnapTypology';
 import { StatueLens } from '@/components/lab/snap/StatueLens';
 import { useLenis } from '@/components/shared/LenisContext';
 import { useHeroSnapPlayback } from '@/hooks/useHeroSnapPlayback';
+import { shouldReduceLoaderExperience } from '@/lib/device/capabilities';
 import { JOURNEY_POSTER } from '@/lib/journey/frames';
 import { HeroLoader } from './HeroLoader';
 import { HeroOverlay } from './HeroOverlay';
@@ -25,12 +26,15 @@ export const Hero = memo(function Hero() {
 
   useEffect(() => {
     let cancelled = false;
+    const mobile = shouldReduceLoaderExperience();
+    const fontWaitMs = mobile ? 600 : 2500;
+    const fontCapMs = mobile ? 1200 : 3000;
     const ready = async () => {
       try {
         if (document.fonts?.ready) {
           await Promise.race([
             document.fonts.ready,
-            new Promise<void>((r) => window.setTimeout(r, 2500)),
+            new Promise<void>((r) => window.setTimeout(r, fontWaitMs)),
           ]);
         }
       } catch {
@@ -41,17 +45,16 @@ export const Hero = memo(function Hero() {
     void ready();
     const fallback = window.setTimeout(() => {
       if (!cancelled) setFontsReady(true);
-    }, 3000);
+    }, fontCapMs);
     return () => {
       cancelled = true;
       clearTimeout(fallback);
     };
   }, []);
 
-  // Opening settle after loader blast + iris: arm beds, then unmute on gesture.
+  // Arm soundscape after dive — user unmutes via AudioToggle (iOS autoplay policy).
   const onDiveUnlock = useCallback(() => {
     audio?.armJourney();
-    void audio?.setMuted(false);
   }, [audio]);
 
   const audioSettled = verifyFast || audio == null || audio.ready;
@@ -181,6 +184,7 @@ export const Hero = memo(function Hero() {
 
   // Absolute failsafe after hard refresh — dismiss a stuck loader only.
   useEffect(() => {
+    const capMs = shouldReduceLoaderExperience() ? 9000 : 14000;
     const id = window.setTimeout(() => {
       setBlastDone(true);
       setLoaderGone(true);
@@ -191,7 +195,7 @@ export const Hero = memo(function Hero() {
         }
       ).__lenis;
       smooth?.start();
-    }, 16000);
+    }, capMs);
     return () => clearTimeout(id);
   }, []);
 
@@ -205,11 +209,6 @@ export const Hero = memo(function Hero() {
   const showLens =
     typologyPoint?.kind === 'statue' &&
     typologyPoint.lensSrc != null &&
-    (typologyMode === 'enter' ||
-      typologyMode === 'hold' ||
-      typologyMode === 'exit');
-  const suppressInscriptions =
-    typologyPoint?.kind === 'statue' &&
     (typologyMode === 'enter' ||
       typologyMode === 'hold' ||
       typologyMode === 'exit');
@@ -258,7 +257,7 @@ export const Hero = memo(function Hero() {
               stageSelector="[data-hero-snap-stage='1']"
             />
           ) : null}
-          {typologyPoint ? (
+          {typologyPoint?.kind === 'statue' ? (
             <LabSnapTypology
               key={typologyPoint.id}
               point={typologyPoint}
@@ -277,7 +276,7 @@ export const Hero = memo(function Hero() {
           <ScrollCue visible={showScrollCue} />
         </div>
         {loaderGone ? (
-          <HeroOverlay suppressInscriptions={suppressInscriptions} />
+          <HeroOverlay />
         ) : null}
       </div>
     </section>

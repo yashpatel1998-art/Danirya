@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 import { useLayoutEffect, useState, type ReactNode } from 'react';
+import { shouldUseNativeScroll } from '@/lib/device/capabilities';
 import { LenisProvider } from './LenisContext';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -21,10 +22,6 @@ export function SmoothScroll({ children }: SmoothScrollProps) {
   const [lenis, setLenis] = useState<Lenis | null>(null);
 
   useLayoutEffect(() => {
-    const prefersReducedMotion = window.matchMedia(
-      '(prefers-reduced-motion: reduce)'
-    ).matches;
-
     // Prevent browser restoring a mid-temple scrollY from a prior visit —
     // that made fresh loads open on the Studio hold inside the film.
     if ('scrollRestoration' in history) {
@@ -32,7 +29,8 @@ export function SmoothScroll({ children }: SmoothScrollProps) {
     }
     window.scrollTo(0, 0);
 
-    if (prefersReducedMotion) return;
+    // Touch / mobile: native scroll avoids Lenis jank and regional CDN stalls.
+    if (shouldUseNativeScroll()) return;
 
     const instance = new Lenis({
       lerp: 0.12,
