@@ -126,7 +126,7 @@ export function LabApplyFlow() {
           <p className={styles.eyebrow}>Application</p>
           <h1 className={styles.title}>Build with Gilt Foundry</h1>
           <p className={styles.lede}>
-            Tell me about the work. I read every application personally.
+            Tell us about the work. We read every application personally.
           </p>
         </header>
 
@@ -135,7 +135,7 @@ export function LabApplyFlow() {
             <div className={styles.success} role="status">
               <h2 className={styles.successTitle}>Application received</h2>
               <p className={styles.successBody}>
-                Thank you. If there is a fit, you will hear from me directly
+                Thank you. If there is a fit, you will hear from us directly
                 within 24 hours.
               </p>
             </div>
