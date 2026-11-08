@@ -131,14 +131,14 @@ export async function POST(request: NextRequest) {
   const confirmText = [
     'Thanks for applying to Gilt Foundry.',
     '',
-    "I read every application personally — no queue, no autoresponder chain. If there's a fit, you'll hear from me directly within 24 hours.",
+    "We read every application personally — no queue, no autoresponder chain. If there's a fit, you'll hear from us directly within 24 hours.",
     '',
     '— Gilt Foundry',
   ].join('\n');
   const confirmHtml = `
     <div style="font-family:Georgia,serif;color:#1a1a1a;line-height:1.6;max-width:520px">
       <p style="margin:0 0 1em">Thanks for applying to Gilt Foundry.</p>
-      <p style="margin:0 0 1em">I read every application personally — no queue, no autoresponder chain. If there's a fit, you'll hear from me directly within 24 hours.</p>
+      <p style="margin:0 0 1em">We read every application personally — no queue, no autoresponder chain. If there's a fit, you'll hear from us directly within 24 hours.</p>
       <p style="margin:0;color:#b8860b">— Gilt Foundry</p>
     </div>
   `;
