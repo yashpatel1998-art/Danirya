@@ -25,19 +25,27 @@ export type FaqItem = { q: string; a: string };
 /** FAQ below the form (not inside the form card). */
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    q: 'What happens after I apply?',
-    a: "I read it myself and reply within 24 hours if it's a fit.",
+    q: 'What does Gilt Foundry specialize in?',
+    a: 'We design and build immersive, premium websites. Cinematic 3D, motion and interaction, crafted to make your brand impossible to ignore. Design, 3D and development all happen under one roof.',
   },
   {
-    q: 'How much does it cost?',
-    a: 'Every project is different, so I quote after I understand what you need.',
+    q: 'How do you work with my preferences?',
+    a: "Every project starts with your goals, your audience and the sites you love. We share the direction early and you approve each stage before we move on, so the result feels like your brand, not ours.",
   },
   {
-    q: 'How long does it take?',
-    a: "Depends on the project. You'll get a real timeline once we talk.",
+    q: 'Can we work together after launch?',
+    a: 'Yes. We can stay on for updates, new pages and improvements as your business grows.',
   },
   {
-    q: 'Do you work with small businesses?',
-    a: 'Yes. What matters is the idea, not the size.',
+    q: 'Can you move faster than normal?',
+    a: "Often, yes. If you have a launch date, mention it in your application and we'll tell you honestly whether we can hit it.",
+  },
+  {
+    q: 'What if I need a more complex build?',
+    a: "That's where we do our best work. Custom 3D, interactive experiences and integrations are scoped individually, so you get a clear plan before anything starts.",
+  },
+  {
+    q: 'Do you help with hosting, domains, and launch?',
+    a: 'Yes. We handle deployment, connect your domain and make sure everything runs smoothly on launch day.',
   },
 ];
